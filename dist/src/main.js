@@ -39,6 +39,7 @@ let activeModal = null;
 let ticker;
 let revealingRowIndex = null;
 let isAnimating = false;
+let showingLanding = true;
 const appRoot = document.querySelector('#app');
 if (!appRoot)
     throw new Error('App root not found.');
@@ -52,11 +53,41 @@ async function initialize() {
     trustedBaseEpochMs = dateInfo.epochMs;
     game = loadGame(dateInfo);
     applySettings();
-    renderShell();
     bindEvents();
+    renderLanding();
+    registerServiceWorker();
+}
+function renderLanding() {
+    const alreadyPlayed = game.status !== 'playing';
+    const previewStates = ['correct', 'present', 'absent', 'present', 'correct'];
+    const previewLetters = ['G', 'A', 'B', 'A', 'Y'];
+    const preview = previewLetters.map((letter, index) => `<div class="tile" data-state="${previewStates[index]}">${letter}</div>`).join('');
+    app.innerHTML = `
+    <div class="landing">
+      <div class="landing-card">
+        <div class="landing-preview" aria-hidden="true">${preview}</div>
+        <p class="eyebrow">Daily Filipino word puzzle</p>
+        <h1 class="landing-title">Wordle Tagalog</h1>
+        <p class="landing-tagline">Guess the 5-letter Filipino word in 6 tries. A new word drops every midnight in Manila.</p>
+        <button class="primary-button landing-play" type="button" data-action="play">${alreadyPlayed ? "See today's result" : 'Play'}</button>
+        <p class="landing-meta">Puzzle #${dateInfo.puzzleNumber} · ${dateInfo.displayDate}</p>
+      </div>
+      <div class="credits landing-credits">
+        <p>Made by <a href="https://instagram.com/gianrufin" target="_blank" rel="noopener noreferrer">Gian Rufin</a></p>
+      </div>
+    </div>
+  `;
+}
+function enterGame() {
+    if (!showingLanding)
+        return;
+    showingLanding = false;
+    renderShell();
     render();
     startTicker();
-    registerServiceWorker();
+    if (game.status !== 'playing') {
+        window.setTimeout(() => showStatsModal(), settings.reduceMotion ? 0 : 300);
+    }
 }
 function renderShell() {
     app.innerHTML = `
@@ -179,6 +210,8 @@ function handleClick(event) {
     }
     if (actionButton) {
         const action = actionButton.dataset.action;
+        if (action === 'play')
+            enterGame();
         if (action === 'help')
             showHelpModal();
         if (action === 'stats')
@@ -202,6 +235,13 @@ function handleClick(event) {
     }
 }
 function handlePhysicalKeyboard(event) {
+    if (showingLanding) {
+        if (event.key === 'Enter') {
+            event.preventDefault();
+            enterGame();
+        }
+        return;
+    }
     if (event.key === 'Escape' && activeModal) {
         closeModal();
         return;
