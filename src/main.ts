@@ -69,6 +69,10 @@ const statePriority: Record<LetterState, number> = {
   present: 2,
   correct: 3
 };
+const FLIP_DURATION_MS = 480;
+const FLIP_STAGGER_MS = 260;
+const BOUNCE_DURATION_MS = 620;
+const BOUNCE_STAGGER_MS = 90;
 
 let dateInfo: ManilaDateInfo;
 let game: GameState;
@@ -79,6 +83,8 @@ let trustedBaseEpochMs = Date.now();
 let installPromptEvent: InstallPromptEvent | null = null;
 let activeModal: string | null = null;
 let ticker: number | undefined;
+let revealingRowIndex: number | null = null;
+let isAnimating = false;
 
 const appRoot = document.querySelector<HTMLDivElement>('#app');
 if (!appRoot) throw new Error('App root not found.');
@@ -136,10 +142,6 @@ function renderShell(): void {
       <section id="keyboard" class="keyboard" aria-label="Keyboard"></section>
     </main>
 
-    <footer class="credits">
-      <p>Made by <a href="https://instagram.com/gianrufin" target="_blank" rel="noopener noreferrer">Gian Rufin</a></p>
-    </footer>
-
     <div id="modalRoot" class="modal-root hidden" aria-hidden="true"></div>
   `;
 }
@@ -177,7 +179,7 @@ function renderBoard(): void {
     const submittedGuess = game.guesses[rowIndex];
     const isCurrentRow = rowIndex === game.guesses.length && game.status === 'playing';
     const word = submittedGuess ?? (isCurrentRow ? game.currentGuess : '');
-    const evaluation = game.evaluations[rowIndex];
+    const evaluation = rowIndex === revealingRowIndex ? undefined : game.evaluations[rowIndex];
     const tiles = Array.from({ length: WORD_LENGTH }, (_, tileIndex) => {
       const letter = word[tileIndex] ?? '';
       const tileState: TileState = evaluation?.[tileIndex] ?? (letter ? 'filled' : 'empty');
@@ -265,6 +267,8 @@ function handlePhysicalKeyboard(event: KeyboardEvent): void {
 }
 
 function handleInput(key: string): void {
+  if (isAnimating) return;
+
   if (game.status !== 'playing') {
     showToast(game.status === 'won' ? 'You already solved today\'s word.' : `Today's word was ${game.solution}.`);
     return;
@@ -308,27 +312,86 @@ function submitGuess(): void {
     return;
   }
 
+  const rowIndex = game.guesses.length;
   const evaluation = evaluateGuess(guess, game.solution);
   game.guesses.push(guess);
   game.evaluations.push(evaluation);
   game.currentGuess = '';
 
-  if (guess === game.solution) {
-    game.status = 'won';
-    finishGame();
-    showToast(getWinMessage(game.guesses.length));
-  } else if (game.guesses.length === MAX_GUESSES) {
-    game.status = 'lost';
-    finishGame();
-    showToast(`The word was ${game.solution}.`);
-  }
+  const won = guess === game.solution;
+  const lost = !won && game.guesses.length === MAX_GUESSES;
+  if (won) game.status = 'won';
+  else if (lost) game.status = 'lost';
 
   saveGame();
-  render();
+  revealingRowIndex = rowIndex;
+  renderBoard();
 
-  if (game.status !== 'playing') {
-    window.setTimeout(() => showStatsModal(), settings.reduceMotion ? 0 : 700);
+  revealRow(rowIndex, evaluation, () => {
+    renderKeyboard();
+    if (won) {
+      finishGame();
+      showToast(getWinMessage(game.guesses.length));
+      bounceRow(rowIndex);
+    } else if (lost) {
+      finishGame();
+      showToast(`The word was ${game.solution}.`);
+    }
+
+    if (game.status !== 'playing') {
+      window.setTimeout(() => showStatsModal(), settings.reduceMotion ? 0 : 700);
+    }
+  });
+}
+
+function revealRow(rowIndex: number, evaluation: LetterState[], onComplete: () => void): void {
+  const row = document.querySelector<HTMLElement>(`.board-row[data-row="${rowIndex}"]`);
+
+  if (!row || settings.reduceMotion) {
+    revealingRowIndex = null;
+    renderBoard();
+    onComplete();
+    return;
   }
+
+  isAnimating = true;
+  const tiles = Array.from(row.querySelectorAll<HTMLElement>('.tile'));
+
+  tiles.forEach((tile, index) => {
+    const delay = index * FLIP_STAGGER_MS;
+    tile.style.animationDelay = `${delay}ms`;
+    tile.classList.add('flip');
+    window.setTimeout(() => {
+      tile.dataset.state = evaluation[index];
+    }, delay + FLIP_DURATION_MS / 2);
+  });
+
+  const totalDuration = (tiles.length - 1) * FLIP_STAGGER_MS + FLIP_DURATION_MS;
+  window.setTimeout(() => {
+    revealingRowIndex = null;
+    isAnimating = false;
+    renderBoard();
+    onComplete();
+  }, totalDuration);
+}
+
+function bounceRow(rowIndex: number): void {
+  if (settings.reduceMotion) return;
+  const row = document.querySelector<HTMLElement>(`.board-row[data-row="${rowIndex}"]`);
+  if (!row) return;
+
+  const tiles = Array.from(row.querySelectorAll<HTMLElement>('.tile'));
+  tiles.forEach((tile, index) => {
+    tile.style.animationDelay = `${index * BOUNCE_STAGGER_MS}ms`;
+    tile.classList.add('bounce');
+  });
+
+  window.setTimeout(() => {
+    tiles.forEach((tile) => {
+      tile.classList.remove('bounce');
+      tile.style.animationDelay = '';
+    });
+  }, BOUNCE_DURATION_MS + tiles.length * BOUNCE_STAGGER_MS);
 }
 
 function rejectGuess(message: string): void {
@@ -466,7 +529,7 @@ function showStatsModal(): void {
     return `
       <div class="distribution-row">
         <span>${guessNumber}</span>
-        <div class="distribution-track"><div class="distribution-bar" style="width:${width}%">${count}</div></div>
+        <div class="distribution-track"><div class="distribution-bar" data-width="${width}">${count}</div></div>
       </div>`;
   }).join('');
 
@@ -490,6 +553,14 @@ function showStatsModal(): void {
       <button class="text-button danger" type="button" data-action="reset-stats">Reset stats</button>
     </div>
   `);
+
+  const modalRoot = document.querySelector('#modalRoot');
+  const bars = Array.from(modalRoot?.querySelectorAll<HTMLElement>('.distribution-bar') ?? []);
+  window.requestAnimationFrame(() => {
+    bars.forEach((bar) => {
+      bar.style.width = `${bar.dataset.width ?? '0'}%`;
+    });
+  });
 }
 
 function showSettingsModal(): void {
@@ -519,6 +590,9 @@ function showSettingsModal(): void {
     <div class="modal-actions">
       <button id="installButton" class="primary-button" type="button" data-action="install" ${installPromptEvent ? '' : 'disabled'}>Install app</button>
     </div>
+    <div class="credits">
+      <p>Made by <a href="https://instagram.com/gianrufin" target="_blank" rel="noopener noreferrer">Gian Rufin</a></p>
+    </div>
   `);
 
   const modal = document.querySelector('#modalRoot');
@@ -541,7 +615,6 @@ function showModal(name: string, body: string): void {
   activeModal = name;
   const root = document.querySelector<HTMLDivElement>('#modalRoot');
   if (!root) return;
-  root.classList.remove('hidden');
   root.setAttribute('aria-hidden', 'false');
   root.innerHTML = `
     <div class="modal-card" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
@@ -549,6 +622,9 @@ function showModal(name: string, body: string): void {
       ${body.replace('<h2>', '<h2 id="modalTitle">')}
     </div>
   `;
+  root.classList.add('hidden');
+  void root.offsetWidth;
+  root.classList.remove('hidden');
 }
 
 function closeModal(): void {
@@ -557,7 +633,11 @@ function closeModal(): void {
   if (!root) return;
   root.classList.add('hidden');
   root.setAttribute('aria-hidden', 'true');
-  root.innerHTML = '';
+
+  const closedModal = root;
+  window.setTimeout(() => {
+    if (closedModal.classList.contains('hidden')) closedModal.innerHTML = '';
+  }, settings.reduceMotion ? 0 : 260);
 }
 
 function showToast(message: string): void {
