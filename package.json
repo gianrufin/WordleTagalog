@@ -1,0 +1,18 @@
+{
+  "name": "wordle-tagalog",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host 0.0.0.0",
+    "build": "tsc && node tools/build-dist.mjs",
+    "preview": "vite preview --host 0.0.0.0",
+    "validate:words": "node tools/validate-words.mjs"
+  },
+  "dependencies": {
+    "@vitejs/plugin-legacy": "latest",
+    "vite": "latest",
+    "typescript": "latest"
+  },
+  "devDependencies": {}
+}
