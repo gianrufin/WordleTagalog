@@ -173,6 +173,7 @@ h1 {
 
 .board {
   align-self: center;
+  justify-self: center;
   width: min(100%, 390px);
   display: grid;
   gap: 7px;
@@ -481,6 +482,28 @@ h1 {
 
 .muted {
   color: var(--muted);
+}
+
+.credits {
+  padding: 10px 0 2px;
+  text-align: center;
+}
+
+.credits p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.78rem;
+}
+
+.credits a {
+  color: var(--text);
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.credits a:hover,
+.credits a:focus-visible {
+  text-decoration: underline;
 }
 
 .shake {

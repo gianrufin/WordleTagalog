@@ -136,6 +136,10 @@ function renderShell(): void {
       <section id="keyboard" class="keyboard" aria-label="Keyboard"></section>
     </main>
 
+    <footer class="credits">
+      <p>Made by <a href="https://instagram.com/gianrufin" target="_blank" rel="noopener noreferrer">Gian Rufin</a></p>
+    </footer>
+
     <div id="modalRoot" class="modal-root hidden" aria-hidden="true"></div>
   `;
 }
