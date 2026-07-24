@@ -1,6 +1,5 @@
 export const MANILA_TIME_ZONE = 'Asia/Manila';
 export const MANILA_UTC_OFFSET_MS = 8 * 60 * 60 * 1000;
-export const PUZZLE_ANCHOR = '2026-01-01';
 const TRUSTED_TIME_OFFSET_KEY = 'wordle-tagalog:trusted-time-offset:v1';
 const TRUSTED_TIME_API_URLS = [
     'https://worldtimeapi.org/api/timezone/Asia/Manila',
@@ -22,15 +21,11 @@ export function buildManilaDateInfo(epochMs, source = 'device') {
         day: 'numeric',
         year: 'numeric'
     }).format(new Date(epochMs));
-    const days = daysBetweenDateKeys(PUZZLE_ANCHOR, dateKey);
-    const puzzleIndex = safeModulo(days, 365);
     return {
         epochMs,
         source,
         dateKey,
         displayDate,
-        puzzleIndex,
-        puzzleNumber: puzzleIndex + 1,
         nextMidnightEpochMs: getNextManilaMidnightEpochMs(parts.year, parts.month, parts.day)
     };
 }
@@ -139,15 +134,12 @@ function getManilaParts(epochMs) {
 function getNextManilaMidnightEpochMs(year, month, day) {
     return Date.UTC(year, month - 1, day + 1, 0, 0, 0) - MANILA_UTC_OFFSET_MS;
 }
-function daysBetweenDateKeys(startKey, endKey) {
+export function daysBetweenDateKeys(startKey, endKey) {
     const [startYear, startMonth, startDay] = startKey.split('-').map(Number);
     const [endYear, endMonth, endDay] = endKey.split('-').map(Number);
     const start = Date.UTC(startYear, startMonth - 1, startDay);
     const end = Date.UTC(endYear, endMonth - 1, endDay);
     return Math.floor((end - start) / (24 * 60 * 60 * 1000));
-}
-function safeModulo(value, divisor) {
-    return ((value % divisor) + divisor) % divisor;
 }
 function pad(value) {
     return value.toString().padStart(2, '0');

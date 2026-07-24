@@ -186,10 +186,10 @@ h1 {
   align-self: stretch;
   justify-self: center;
   width: auto;
-  min-width: 130px;
+  min-width: 156px;
   min-height: 156px;
   max-width: min(100%, 390px);
-  aspect-ratio: 5 / 6;
+  aspect-ratio: 1;
   margin: 0 auto;
   display: grid;
   grid-template-rows: repeat(6, 1fr);
@@ -199,7 +199,7 @@ h1 {
 
 .board-row {
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
+  grid-template-columns: repeat(6, 1fr);
   gap: 7px;
   min-height: 0;
   perspective: 800px;
@@ -213,12 +213,17 @@ h1 {
   border-radius: 12px;
   background: var(--empty);
   color: var(--text);
-  font-size: clamp(1.6rem, 10vw, 2.5rem);
+  font-size: clamp(1.3rem, 8vw, 2.2rem);
   font-weight: 900;
   line-height: 1;
   text-transform: uppercase;
   user-select: none;
   transition: transform 180ms ease, border-color 180ms ease, background 180ms ease;
+}
+
+.tile-wide-letter {
+  font-size: clamp(0.85rem, 5vw, 1.35rem);
+  letter-spacing: -0.02em;
 }
 
 .tile[data-state="filled"] {
@@ -315,6 +320,12 @@ h1 {
   font-size: clamp(0.64rem, 2.8vw, 0.8rem);
 }
 
+.double-key {
+  width: 11.4%;
+  max-width: 52px;
+  font-size: clamp(0.66rem, 2.8vw, 0.82rem);
+}
+
 .key[data-state="correct"],
 .key[data-state="present"],
 .key[data-state="absent"] {
@@ -395,7 +406,7 @@ h1 {
 
 .example-grid {
   display: grid;
-  grid-template-columns: repeat(5, 42px);
+  grid-template-columns: repeat(6, 38px);
   gap: 6px;
   margin-top: 14px;
 }
@@ -403,7 +414,11 @@ h1 {
 .example-grid .tile {
   aspect-ratio: 1;
   border-radius: 9px;
-  font-size: 1.25rem;
+  font-size: 1.1rem;
+}
+
+.example-grid .tile-wide-letter {
+  font-size: 0.72rem;
 }
 
 .stats-grid {
@@ -469,6 +484,20 @@ h1 {
 .result-line {
   color: var(--text) !important;
   font-weight: 800;
+}
+
+.word-meaning {
+  margin-top: 4px;
+  padding: 10px 12px;
+  border-radius: 12px;
+  background: var(--surface-2);
+  color: var(--text) !important;
+  font-size: 0.85rem;
+  line-height: 1.45;
+}
+
+.word-meaning strong {
+  letter-spacing: 0.02em;
 }
 
 .setting-row {
@@ -590,9 +619,9 @@ h1 {
 
 .landing-preview {
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
+  grid-template-columns: repeat(6, 1fr);
   gap: 6px;
-  width: min(100%, 260px);
+  width: min(100%, 300px);
   margin-bottom: 6px;
 }
 
@@ -603,11 +632,16 @@ h1 {
   animation: tilePop 220ms ease-out backwards;
 }
 
+.landing-preview .tile-wide-letter {
+  font-size: 0.68rem;
+}
+
 .landing-preview .tile:nth-child(1) { animation-delay: 0ms; }
-.landing-preview .tile:nth-child(2) { animation-delay: 80ms; }
-.landing-preview .tile:nth-child(3) { animation-delay: 160ms; }
-.landing-preview .tile:nth-child(4) { animation-delay: 240ms; }
-.landing-preview .tile:nth-child(5) { animation-delay: 320ms; }
+.landing-preview .tile:nth-child(2) { animation-delay: 70ms; }
+.landing-preview .tile:nth-child(3) { animation-delay: 140ms; }
+.landing-preview .tile:nth-child(4) { animation-delay: 210ms; }
+.landing-preview .tile:nth-child(5) { animation-delay: 280ms; }
+.landing-preview .tile:nth-child(6) { animation-delay: 350ms; }
 
 .landing-title {
   margin: 0;

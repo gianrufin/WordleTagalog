@@ -1,6 +1,8 @@
-import { MAX_GUESSES, SOLUTIONS, VALID_GUESSES, WORD_LENGTH } from './words.js';
+import { MAX_GUESSES, VALID_GUESSES, WORD_LENGTH } from './words.js';
 import { buildManilaDateInfo, formatCountdown, getManilaDateInfo, getPreviousDateKey, type ManilaDateInfo } from './time.js';
 import { readJson, removeKey, writeJson } from './storage.js';
+import { tokenize } from './tokenize.js';
+import { getPuzzleForDate, type Difficulty } from './schedule.js';
 
 type LetterState = 'correct' | 'present' | 'absent';
 type TileState = LetterState | 'filled' | 'empty';
@@ -10,6 +12,10 @@ type GameState = {
   dateKey: string;
   puzzleNumber: number;
   solution: string;
+  definition: string;
+  source: string;
+  difficulty: Difficulty;
+  isFallback: boolean;
   guesses: string[];
   evaluations: LetterState[][];
   currentGuess: string;
@@ -51,8 +57,8 @@ const STATS_KEY = 'wordle-tagalog:stats:v1';
 const VALID_WORD_SET = new Set(VALID_GUESSES);
 const KEYBOARD_ROWS = [
   ['Q', 'W', 'E', 'R', 'T', 'Y', 'U', 'I', 'O', 'P'],
-  ['A', 'S', 'D', 'F', 'G', 'H', 'J', 'K', 'L'],
-  ['ENTER', 'Z', 'X', 'C', 'V', 'B', 'N', 'M', 'BACKSPACE']
+  ['A', 'S', 'D', 'F', 'G', 'H', 'J', 'K', 'L', 'Ñ'],
+  ['ENTER', 'Z', 'X', 'C', 'V', 'B', 'N', 'M', 'NG', 'BACKSPACE']
 ];
 const RESULT_EMOJI: Record<LetterState, string> = {
   correct: '🟩',
@@ -108,10 +114,10 @@ async function initialize(): Promise<void> {
 
 function renderLanding(): void {
   const alreadyPlayed = game.status !== 'playing';
-  const previewStates: LetterState[] = ['correct', 'present', 'absent', 'present', 'correct'];
-  const previewLetters = ['G', 'A', 'B', 'A', 'Y'];
+  const previewStates: LetterState[] = ['correct', 'present', 'absent', 'present', 'absent', 'correct'];
+  const previewLetters = ['T', 'A', 'NG', 'G', 'A', 'P'];
   const preview = previewLetters.map((letter, index) =>
-    `<div class="tile" data-state="${previewStates[index]}">${letter}</div>`
+    `<div class="tile${letter.length > 1 ? ' tile-wide-letter' : ''}" data-state="${previewStates[index]}">${letter}</div>`
   ).join('');
 
   app.innerHTML = `
@@ -120,9 +126,9 @@ function renderLanding(): void {
         <div class="landing-preview" aria-hidden="true">${preview}</div>
         <p class="eyebrow">Daily Filipino word puzzle</p>
         <h1 class="landing-title">Wordle Tagalog</h1>
-        <p class="landing-tagline">Guess the 5-letter Filipino word in 6 tries. A new word drops every midnight in Manila.</p>
+        <p class="landing-tagline">Guess the 6-letter Filipino word in 6 tries. Ñ and NG each count as one letter. A new word drops every midnight in Manila.</p>
         <button class="primary-button landing-play" type="button" data-action="play">${alreadyPlayed ? "See today's result" : 'Play'}</button>
-        <p class="landing-meta">Puzzle #${dateInfo.puzzleNumber} · ${dateInfo.displayDate}</p>
+        <p class="landing-meta">Puzzle #${game.puzzleNumber} · ${dateInfo.displayDate}</p>
       </div>
       <div class="credits landing-credits">
         <p>Made by <a href="https://instagram.com/gianrufin" target="_blank" rel="noopener noreferrer">Gian Rufin</a></p>
@@ -161,7 +167,7 @@ function renderShell(): void {
       <section class="status-card" aria-label="Puzzle status">
         <div>
           <span class="label">Puzzle</span>
-          <strong id="puzzleNumber">#${dateInfo.puzzleNumber}</strong>
+          <strong id="puzzleNumber">#${game.puzzleNumber}</strong>
         </div>
         <div>
           <span class="label">Manila date</span>
@@ -202,7 +208,7 @@ function renderStatus(): void {
   const puzzleNumber = document.querySelector('#puzzleNumber');
   const manilaDate = document.querySelector('#manilaDate');
   const countdown = document.querySelector('#countdown');
-  if (puzzleNumber) puzzleNumber.textContent = `#${dateInfo.puzzleNumber}`;
+  if (puzzleNumber) puzzleNumber.textContent = `#${game.puzzleNumber}`;
   if (manilaDate) manilaDate.textContent = dateInfo.displayDate;
   if (countdown) countdown.textContent = formatCountdown(dateInfo.nextMidnightEpochMs - getEstimatedEpochMs());
 }
@@ -215,12 +221,14 @@ function renderBoard(): void {
     const submittedGuess = game.guesses[rowIndex];
     const isCurrentRow = rowIndex === game.guesses.length && game.status === 'playing';
     const word = submittedGuess ?? (isCurrentRow ? game.currentGuess : '');
+    const wordTokens = tokenize(word);
     const evaluation = rowIndex === revealingRowIndex ? undefined : game.evaluations[rowIndex];
     const tiles = Array.from({ length: WORD_LENGTH }, (_, tileIndex) => {
-      const letter = word[tileIndex] ?? '';
+      const letter = wordTokens[tileIndex] ?? '';
       const tileState: TileState = evaluation?.[tileIndex] ?? (letter ? 'filled' : 'empty');
       const aria = letter ? `${letter}, ${tileState}` : 'empty';
-      return `<div class="tile" data-state="${tileState}" role="gridcell" aria-label="${aria}">${letter}</div>`;
+      const wideClass = letter.length > 1 ? ' tile-wide-letter' : '';
+      return `<div class="tile${wideClass}" data-state="${tileState}" role="gridcell" aria-label="${aria}">${letter}</div>`;
     }).join('');
     return `<div class="board-row" data-row="${rowIndex}" role="row">${tiles}</div>`;
   }).join('');
@@ -237,7 +245,9 @@ function renderKeyboard(): void {
     const keys = row.map((key) => {
       const state = keyStates.get(key) ?? 'empty';
       const label = key === 'BACKSPACE' ? '⌫' : key;
-      const className = key.length > 1 ? 'key wide-key' : 'key';
+      const isWide = key === 'ENTER' || key === 'BACKSPACE';
+      const isDouble = key.length > 1 && !isWide;
+      const className = isWide ? 'key wide-key' : isDouble ? 'key double-key' : 'key';
       return `<button class="${className}" type="button" data-key="${key}" data-state="${state}" aria-label="${key}">${label}</button>`;
     }).join('');
     return `<div class="keyboard-row">${keys}</div>`;
@@ -247,11 +257,12 @@ function renderKeyboard(): void {
 function getKeyboardStates(): Map<string, LetterState> {
   const keys = new Map<string, LetterState>();
   game.guesses.forEach((guess, rowIndex) => {
+    const tokens = tokenize(guess);
     const evaluation = game.evaluations[rowIndex];
     evaluation.forEach((state, letterIndex) => {
-      const letter = guess[letterIndex];
-      const current = keys.get(letter);
-      if (!current || statePriority[state] > statePriority[current]) keys.set(letter, state);
+      const token = tokens[letterIndex];
+      const current = keys.get(token);
+      if (!current || statePriority[state] > statePriority[current]) keys.set(token, state);
     });
   });
   return keys;
@@ -305,7 +316,7 @@ function handlePhysicalKeyboard(event: KeyboardEvent): void {
   if (event.metaKey || event.ctrlKey || event.altKey) return;
 
   const key = event.key === 'Backspace' ? 'BACKSPACE' : event.key === 'Enter' ? 'ENTER' : event.key.toUpperCase();
-  if (key === 'BACKSPACE' || key === 'ENTER' || /^[A-Z]$/.test(key)) {
+  if (key === 'BACKSPACE' || key === 'ENTER' || /^[A-ZÑ]$/.test(key)) {
     event.preventDefault();
     handleInput(key);
   }
@@ -325,13 +336,16 @@ function handleInput(key: string): void {
   }
 
   if (key === 'BACKSPACE') {
-    game.currentGuess = game.currentGuess.slice(0, -1);
+    const tokens = tokenize(game.currentGuess);
+    tokens.pop();
+    game.currentGuess = tokens.join('');
     saveGame();
     renderBoard();
     return;
   }
 
-  if (/^[A-Z]$/.test(key) && game.currentGuess.length < WORD_LENGTH) {
+  const isLetterKey = key === 'NG' || /^[A-ZÑ]$/.test(key);
+  if (isLetterKey && tokenize(game.currentGuess).length < WORD_LENGTH) {
     game.currentGuess += key;
     saveGame();
     renderBoard();
@@ -341,7 +355,7 @@ function handleInput(key: string): void {
 function submitGuess(): void {
   const guess = game.currentGuess.toUpperCase();
 
-  if (guess.length < WORD_LENGTH) {
+  if (tokenize(guess).length < WORD_LENGTH) {
     rejectGuess('Not enough letters.');
     return;
   }
@@ -449,24 +463,26 @@ function rejectGuess(message: string): void {
 }
 
 function evaluateGuess(guess: string, solution: string): LetterState[] {
+  const guessTokens = tokenize(guess);
+  const solutionTokens = tokenize(solution);
   const result: LetterState[] = Array(WORD_LENGTH).fill('absent') as LetterState[];
   const remaining = new Map<string, number>();
 
   for (let index = 0; index < WORD_LENGTH; index += 1) {
-    if (guess[index] === solution[index]) {
+    if (guessTokens[index] === solutionTokens[index]) {
       result[index] = 'correct';
     } else {
-      remaining.set(solution[index], (remaining.get(solution[index]) ?? 0) + 1);
+      remaining.set(solutionTokens[index], (remaining.get(solutionTokens[index]) ?? 0) + 1);
     }
   }
 
   for (let index = 0; index < WORD_LENGTH; index += 1) {
     if (result[index] === 'correct') continue;
-    const letter = guess[index];
-    const count = remaining.get(letter) ?? 0;
+    const token = guessTokens[index];
+    const count = remaining.get(token) ?? 0;
     if (count > 0) {
       result[index] = 'present';
-      remaining.set(letter, count - 1);
+      remaining.set(token, count - 1);
     }
   }
 
@@ -474,32 +490,33 @@ function evaluateGuess(guess: string, solution: string): LetterState[] {
 }
 
 function getHardModeProblem(nextGuess: string): string | null {
+  const nextTokens = tokenize(nextGuess);
   const requiredCounts = new Map<string, number>();
 
   for (let row = 0; row < game.guesses.length; row += 1) {
-    const previousGuess = game.guesses[row];
+    const previousTokens = tokenize(game.guesses[row]);
     const previousEvaluation = game.evaluations[row];
     const rowCounts = new Map<string, number>();
 
     for (let column = 0; column < WORD_LENGTH; column += 1) {
-      const letter = previousGuess[column];
+      const token = previousTokens[column];
       const state = previousEvaluation[column];
-      if (state === 'correct' && nextGuess[column] !== letter) {
-        return `${letter} must stay in spot ${column + 1}.`;
+      if (state === 'correct' && nextTokens[column] !== token) {
+        return `${token} must stay in spot ${column + 1}.`;
       }
       if (state === 'correct' || state === 'present') {
-        rowCounts.set(letter, (rowCounts.get(letter) ?? 0) + 1);
+        rowCounts.set(token, (rowCounts.get(token) ?? 0) + 1);
       }
     }
 
-    rowCounts.forEach((count, letter) => {
-      requiredCounts.set(letter, Math.max(requiredCounts.get(letter) ?? 0, count));
+    rowCounts.forEach((count, token) => {
+      requiredCounts.set(token, Math.max(requiredCounts.get(token) ?? 0, count));
     });
   }
 
-  for (const [letter, count] of requiredCounts.entries()) {
-    const actual = Array.from(nextGuess).filter((character) => character === letter).length;
-    if (actual < count) return `Guess must contain ${letter}.`;
+  for (const [token, count] of requiredCounts.entries()) {
+    const actual = nextTokens.filter((character) => character === token).length;
+    if (actual < count) return `Guess must contain ${token}.`;
   }
 
   return null;
@@ -535,31 +552,35 @@ function finishGame(): void {
 function showHelpModal(): void {
   showModal('help', `
     <h2>How to play</h2>
-    <p>Guess the five-letter Filipino or Tagalog word in six tries.</p>
+    <p>Guess the six-letter Filipino or Tagalog word in six tries.</p>
     <div class="example-grid" aria-hidden="true">
-      <div class="tile" data-state="correct">S</div>
-      <div class="tile" data-state="empty">U</div>
-      <div class="tile" data-state="empty">L</div>
+      <div class="tile" data-state="correct">T</div>
       <div class="tile" data-state="empty">A</div>
-      <div class="tile" data-state="empty">T</div>
+      <div class="tile tile-wide-letter" data-state="empty">NG</div>
+      <div class="tile" data-state="empty">G</div>
+      <div class="tile" data-state="empty">A</div>
+      <div class="tile" data-state="empty">P</div>
     </div>
     <p><strong>Green</strong> means the letter is in the right spot.</p>
     <div class="example-grid" aria-hidden="true">
-      <div class="tile" data-state="empty">B</div>
+      <div class="tile" data-state="empty">S</div>
       <div class="tile" data-state="present">A</div>
-      <div class="tile" data-state="empty">Y</div>
+      <div class="tile tile-wide-letter" data-state="empty">NG</div>
+      <div class="tile" data-state="empty">K</div>
       <div class="tile" data-state="empty">A</div>
-      <div class="tile" data-state="empty">N</div>
+      <div class="tile" data-state="empty">P</div>
     </div>
     <p><strong>Yellow</strong> means the letter is in the word but in a different spot.</p>
     <div class="example-grid" aria-hidden="true">
-      <div class="tile" data-state="empty">P</div>
-      <div class="tile" data-state="empty">U</div>
-      <div class="tile" data-state="absent">S</div>
-      <div class="tile" data-state="empty">O</div>
+      <div class="tile" data-state="empty">B</div>
+      <div class="tile" data-state="absent">U</div>
       <div class="tile" data-state="empty">K</div>
+      <div class="tile" data-state="empty">A</div>
+      <div class="tile" data-state="empty">N</div>
+      <div class="tile" data-state="empty">A</div>
     </div>
     <p><strong>Gray</strong> means the letter is not in the word.</p>
+    <p class="muted"><strong>Ñ</strong> and the <strong>NG</strong> combination each count as a single letter, just like in Filipino dictionaries. Use the dedicated NG key on the keyboard, or type N then G and they'll combine automatically.</p>
     <p class="muted">A new word appears every 12:00 AM Philippine time. The date is calculated in Manila time, not your device timezone.</p>
   `);
 }
@@ -580,7 +601,10 @@ function showStatsModal(): void {
 
   const resultLine = game.status === 'playing'
     ? `<p class="muted">Keep going. Today\'s puzzle closes at midnight Manila time.</p>`
-    : `<p class="result-line">Today: <strong>${game.status === 'won' ? `${game.guesses.length}/6` : `X/6`}</strong></p>`;
+    : `
+      <p class="result-line">Today: <strong>${game.status === 'won' ? `${game.guesses.length}/6` : `X/6`}</strong></p>
+      <p class="word-meaning"><strong>${game.solution}</strong> — ${game.definition}</p>
+    `;
 
   showModal('stats', `
     <h2>Statistics</h2>
@@ -795,7 +819,7 @@ function loadGame(info: ManilaDateInfo): GameState {
   const key = getGameKey(info.dateKey);
   const fallback = createNewGame(info);
   const saved = readJson<GameState>(key, fallback);
-  if (saved.dateKey !== info.dateKey || saved.solution !== SOLUTIONS[info.puzzleIndex]) return fallback;
+  if (saved.dateKey !== info.dateKey || saved.solution !== fallback.solution) return fallback;
   return {
     ...fallback,
     ...saved,
@@ -804,10 +828,15 @@ function loadGame(info: ManilaDateInfo): GameState {
 }
 
 function createNewGame(info: ManilaDateInfo): GameState {
+  const puzzle = getPuzzleForDate(info.dateKey);
   return {
     dateKey: info.dateKey,
-    puzzleNumber: info.puzzleNumber,
-    solution: SOLUTIONS[info.puzzleIndex],
+    puzzleNumber: puzzle.puzzleNumber,
+    solution: puzzle.word,
+    definition: puzzle.definition,
+    source: puzzle.source,
+    difficulty: puzzle.difficulty,
+    isFallback: puzzle.isFallback,
     guesses: [],
     evaluations: [],
     currentGuess: '',
