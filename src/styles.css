@@ -48,7 +48,7 @@
 
 html,
 body {
-  min-height: 100%;
+  height: 100%;
 }
 
 body {
@@ -57,6 +57,7 @@ body {
   color: var(--text);
   touch-action: manipulation;
   -webkit-font-smoothing: antialiased;
+  overscroll-behavior-y: none;
 }
 
 button,
@@ -66,10 +67,16 @@ input {
 
 button {
   -webkit-tap-highlight-color: transparent;
+  transition: transform 120ms ease, background 160ms ease;
+}
+
+button:active {
+  transform: scale(0.94);
 }
 
 .app-shell {
   width: min(100%, 680px);
+  height: 100%;
   min-height: 100dvh;
   margin: 0 auto;
   display: flex;
@@ -131,6 +138,10 @@ h1 {
   outline: none;
 }
 
+.icon-button:active {
+  transform: scale(0.88);
+}
+
 .game {
   flex: 1;
   display: grid;
@@ -175,6 +186,7 @@ h1 {
   align-self: center;
   justify-self: center;
   width: min(100%, 390px);
+  margin: 0 auto;
   display: grid;
   gap: 7px;
   padding: 4px 0;
@@ -184,6 +196,7 @@ h1 {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   gap: 7px;
+  perspective: 800px;
 }
 
 .tile {
@@ -205,7 +218,7 @@ h1 {
 .tile[data-state="filled"] {
   border-color: color-mix(in srgb, var(--text) 60%, var(--border));
   background: var(--filled);
-  transform: scale(1.025);
+  animation: tilePop 160ms ease-out;
 }
 
 .tile[data-state="correct"],
@@ -218,6 +231,33 @@ h1 {
 .tile[data-state="correct"] { background: var(--correct); }
 .tile[data-state="present"] { background: var(--present); }
 .tile[data-state="absent"] { background: var(--absent); }
+
+.tile.flip {
+  animation: tileFlip 480ms ease-in-out backwards;
+}
+
+.tile.bounce {
+  animation: tileBounce 620ms ease backwards;
+}
+
+@keyframes tilePop {
+  0% { transform: scale(0.9); }
+  45% { transform: scale(1.06); }
+  100% { transform: scale(1); }
+}
+
+@keyframes tileFlip {
+  0% { transform: rotateX(0deg); }
+  50% { transform: rotateX(-90deg); }
+  100% { transform: rotateX(0deg); }
+}
+
+@keyframes tileBounce {
+  0%, 100% { transform: translateY(0); }
+  25% { transform: translateY(-22%); }
+  50% { transform: translateY(6%); }
+  75% { transform: translateY(-8%); }
+}
 
 .message {
   min-height: 34px;
@@ -292,10 +332,14 @@ h1 {
   padding: 16px;
   background: rgba(2, 6, 23, 0.54);
   backdrop-filter: blur(10px);
+  opacity: 1;
+  transition: opacity 220ms ease, backdrop-filter 220ms ease;
 }
 
 .modal-root.hidden {
-  display: none;
+  opacity: 0;
+  pointer-events: none;
+  backdrop-filter: blur(0px);
 }
 
 .modal-card {
@@ -308,6 +352,14 @@ h1 {
   border-radius: 24px;
   background: var(--surface);
   box-shadow: var(--shadow);
+  transform: translateY(0) scale(1);
+  opacity: 1;
+  transition: transform 260ms cubic-bezier(.2, .8, .2, 1), opacity 220ms ease;
+}
+
+.modal-root.hidden .modal-card {
+  transform: translateY(24px) scale(0.98);
+  opacity: 0;
 }
 
 .modal-close {
@@ -395,6 +447,7 @@ h1 {
 
 .distribution-bar {
   min-width: 0;
+  width: 0;
   height: 100%;
   display: grid;
   place-items: center end;
@@ -403,6 +456,7 @@ h1 {
   background: var(--correct);
   color: #ffffff;
   font-size: 0.78rem;
+  transition: width 600ms cubic-bezier(.2, .8, .2, 1);
 }
 
 .result-line {
@@ -485,7 +539,9 @@ h1 {
 }
 
 .credits {
-  padding: 10px 0 2px;
+  margin-top: 18px;
+  padding-top: 16px;
+  border-top: 1px solid var(--border);
   text-align: center;
 }
 
