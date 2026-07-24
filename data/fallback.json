@@ -1,8 +1,722 @@
 [
   {
-    "word": "TANGGOL",
-    "definition": "to defend",
-    "source": "https://en.wiktionary.org/wiki/tanggol",
+    "word": "SUPLONG",
+    "definition": "act of reporting or denouncing an anomaly or irregularity to the authorities",
+    "source": "https://en.wiktionary.org/wiki/suplong",
+    "difficulty": "easy"
+  },
+  {
+    "word": "LAGKIT",
+    "definition": "stickiness; adhesiveness",
+    "source": "https://en.wiktionary.org/wiki/lagkit",
+    "difficulty": "easy"
+  },
+  {
+    "word": "PIRYUD",
+    "definition": "period (punctation mark “.”)",
+    "source": "https://en.wiktionary.org/wiki/piryud",
+    "difficulty": "easy"
+  },
+  {
+    "word": "ROSKAS",
+    "definition": "screw thread",
+    "source": "https://en.wiktionary.org/wiki/roskas",
+    "difficulty": "easy"
+  },
+  {
+    "word": "MISYON",
+    "definition": "mission",
+    "source": "https://en.wiktionary.org/wiki/misyon",
+    "difficulty": "easy"
+  },
+  {
+    "word": "ISLAID",
+    "definition": "dated spelling of islayd",
+    "source": "https://en.wiktionary.org/wiki/islaid",
+    "difficulty": "easy"
+  },
+  {
+    "word": "OBLIGA",
+    "definition": "act of obligating",
+    "source": "https://en.wiktionary.org/wiki/obliga",
+    "difficulty": "easy"
+  },
+  {
+    "word": "MANGKOK",
+    "definition": "big bowl or saucer",
+    "source": "https://en.wiktionary.org/wiki/mangkok",
+    "difficulty": "easy"
+  },
+  {
+    "word": "RATRAT",
+    "definition": "pelting; bombarding with bullets",
+    "source": "https://en.wiktionary.org/wiki/ratrat",
+    "difficulty": "easy"
+  },
+  {
+    "word": "ATRASO",
+    "definition": "lateness; delay; tardiness",
+    "source": "https://en.wiktionary.org/wiki/atraso",
+    "difficulty": "easy"
+  },
+  {
+    "word": "KONDOM",
+    "definition": "condom",
+    "source": "https://en.wiktionary.org/wiki/kondom",
+    "difficulty": "easy"
+  },
+  {
+    "word": "BUGNOY",
+    "definition": "fallen coconut fruit",
+    "source": "https://en.wiktionary.org/wiki/bugnoy",
+    "difficulty": "easy"
+  },
+  {
+    "word": "LUGLOG",
+    "definition": "rinsing by shaking in water",
+    "source": "https://en.wiktionary.org/wiki/luglog",
+    "difficulty": "easy"
+  },
+  {
+    "word": "ALYADO",
+    "definition": "ally",
+    "source": "https://en.wiktionary.org/wiki/alyado",
+    "difficulty": "easy"
+  },
+  {
+    "word": "SINSIN",
+    "definition": "condition of being set, placed, or arranged close together",
+    "source": "https://en.wiktionary.org/wiki/sinsin",
+    "difficulty": "easy"
+  },
+  {
+    "word": "PAKANA",
+    "definition": "advantage; benefit",
+    "source": "https://en.wiktionary.org/wiki/pakana",
+    "difficulty": "easy"
+  },
+  {
+    "word": "NABASA",
+    "definition": "complete aspect of mabasa",
+    "source": "https://en.wiktionary.org/wiki/nabasa",
+    "difficulty": "easy"
+  },
+  {
+    "word": "SUUNGIN",
+    "definition": "superseded, pre-2014 spelling of suongin",
+    "source": "https://en.wiktionary.org/wiki/suungin",
+    "difficulty": "easy"
+  },
+  {
+    "word": "KANYON",
+    "definition": "cannon",
+    "source": "https://en.wiktionary.org/wiki/kanyon",
+    "difficulty": "easy"
+  },
+  {
+    "word": "LUGAMI",
+    "definition": "fallen into misfortune or suffering",
+    "source": "https://en.wiktionary.org/wiki/lugami",
+    "difficulty": "easy"
+  },
+  {
+    "word": "ALIPIN",
+    "definition": "slave",
+    "source": "https://en.wiktionary.org/wiki/alipin",
+    "difficulty": "easy"
+  },
+  {
+    "word": "LUMIKO",
+    "definition": "to turn; to make a turn",
+    "source": "https://en.wiktionary.org/wiki/lumiko",
+    "difficulty": "easy"
+  },
+  {
+    "word": "PINTAS",
+    "definition": "fault; flaw; defect",
+    "source": "https://en.wiktionary.org/wiki/pintas",
+    "difficulty": "easy"
+  },
+  {
+    "word": "PIKOLO",
+    "definition": "piccolo",
+    "source": "https://en.wiktionary.org/wiki/pikolo",
+    "difficulty": "easy"
+  },
+  {
+    "word": "PATUNA",
+    "definition": "striped eel catfish (Plotosus lineatus)",
+    "source": "https://en.wiktionary.org/wiki/patuna",
+    "difficulty": "easy"
+  },
+  {
+    "word": "MOTIBO",
+    "definition": "motive",
+    "source": "https://en.wiktionary.org/wiki/motibo",
+    "difficulty": "easy"
+  },
+  {
+    "word": "SAKLOB",
+    "definition": "act of putting on one's hat",
+    "source": "https://en.wiktionary.org/wiki/saklob",
+    "difficulty": "easy"
+  },
+  {
+    "word": "KOSTAL",
+    "definition": "jute sack or bag",
+    "source": "https://en.wiktionary.org/wiki/kostal",
+    "difficulty": "easy"
+  },
+  {
+    "word": "OBARYO",
+    "definition": "ovary",
+    "source": "https://en.wiktionary.org/wiki/obaryo",
+    "difficulty": "easy"
+  },
+  {
+    "word": "TIGHOY",
+    "definition": "temporary stopping, mitigation, or reduction in intensity",
+    "source": "https://en.wiktionary.org/wiki/tighoy",
+    "difficulty": "easy"
+  },
+  {
+    "word": "MAPILI",
+    "definition": "selective; choosy",
+    "source": "https://en.wiktionary.org/wiki/mapili",
+    "difficulty": "easy"
+  },
+  {
+    "word": "TUBERO",
+    "definition": "plumber; pipe setter",
+    "source": "https://en.wiktionary.org/wiki/tubero",
+    "difficulty": "easy"
+  },
+  {
+    "word": "BUMAHA",
+    "definition": "to be flooded; to be inundated",
+    "source": "https://en.wiktionary.org/wiki/bumaha",
+    "difficulty": "easy"
+  },
+  {
+    "word": "LIMPAL",
+    "definition": "very huge piece; huge bulk",
+    "source": "https://en.wiktionary.org/wiki/limpal",
+    "difficulty": "easy"
+  },
+  {
+    "word": "BUNYAG",
+    "definition": "disclosure; revelation",
+    "source": "https://en.wiktionary.org/wiki/bunyag",
+    "difficulty": "easy"
+  },
+  {
+    "word": "INSULA",
+    "definition": "act of insulation",
+    "source": "https://en.wiktionary.org/wiki/insula",
+    "difficulty": "easy"
+  },
+  {
+    "word": "MARTIR",
+    "definition": "martyr",
+    "source": "https://en.wiktionary.org/wiki/martir",
+    "difficulty": "easy"
+  },
+  {
+    "word": "KAMPING",
+    "definition": "physical weakness or frailty; languor; weariness",
+    "source": "https://en.wiktionary.org/wiki/kamping",
+    "difficulty": "easy"
+  },
+  {
+    "word": "REPERI",
+    "definition": "referee",
+    "source": "https://en.wiktionary.org/wiki/reperi",
+    "difficulty": "easy"
+  },
+  {
+    "word": "MUTAWI",
+    "definition": "utterance; pronouncement; declaration",
+    "source": "https://en.wiktionary.org/wiki/mutawi",
+    "difficulty": "easy"
+  },
+  {
+    "word": "TABIGI",
+    "definition": "cannonball mangrove (Xylocarpus granatum)",
+    "source": "https://en.wiktionary.org/wiki/tabigi",
+    "difficulty": "easy"
+  },
+  {
+    "word": "AYUSIN",
+    "definition": "to be arranged; to be put in order",
+    "source": "https://en.wiktionary.org/wiki/ayusin",
+    "difficulty": "easy"
+  },
+  {
+    "word": "SINGSING",
+    "definition": "ring",
+    "source": "https://en.wiktionary.org/wiki/singsing",
+    "difficulty": "easy"
+  },
+  {
+    "word": "LIYAMA",
+    "definition": "llama",
+    "source": "https://en.wiktionary.org/wiki/liyama",
+    "difficulty": "easy"
+  },
+  {
+    "word": "PAROKO",
+    "definition": "a parish priest",
+    "source": "https://en.wiktionary.org/wiki/paroko",
+    "difficulty": "easy"
+  },
+  {
+    "word": "BALUTI",
+    "definition": "armor; breastplate",
+    "source": "https://en.wiktionary.org/wiki/baluti",
+    "difficulty": "easy"
+  },
+  {
+    "word": "SUONGIN",
+    "definition": "to be faced ; to be risked through",
+    "source": "https://en.wiktionary.org/wiki/suongin",
+    "difficulty": "easy"
+  },
+  {
+    "word": "INASAL",
+    "definition": "inasal (variant of the Filipino chicken dish lechon manok)",
+    "source": "https://en.wiktionary.org/wiki/inasal",
+    "difficulty": "easy"
+  },
+  {
+    "word": "TINGTING",
+    "definition": "palm leaf midrib without the blades or lamina",
+    "source": "https://en.wiktionary.org/wiki/tingting",
+    "difficulty": "easy"
+  },
+  {
+    "word": "DYAKET",
+    "definition": "jacket (clothing)",
+    "source": "https://en.wiktionary.org/wiki/dyaket",
+    "difficulty": "easy"
+  },
+  {
+    "word": "AMONYO",
+    "definition": "ammonium",
+    "source": "https://en.wiktionary.org/wiki/amonyo",
+    "difficulty": "easy"
+  },
+  {
+    "word": "PUKPOK",
+    "definition": "hammering; striking; pounding",
+    "source": "https://en.wiktionary.org/wiki/pukpok",
+    "difficulty": "easy"
+  },
+  {
+    "word": "TINLOY",
+    "definition": "lesser spear grass (Chrysopogon aciculatus)",
+    "source": "https://en.wiktionary.org/wiki/tinloy",
+    "difficulty": "easy"
+  },
+  {
+    "word": "ITATAG",
+    "definition": "to be founded; to established",
+    "source": "https://en.wiktionary.org/wiki/itatag",
+    "difficulty": "easy"
+  },
+  {
+    "word": "HITHIT",
+    "definition": "puff; drag",
+    "source": "https://en.wiktionary.org/wiki/hithit",
+    "difficulty": "easy"
+  },
+  {
+    "word": "TENKYU",
+    "definition": "thank you",
+    "source": "https://en.wiktionary.org/wiki/tenkyu",
+    "difficulty": "medium"
+  },
+  {
+    "word": "SULAKE",
+    "definition": "wood wool; excelsior",
+    "source": "https://en.wiktionary.org/wiki/sulake",
+    "difficulty": "easy"
+  },
+  {
+    "word": "SUMPIT",
+    "definition": "blowgun; popgun",
+    "source": "https://en.wiktionary.org/wiki/sumpit",
+    "difficulty": "easy"
+  },
+  {
+    "word": "SAMPON",
+    "definition": "together; along",
+    "source": "https://en.wiktionary.org/wiki/sampon",
+    "difficulty": "medium"
+  },
+  {
+    "word": "KAMYAS",
+    "definition": "bilimbi (Averrhoa bilimbi)",
+    "source": "https://en.wiktionary.org/wiki/kamyas",
+    "difficulty": "easy"
+  },
+  {
+    "word": "KANLONG",
+    "definition": "shadow of a tree",
+    "source": "https://en.wiktionary.org/wiki/kanlong",
+    "difficulty": "easy"
+  },
+  {
+    "word": "BAGASO",
+    "definition": "bagasse",
+    "source": "https://en.wiktionary.org/wiki/bagaso",
+    "difficulty": "easy"
+  },
+  {
+    "word": "GITGIT",
+    "definition": "jostling; act of elbowing one's way into a thick crowd",
+    "source": "https://en.wiktionary.org/wiki/gitgit",
+    "difficulty": "easy"
+  },
+  {
+    "word": "NAPNAP",
+    "definition": "perfect",
+    "source": "https://en.wiktionary.org/wiki/napnap",
+    "difficulty": "easy"
+  },
+  {
+    "word": "KIKYAM",
+    "definition": "kikiam (Philippine variant of ngo hiang)",
+    "source": "https://en.wiktionary.org/wiki/kikyam",
+    "difficulty": "easy"
+  },
+  {
+    "word": "KAMPOR",
+    "definition": "camphor",
+    "source": "https://en.wiktionary.org/wiki/kampor",
+    "difficulty": "easy"
+  },
+  {
+    "word": "KORNER",
+    "definition": "corner (point where two converging lines meet)",
+    "source": "https://en.wiktionary.org/wiki/korner",
+    "difficulty": "easy"
+  },
+  {
+    "word": "DEPINI",
+    "definition": "act of definition",
+    "source": "https://en.wiktionary.org/wiki/depini",
+    "difficulty": "easy"
+  },
+  {
+    "word": "SUPSOP",
+    "definition": "act of sucking using the mouth",
+    "source": "https://en.wiktionary.org/wiki/supsop",
+    "difficulty": "easy"
+  },
+  {
+    "word": "TSITSA",
+    "definition": "let's eat!",
+    "source": "https://en.wiktionary.org/wiki/tsitsa",
+    "difficulty": "medium"
+  },
+  {
+    "word": "DIRIHI",
+    "definition": "act of directing, leading, guiding, or steering",
+    "source": "https://en.wiktionary.org/wiki/dirihi",
+    "difficulty": "easy"
+  },
+  {
+    "word": "TULIRO",
+    "definition": "confused; mentally puzzled",
+    "source": "https://en.wiktionary.org/wiki/tuliro",
+    "difficulty": "easy"
+  },
+  {
+    "word": "HADLANG",
+    "definition": "obstruction; obstacle; hindrance",
+    "source": "https://en.wiktionary.org/wiki/hadlang",
+    "difficulty": "easy"
+  },
+  {
+    "word": "MINTIS",
+    "definition": "failed; dud (said of firecrackers that did not explode, or some project that failed or missed out)",
+    "source": "https://en.wiktionary.org/wiki/mintis",
+    "difficulty": "easy"
+  },
+  {
+    "word": "SAGWIL",
+    "definition": "obstacle; impediment; obstruction",
+    "source": "https://en.wiktionary.org/wiki/sagwil",
+    "difficulty": "easy"
+  },
+  {
+    "word": "KUHILA",
+    "definition": "traitor; betrayer; disloyal person",
+    "source": "https://en.wiktionary.org/wiki/kuhila",
+    "difficulty": "easy"
+  },
+  {
+    "word": "TILAOK",
+    "definition": "cock-a-doodle-doo; cry of a rooster",
+    "source": "https://en.wiktionary.org/wiki/tilaok",
+    "difficulty": "easy"
+  },
+  {
+    "word": "SALAPI",
+    "definition": "money",
+    "source": "https://en.wiktionary.org/wiki/salapi",
+    "difficulty": "easy"
+  },
+  {
+    "word": "TIKTIK",
+    "definition": "ticking of a watch, clock, etc.",
+    "source": "https://en.wiktionary.org/wiki/tiktik",
+    "difficulty": "easy"
+  },
+  {
+    "word": "SALARA",
+    "definition": "salad",
+    "source": "https://en.wiktionary.org/wiki/salara",
+    "difficulty": "easy"
+  },
+  {
+    "word": "NUWEBE",
+    "definition": "nine",
+    "source": "https://en.wiktionary.org/wiki/nuwebe",
+    "difficulty": "medium"
+  },
+  {
+    "word": "NUMERO",
+    "definition": "number",
+    "source": "https://en.wiktionary.org/wiki/numero",
+    "difficulty": "easy"
+  },
+  {
+    "word": "CANILA",
+    "definition": "obsolete spelling of kanila",
+    "source": "https://en.wiktionary.org/wiki/canila",
+    "difficulty": "hard"
+  },
+  {
+    "word": "KABILA",
+    "definition": "opposite side",
+    "source": "https://en.wiktionary.org/wiki/kabila",
+    "difficulty": "easy"
+  },
+  {
+    "word": "MAALAT",
+    "definition": "salty (tasting of salt)",
+    "source": "https://en.wiktionary.org/wiki/maalat",
+    "difficulty": "easy"
+  },
+  {
+    "word": "TEKSTO",
+    "definition": "text (a written passage)",
+    "source": "https://en.wiktionary.org/wiki/teksto",
+    "difficulty": "easy"
+  },
+  {
+    "word": "ASUNTO",
+    "definition": "court case",
+    "source": "https://en.wiktionary.org/wiki/asunto",
+    "difficulty": "easy"
+  },
+  {
+    "word": "KAMADA",
+    "definition": "litter (animals born in one birth); brood of young animals produced at one time",
+    "source": "https://en.wiktionary.org/wiki/kamada",
+    "difficulty": "easy"
+  },
+  {
+    "word": "ABSISA",
+    "definition": "abscissa",
+    "source": "https://en.wiktionary.org/wiki/absisa",
+    "difficulty": "easy"
+  },
+  {
+    "word": "PANGULO",
+    "definition": "president",
+    "source": "https://en.wiktionary.org/wiki/pangulo",
+    "difficulty": "easy"
+  },
+  {
+    "word": "SAMBAL",
+    "definition": "crossing; junction of two roads or rivers",
+    "source": "https://en.wiktionary.org/wiki/sambal",
+    "difficulty": "easy"
+  },
+  {
+    "word": "HALATA",
+    "definition": "obvious; noticeable; perceptible",
+    "source": "https://en.wiktionary.org/wiki/halata",
+    "difficulty": "easy"
+  },
+  {
+    "word": "TIISIN",
+    "definition": "burden; hardship",
+    "source": "https://en.wiktionary.org/wiki/tiisin",
+    "difficulty": "easy"
+  },
+  {
+    "word": "SALAWA",
+    "definition": "having the habit of taking on too many things without doing anything, neither beginning nor finishing",
+    "source": "https://en.wiktionary.org/wiki/salawa",
+    "difficulty": "easy"
+  },
+  {
+    "word": "HANTING",
+    "definition": "hunting",
+    "source": "https://en.wiktionary.org/wiki/hanting",
+    "difficulty": "easy"
+  },
+  {
+    "word": "PITPIT",
+    "definition": "flattened by beating; beaten; pounded",
+    "source": "https://en.wiktionary.org/wiki/pitpit",
+    "difficulty": "easy"
+  },
+  {
+    "word": "GURAMI",
+    "definition": "snakeskin gourami (Trichopodus pectoralis)",
+    "source": "https://en.wiktionary.org/wiki/gurami",
+    "difficulty": "easy"
+  },
+  {
+    "word": "ABWELA",
+    "definition": "grandmother",
+    "source": "https://en.wiktionary.org/wiki/abwela",
+    "difficulty": "easy"
+  },
+  {
+    "word": "TARAWI",
+    "definition": "tarawih (an extra prayer performed by Sunni Muslims at night in the month of Ramadan)",
+    "source": "https://en.wiktionary.org/wiki/tarawi",
+    "difficulty": "easy"
+  },
+  {
+    "word": "TAMPAK",
+    "definition": "patent; evident; obvious",
+    "source": "https://en.wiktionary.org/wiki/tampak",
+    "difficulty": "easy"
+  },
+  {
+    "word": "ALISIN",
+    "definition": "to be removed; to be taken off",
+    "source": "https://en.wiktionary.org/wiki/alisin",
+    "difficulty": "easy"
+  },
+  {
+    "word": "DEBOTO",
+    "definition": "devotee",
+    "source": "https://en.wiktionary.org/wiki/deboto",
+    "difficulty": "easy"
+  },
+  {
+    "word": "HAGWAY",
+    "definition": "proportioned tallness and slenderness",
+    "source": "https://en.wiktionary.org/wiki/hagway",
+    "difficulty": "easy"
+  },
+  {
+    "word": "PORKET",
+    "definition": "just because",
+    "source": "https://en.wiktionary.org/wiki/porket",
+    "difficulty": "medium"
+  },
+  {
+    "word": "AKUMEN",
+    "definition": "acumen (quickness of perception); sharpness",
+    "source": "https://en.wiktionary.org/wiki/akumen",
+    "difficulty": "easy"
+  },
+  {
+    "word": "AKWOSO",
+    "definition": "aqueous; watery",
+    "source": "https://en.wiktionary.org/wiki/akwoso",
+    "difficulty": "easy"
+  },
+  {
+    "word": "BUKLAT",
+    "definition": "open; opened; turned",
+    "source": "https://en.wiktionary.org/wiki/buklat",
+    "difficulty": "easy"
+  },
+  {
+    "word": "SARHAN",
+    "definition": "to be closed something on (a door, window, etc.)",
+    "source": "https://en.wiktionary.org/wiki/sarhan",
+    "difficulty": "easy"
+  },
+  {
+    "word": "PANTOG",
+    "definition": "urinary bladder",
+    "source": "https://en.wiktionary.org/wiki/pantog",
+    "difficulty": "easy"
+  },
+  {
+    "word": "PAGARE",
+    "definition": "promissory note",
+    "source": "https://en.wiktionary.org/wiki/pagare",
+    "difficulty": "easy"
+  },
+  {
+    "word": "DINGGIN",
+    "definition": "to listen to; to hear; to pay attention to what one is saying",
+    "source": "https://en.wiktionary.org/wiki/dinggin",
+    "difficulty": "easy"
+  },
+  {
+    "word": "BUKSAN",
+    "definition": "to be opened",
+    "source": "https://en.wiktionary.org/wiki/buksan",
+    "difficulty": "easy"
+  },
+  {
+    "word": "TUBLIK",
+    "definition": "piston",
+    "source": "https://en.wiktionary.org/wiki/tublik",
+    "difficulty": "easy"
+  },
+  {
+    "word": "KADETE",
+    "definition": "cadet",
+    "source": "https://en.wiktionary.org/wiki/kadete",
+    "difficulty": "easy"
+  },
+  {
+    "word": "NAYLON",
+    "definition": "nylon",
+    "source": "https://en.wiktionary.org/wiki/naylon",
+    "difficulty": "easy"
+  },
+  {
+    "word": "ISINGIT",
+    "definition": "to be inserted in a narrow space",
+    "source": "https://en.wiktionary.org/wiki/isingit",
+    "difficulty": "easy"
+  },
+  {
+    "word": "TINDIG",
+    "definition": "deportment; bearing; posture; pose",
+    "source": "https://en.wiktionary.org/wiki/tindig",
+    "difficulty": "easy"
+  },
+  {
+    "word": "TAKBIR",
+    "definition": "takbir (a proclamation of the greatness of God)",
+    "source": "https://en.wiktionary.org/wiki/takbir",
+    "difficulty": "easy"
+  },
+  {
+    "word": "KAPUSO",
+    "definition": "someone of the same heart",
+    "source": "https://en.wiktionary.org/wiki/kapuso",
+    "difficulty": "easy"
+  },
+  {
+    "word": "INGRESO",
+    "definition": "money remitted; receipts",
+    "source": "https://en.wiktionary.org/wiki/ingreso",
     "difficulty": "easy"
   }
 ]
