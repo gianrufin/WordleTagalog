@@ -9,18 +9,5835 @@ export const SCHEDULE_START_DATE = "2026-07-25";
 export const SCHEDULE: ScheduleEntry[] = [
   {
     "date": "2026-07-25",
-    "word": "TANGGAP",
-    "definition": "to receive or accept something",
-    "source": "https://en.wiktionary.org/wiki/tanggap",
+    "word": "TAKSAN",
+    "definition": "much; many; plenty of",
+    "source": "https://en.wiktionary.org/wiki/taksan",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2026-07-26",
+    "word": "RABINO",
+    "definition": "rabbi",
+    "source": "https://en.wiktionary.org/wiki/rabino",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2026-07-27",
+    "word": "PIGAIN",
+    "definition": "to be wrung out",
+    "source": "https://en.wiktionary.org/wiki/pigain",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2026-07-28",
+    "word": "LINSIL",
+    "definition": "erroneous; improper; mistaken; wrong",
+    "source": "https://en.wiktionary.org/wiki/linsil",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2026-07-29",
+    "word": "MALUTO",
+    "definition": "cooked",
+    "source": "https://en.wiktionary.org/wiki/maluto",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2026-07-30",
+    "word": "LINGMING",
+    "definition": "stupefied; bewildered",
+    "source": "https://en.wiktionary.org/wiki/lingming",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2026-07-31",
+    "word": "BIGUIN",
+    "definition": "to let down; to disappoint",
+    "source": "https://en.wiktionary.org/wiki/biguin",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2026-08-01",
+    "word": "PAMANA",
+    "definition": "inheritance; heritage",
+    "source": "https://en.wiktionary.org/wiki/pamana",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2026-08-02",
+    "word": "MASAMA",
+    "definition": "evil; bad",
+    "source": "https://en.wiktionary.org/wiki/masama",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2026-08-03",
+    "word": "NOBELA",
+    "definition": "novel",
+    "source": "https://en.wiktionary.org/wiki/nobela",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2026-08-04",
+    "word": "LINGGIT",
+    "definition": "littleness; smallness; tininess",
+    "source": "https://en.wiktionary.org/wiki/linggit",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2026-08-05",
+    "word": "MANAWA",
+    "definition": "to be fed up; to lose interest or appetite on something due to excess",
+    "source": "https://en.wiktionary.org/wiki/manawa",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2026-08-06",
+    "word": "PASULO",
+    "definition": "crossbow",
+    "source": "https://en.wiktionary.org/wiki/pasulo",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2026-08-07",
+    "word": "PIRATA",
+    "definition": "pirate",
+    "source": "https://en.wiktionary.org/wiki/pirata",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2026-08-08",
+    "word": "LUSLOS",
+    "definition": "fallen and hanging down",
+    "source": "https://en.wiktionary.org/wiki/luslos",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2026-08-09",
+    "word": "MISTER",
+    "definition": "Mister",
+    "source": "https://en.wiktionary.org/wiki/mister",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2026-08-10",
+    "word": "PINDOL",
+    "definition": "pennant; pennon; banner",
+    "source": "https://en.wiktionary.org/wiki/pindol",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2026-08-11",
+    "word": "MAYELO",
+    "definition": "icy",
+    "source": "https://en.wiktionary.org/wiki/mayelo",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2026-08-12",
+    "word": "PINGKOK",
+    "definition": "claw-handed",
+    "source": "https://en.wiktionary.org/wiki/pingkok",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2026-08-13",
+    "word": "PANDOT",
+    "definition": "sensual",
+    "source": "https://en.wiktionary.org/wiki/pandot",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2026-08-14",
+    "word": "WAGWAG",
+    "definition": "act of shaking something to rid it of things clinging on it",
+    "source": "https://en.wiktionary.org/wiki/wagwag",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2026-08-15",
+    "word": "LANTOT",
+    "definition": "stench of stagnant water",
+    "source": "https://en.wiktionary.org/wiki/lantot",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2026-08-16",
+    "word": "TALUKI",
+    "definition": "silk cloth",
+    "source": "https://en.wiktionary.org/wiki/taluki",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2026-08-17",
+    "word": "SADAKA",
+    "definition": "sadaqah (voluntary alms or charity)",
+    "source": "https://en.wiktionary.org/wiki/sadaka",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2026-08-18",
+    "word": "PARUSA",
+    "definition": "punishment",
+    "source": "https://en.wiktionary.org/wiki/parusa",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2026-08-19",
+    "word": "MANEHO",
+    "definition": "act or manner of driving",
+    "source": "https://en.wiktionary.org/wiki/maneho",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2026-08-20",
+    "word": "DEBATE",
+    "definition": "debate; heated discussion",
+    "source": "https://en.wiktionary.org/wiki/debate",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2026-08-21",
+    "word": "TAGILO",
+    "definition": "pyramid",
+    "source": "https://en.wiktionary.org/wiki/tagilo",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2026-08-22",
+    "word": "KIDNAP",
+    "definition": "kidnap",
+    "source": "https://en.wiktionary.org/wiki/kidnap",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2026-08-23",
+    "word": "MANIBA",
+    "definition": "almost ripe; nearly mature",
+    "source": "https://en.wiktionary.org/wiki/maniba",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2026-08-24",
+    "word": "PEYROL",
+    "definition": "payroll",
+    "source": "https://en.wiktionary.org/wiki/peyrol",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2026-08-25",
+    "word": "ESPOSA",
+    "definition": "wife",
+    "source": "https://en.wiktionary.org/wiki/esposa",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2026-08-26",
+    "word": "SINGHAP",
+    "definition": "act of catching one's breath",
+    "source": "https://en.wiktionary.org/wiki/singhap",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2026-08-27",
+    "word": "HATDOG",
+    "definition": "hotdog",
+    "source": "https://en.wiktionary.org/wiki/hatdog",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2026-08-28",
+    "word": "SUBYANG",
+    "definition": "splinter under the skin or flesh",
+    "source": "https://en.wiktionary.org/wiki/subyang",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2026-08-29",
+    "word": "SABALO",
+    "definition": "milkfish spawner",
+    "source": "https://en.wiktionary.org/wiki/sabalo",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2026-08-30",
+    "word": "HANASH",
+    "definition": "blabber; chatter; words",
+    "source": "https://en.wiktionary.org/wiki/hanash",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2026-08-31",
+    "word": "HANTONG",
+    "definition": "stopping; ending",
+    "source": "https://en.wiktionary.org/wiki/hantong",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2026-09-01",
+    "word": "OPISYO",
+    "definition": "occupation; means of livelihood",
+    "source": "https://en.wiktionary.org/wiki/opisyo",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2026-09-02",
+    "word": "HIMPIL",
+    "definition": "parking or stopping of a vehicle",
+    "source": "https://en.wiktionary.org/wiki/himpil",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2026-09-03",
+    "word": "BUBALO",
+    "definition": "African antelope",
+    "source": "https://en.wiktionary.org/wiki/bubalo",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2026-09-04",
+    "word": "HIMUTI",
+    "definition": "final picking of fruits from trees following previous pickings",
+    "source": "https://en.wiktionary.org/wiki/himuti",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2026-09-05",
+    "word": "PINDANG",
+    "definition": "jerked beef",
+    "source": "https://en.wiktionary.org/wiki/pindang",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2026-09-06",
+    "word": "SIKMAT",
+    "definition": "sudden bite or snatch (made by a dog, etc.)",
+    "source": "https://en.wiktionary.org/wiki/sikmat",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2026-09-07",
+    "word": "PINGGAN",
+    "definition": "plate",
+    "source": "https://en.wiktionary.org/wiki/pinggan",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2026-09-08",
+    "word": "SIDLAN",
+    "definition": "to fill (a container)",
+    "source": "https://en.wiktionary.org/wiki/sidlan",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2026-09-09",
+    "word": "TUMBAS",
+    "definition": "act of giving an equivalent or matching of something received",
+    "source": "https://en.wiktionary.org/wiki/tumbas",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2026-09-10",
+    "word": "PABASA",
+    "definition": "invitation to read; letting of something to be read",
+    "source": "https://en.wiktionary.org/wiki/pabasa",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2026-09-11",
+    "word": "PETIKS",
+    "definition": "easy",
+    "source": "https://en.wiktionary.org/wiki/petiks",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2026-09-12",
+    "word": "AMABLE",
+    "definition": "amiable; kind; friendly",
+    "source": "https://en.wiktionary.org/wiki/amable",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2026-09-13",
+    "word": "ANILAW",
+    "definition": "Colona serratifolia",
+    "source": "https://en.wiktionary.org/wiki/anilaw",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2026-09-14",
+    "word": "BAGAHE",
+    "definition": "luggage; baggage",
+    "source": "https://en.wiktionary.org/wiki/bagahe",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2026-09-15",
+    "word": "TAKLAB",
+    "definition": "granary",
+    "source": "https://en.wiktionary.org/wiki/taklab",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2026-09-16",
+    "word": "SINGKAL",
+    "definition": "splitting of a crack by forcing it with a wedge or quoin",
+    "source": "https://en.wiktionary.org/wiki/singkal",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2026-09-17",
+    "word": "SANGKAP",
+    "definition": "ingredient; condiment",
+    "source": "https://en.wiktionary.org/wiki/sangkap",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2026-09-18",
+    "word": "LASTAG",
+    "definition": "nude",
+    "source": "https://en.wiktionary.org/wiki/lastag",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2026-09-19",
+    "word": "SABJEK",
+    "definition": "subject (particular area of study)",
+    "source": "https://en.wiktionary.org/wiki/sabjek",
+    "difficulty": "hard"
+  },
+  {
+    "date": "2026-09-20",
+    "word": "EMBUDO",
+    "definition": "funnel",
+    "source": "https://en.wiktionary.org/wiki/embudo",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2026-09-21",
+    "word": "SANGKONG",
+    "definition": "term of address for third eldest brother",
+    "source": "https://en.wiktionary.org/wiki/sangkong",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2026-09-22",
+    "word": "BOTIKA",
+    "definition": "drugstore; pharmacy",
+    "source": "https://en.wiktionary.org/wiki/botika",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2026-09-23",
+    "word": "BINHAY",
+    "definition": "germ",
+    "source": "https://en.wiktionary.org/wiki/binhay",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2026-09-24",
+    "word": "TEKWAN",
+    "definition": "metal teapot",
+    "source": "https://en.wiktionary.org/wiki/tekwan",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2026-09-25",
+    "word": "EPEKTO",
+    "definition": "effect",
+    "source": "https://en.wiktionary.org/wiki/epekto",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2026-09-26",
+    "word": "IAGPANG",
+    "definition": "to be fitted; to be adapted",
+    "source": "https://en.wiktionary.org/wiki/iagpang",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2026-09-27",
+    "word": "SALUNO",
+    "definition": "person sent to meet someone on the way at some distance",
+    "source": "https://en.wiktionary.org/wiki/saluno",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2026-09-28",
+    "word": "APATAN",
+    "definition": "four by four",
+    "source": "https://en.wiktionary.org/wiki/apatan",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2026-09-29",
+    "word": "BISNES",
+    "definition": "business",
+    "source": "https://en.wiktionary.org/wiki/bisnes",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2026-09-30",
+    "word": "MUNSIK",
+    "definition": "tiny; very small",
+    "source": "https://en.wiktionary.org/wiki/munsik",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2026-10-01",
+    "word": "PLAWTA",
+    "definition": "flute",
+    "source": "https://en.wiktionary.org/wiki/plawta",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2026-10-02",
+    "word": "BUKLOD",
+    "definition": "reinforcing hoop",
+    "source": "https://en.wiktionary.org/wiki/buklod",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2026-10-03",
+    "word": "SAWALI",
+    "definition": "woven, coarse mat of interlaced, thin, split bamboo strips",
+    "source": "https://en.wiktionary.org/wiki/sawali",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2026-10-04",
+    "word": "MIGMIG",
+    "definition": "immigration agents",
+    "source": "https://en.wiktionary.org/wiki/migmig",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2026-10-05",
+    "word": "DURYAN",
+    "definition": "durian",
+    "source": "https://en.wiktionary.org/wiki/duryan",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2026-10-06",
+    "word": "EKISAN",
+    "definition": "to cross (mark with an X)",
+    "source": "https://en.wiktionary.org/wiki/ekisan",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2026-10-07",
+    "word": "HIKMAT",
+    "definition": "magic art",
+    "source": "https://en.wiktionary.org/wiki/hikmat",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2026-10-08",
+    "word": "SOLIDO",
+    "definition": "solid (in the solid state)",
+    "source": "https://en.wiktionary.org/wiki/solido",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2026-10-09",
+    "word": "MINGMING",
+    "definition": "appellation for a cat",
+    "source": "https://en.wiktionary.org/wiki/mingming",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2026-10-10",
+    "word": "AGUHON",
+    "definition": "very large needle",
+    "source": "https://en.wiktionary.org/wiki/aguhon",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2026-10-11",
+    "word": "HAMPAS",
+    "definition": "strike; blow",
+    "source": "https://en.wiktionary.org/wiki/hampas",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2026-10-12",
+    "word": "ATLETA",
+    "definition": "athlete",
+    "source": "https://en.wiktionary.org/wiki/atleta",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2026-10-13",
+    "word": "MAKRUH",
+    "definition": "makruh",
+    "source": "https://en.wiktionary.org/wiki/makruh",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2026-10-14",
+    "word": "SABLAY",
+    "definition": "wide of the mark; not striking the target aimed at",
+    "source": "https://en.wiktionary.org/wiki/sablay",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2026-10-15",
+    "word": "GRAMAR",
+    "definition": "grammar",
+    "source": "https://en.wiktionary.org/wiki/gramar",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2026-10-16",
+    "word": "GUMAWA",
+    "definition": "to make; to manufacture",
+    "source": "https://en.wiktionary.org/wiki/gumawa",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2026-10-17",
+    "word": "BIGYAN",
+    "definition": "to give (someone or something)",
+    "source": "https://en.wiktionary.org/wiki/bigyan",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2026-10-18",
+    "word": "MALINA",
+    "definition": "nymphlike",
+    "source": "https://en.wiktionary.org/wiki/malina",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2026-10-19",
+    "word": "SALIDA",
+    "definition": "exit; way out",
+    "source": "https://en.wiktionary.org/wiki/salida",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2026-10-20",
+    "word": "HINETE",
+    "definition": "jockey (one who rides racehorses competitively)",
+    "source": "https://en.wiktionary.org/wiki/hinete",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2026-10-21",
+    "word": "KULITI",
+    "definition": "stye",
+    "source": "https://en.wiktionary.org/wiki/kuliti",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2026-10-22",
+    "word": "TABLAY",
+    "definition": "electric charge",
+    "source": "https://en.wiktionary.org/wiki/tablay",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2026-10-23",
+    "word": "ADWANA",
+    "definition": "customs; custom house",
+    "source": "https://en.wiktionary.org/wiki/adwana",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2026-10-24",
+    "word": "KUMAIN",
+    "definition": "to eat",
+    "source": "https://en.wiktionary.org/wiki/kumain",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2026-10-25",
+    "word": "PUWEDS",
+    "definition": "can; able; possible",
+    "source": "https://en.wiktionary.org/wiki/puweds",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2026-10-26",
+    "word": "SAKTAN",
+    "definition": "to hurt",
+    "source": "https://en.wiktionary.org/wiki/saktan",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2026-10-27",
+    "word": "GASLAW",
+    "definition": "immodesty; rudeness; coarseness",
+    "source": "https://en.wiktionary.org/wiki/gaslaw",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2026-10-28",
+    "word": "SIMPOK",
+    "definition": "surge or swell of the sea breaking into a wave or ripple",
+    "source": "https://en.wiktionary.org/wiki/simpok",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2026-10-29",
+    "word": "BALAONG",
+    "definition": "large, square basket made of wide bamboo splits",
+    "source": "https://en.wiktionary.org/wiki/balaong",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2026-10-30",
+    "word": "AGALYA",
+    "definition": "gallnut",
+    "source": "https://en.wiktionary.org/wiki/agalya",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2026-10-31",
+    "word": "ESKINA",
+    "definition": "street corner",
+    "source": "https://en.wiktionary.org/wiki/eskina",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2026-11-01",
+    "word": "KALIKO",
+    "definition": "calico (plain white cotton cloth)",
+    "source": "https://en.wiktionary.org/wiki/kaliko",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2026-11-02",
+    "word": "TAKBAN",
+    "definition": "to cover; to provide with a cover",
+    "source": "https://en.wiktionary.org/wiki/takban",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2026-11-03",
+    "word": "KANIYA",
+    "definition": "his; her",
+    "source": "https://en.wiktionary.org/wiki/kaniya",
+    "difficulty": "medium"
+  },
+  {
+    "date": "2026-11-04",
+    "word": "SAYAONG",
+    "definition": "since; ever since",
+    "source": "https://en.wiktionary.org/wiki/sayaong",
+    "difficulty": "medium"
+  },
+  {
+    "date": "2026-11-05",
+    "word": "BINATA",
+    "definition": "bachelor; unmarried man",
+    "source": "https://en.wiktionary.org/wiki/binata",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2026-11-06",
+    "word": "ISIPIN",
+    "definition": "things that need careful or deep thinking; something to think about",
+    "source": "https://en.wiktionary.org/wiki/isipin",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2026-11-07",
+    "word": "GINGGING",
+    "definition": "orangeberry shrub; gin berry shrub (Glycosmis pentaphylla)",
+    "source": "https://en.wiktionary.org/wiki/gingging",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2026-11-08",
+    "word": "BILULO",
+    "definition": "key lime, especially the Philippine variety (Citrus × aurantiifolia)",
+    "source": "https://en.wiktionary.org/wiki/bilulo",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2026-11-09",
+    "word": "HENTAI",
+    "definition": "hentai (sexual or pornographic anime or manga)",
+    "source": "https://en.wiktionary.org/wiki/hentai",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2026-11-10",
+    "word": "AYORTA",
+    "definition": "aorta",
+    "source": "https://en.wiktionary.org/wiki/ayorta",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2026-11-11",
+    "word": "MAAARI",
+    "definition": "can be; possible",
+    "source": "https://en.wiktionary.org/wiki/maaari",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2026-11-12",
+    "word": "MALABO",
+    "definition": "blurry; hard to read",
+    "source": "https://en.wiktionary.org/wiki/malabo",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2026-11-13",
+    "word": "MADIWA",
+    "definition": "meaningful; full of meaning",
+    "source": "https://en.wiktionary.org/wiki/madiwa",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2026-11-14",
+    "word": "KANTON",
+    "definition": "ellipsis of pansit kanton",
+    "source": "https://en.wiktionary.org/wiki/kanton",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2026-11-15",
+    "word": "BULAAN",
+    "definition": "lying; untruthful",
+    "source": "https://en.wiktionary.org/wiki/bulaan",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2026-11-16",
+    "word": "SINAING",
+    "definition": "rice being cooked",
+    "source": "https://en.wiktionary.org/wiki/sinaing",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2026-11-17",
+    "word": "ALAPAP",
+    "definition": "doubt; incertitude; indecision",
+    "source": "https://en.wiktionary.org/wiki/alapap",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2026-11-18",
+    "word": "BULHAW",
+    "definition": "reddish; vermilion",
+    "source": "https://en.wiktionary.org/wiki/bulhaw",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2026-11-19",
+    "word": "SIPHAW",
+    "definition": "persecution",
+    "source": "https://en.wiktionary.org/wiki/siphaw",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2026-11-20",
+    "word": "ANILYA",
+    "definition": "a ring which a cord or strap is tied in order to secure an object",
+    "source": "https://en.wiktionary.org/wiki/anilya",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2026-11-21",
+    "word": "SANLING",
+    "definition": "ochre (clay earth pigment)",
+    "source": "https://en.wiktionary.org/wiki/sanling",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2026-11-22",
+    "word": "PRINSA",
+    "definition": "dam; floodgate",
+    "source": "https://en.wiktionary.org/wiki/prinsa",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2026-11-23",
+    "word": "TALANGA",
+    "definition": "quiver (container for arrows)",
+    "source": "https://en.wiktionary.org/wiki/talanga",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2026-11-24",
+    "word": "KUTKOT",
+    "definition": "act of scraping, scratching, digging, or burrowing deeper",
+    "source": "https://en.wiktionary.org/wiki/kutkot",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2026-11-25",
+    "word": "KAALAN",
+    "definition": "namesake; fellow with the same name",
+    "source": "https://en.wiktionary.org/wiki/kaalan",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2026-11-26",
+    "word": "LAGMAK",
+    "definition": "helplessly prostrate or bedridden",
+    "source": "https://en.wiktionary.org/wiki/lagmak",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2026-11-27",
+    "word": "LIPANA",
+    "definition": "widespread; diffused; found everywhere",
+    "source": "https://en.wiktionary.org/wiki/lipana",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2026-11-28",
+    "word": "BINAGO",
+    "definition": "modified",
+    "source": "https://en.wiktionary.org/wiki/binago",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2026-11-29",
+    "word": "ALMEHA",
+    "definition": "clam; bivalve mollusc",
+    "source": "https://en.wiktionary.org/wiki/almeha",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2026-11-30",
+    "word": "BAHADA",
+    "definition": "downhill slope",
+    "source": "https://en.wiktionary.org/wiki/bahada",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2026-12-01",
+    "word": "TIBUYO",
+    "definition": "piggy bank; money box",
+    "source": "https://en.wiktionary.org/wiki/tibuyo",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2026-12-02",
+    "word": "ABAKUS",
+    "definition": "abacus",
+    "source": "https://en.wiktionary.org/wiki/abakus",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2026-12-03",
+    "word": "BATUTA",
+    "definition": "police baton; nightstick",
+    "source": "https://en.wiktionary.org/wiki/batuta",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2026-12-04",
+    "word": "KILALA",
+    "definition": "act of knowing or recognizing someone or something",
+    "source": "https://en.wiktionary.org/wiki/kilala",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2026-12-05",
+    "word": "PAYKOT",
+    "definition": "spareribs",
+    "source": "https://en.wiktionary.org/wiki/paykot",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2026-12-06",
+    "word": "LAPYAD",
+    "definition": "flat nose",
+    "source": "https://en.wiktionary.org/wiki/lapyad",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2026-12-07",
+    "word": "SUBALI",
+    "definition": "but; however",
+    "source": "https://en.wiktionary.org/wiki/subali",
+    "difficulty": "medium"
+  },
+  {
+    "date": "2026-12-08",
+    "word": "IKAISA",
+    "definition": "first",
+    "source": "https://en.wiktionary.org/wiki/ikaisa",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2026-12-09",
+    "word": "SAKLIT",
+    "definition": "entanglement of loose rope, cord, wire, etc.",
+    "source": "https://en.wiktionary.org/wiki/saklit",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2026-12-10",
+    "word": "MARTSA",
+    "definition": "march (movement)",
+    "source": "https://en.wiktionary.org/wiki/martsa",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2026-12-11",
+    "word": "KAGAYA",
+    "definition": "like; similar to",
+    "source": "https://en.wiktionary.org/wiki/kagaya",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2026-12-12",
+    "word": "PATNIG",
+    "definition": "quick reply; repartee",
+    "source": "https://en.wiktionary.org/wiki/patnig",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2026-12-13",
+    "word": "LIBTOS",
+    "definition": "blister",
+    "source": "https://en.wiktionary.org/wiki/libtos",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2026-12-14",
+    "word": "RELAKS",
+    "definition": "relaxation",
+    "source": "https://en.wiktionary.org/wiki/relaks",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2026-12-15",
+    "word": "ALULONG",
+    "definition": "distant howling; distant barking",
+    "source": "https://en.wiktionary.org/wiki/alulong",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2026-12-16",
+    "word": "RETASO",
+    "definition": "snippet; cut pieces",
+    "source": "https://en.wiktionary.org/wiki/retaso",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2026-12-17",
+    "word": "BLATER",
+    "definition": "blotting paper",
+    "source": "https://en.wiktionary.org/wiki/blater",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2026-12-18",
+    "word": "RENTAS",
+    "definition": "government income",
+    "source": "https://en.wiktionary.org/wiki/rentas",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2026-12-19",
+    "word": "ALERTO",
+    "definition": "alert",
+    "source": "https://en.wiktionary.org/wiki/alerto",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2026-12-20",
+    "word": "SASTRE",
+    "definition": "tailor",
+    "source": "https://en.wiktionary.org/wiki/sastre",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2026-12-21",
+    "word": "PABEBE",
+    "definition": "an adult showing mannerisms of a child or acting like a kid",
+    "source": "https://en.wiktionary.org/wiki/pabebe",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2026-12-22",
+    "word": "BIYUDA",
+    "definition": "widow",
+    "source": "https://en.wiktionary.org/wiki/biyuda",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2026-12-23",
+    "word": "ARPIYA",
+    "definition": "harpy",
+    "source": "https://en.wiktionary.org/wiki/arpiya",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2026-12-24",
+    "word": "SAKNONG",
+    "definition": "stanza",
+    "source": "https://en.wiktionary.org/wiki/saknong",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2026-12-25",
+    "word": "ALUMNO",
+    "definition": "alumnus (male graduate)",
+    "source": "https://en.wiktionary.org/wiki/alumno",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2026-12-26",
+    "word": "NGUYNGOY",
+    "definition": "incessant cry; sulky, continuous weeping",
+    "source": "https://en.wiktionary.org/wiki/nguyngoy",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2026-12-27",
+    "word": "NORMAL",
+    "definition": "normal (according to norms or rules)",
+    "source": "https://en.wiktionary.org/wiki/normal",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2026-12-28",
+    "word": "AHUSTE",
+    "definition": "adjustment",
+    "source": "https://en.wiktionary.org/wiki/ahuste",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2026-12-29",
+    "word": "PINTOR",
+    "definition": "painter",
+    "source": "https://en.wiktionary.org/wiki/pintor",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2026-12-30",
+    "word": "KINDAT",
+    "definition": "wink (of one's eye)",
+    "source": "https://en.wiktionary.org/wiki/kindat",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2026-12-31",
+    "word": "BORDON",
+    "definition": "a large log",
+    "source": "https://en.wiktionary.org/wiki/bordon",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2027-01-01",
+    "word": "GILGIL",
+    "definition": "cutting with an instrument pressed hard while being moved to and fro without raising",
+    "source": "https://en.wiktionary.org/wiki/gilgil",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2027-01-02",
+    "word": "BOTOGS",
+    "definition": "spider used in spider fighting",
+    "source": "https://en.wiktionary.org/wiki/botogs",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2027-01-03",
+    "word": "SUWERO",
+    "definition": "long, large hypodermic needle",
+    "source": "https://en.wiktionary.org/wiki/suwero",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2027-01-04",
+    "word": "KAAGAW",
+    "definition": "rival; competitor",
+    "source": "https://en.wiktionary.org/wiki/kaagaw",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2027-01-05",
+    "word": "APUHAP",
+    "definition": "act of groping or feeling about with one's hand",
+    "source": "https://en.wiktionary.org/wiki/apuhap",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2027-01-06",
+    "word": "LAGETS",
+    "definition": "old; elderly",
+    "source": "https://en.wiktionary.org/wiki/lagets",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2027-01-07",
+    "word": "SALPOK",
+    "definition": "crash; collision",
+    "source": "https://en.wiktionary.org/wiki/salpok",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2027-01-08",
+    "word": "SIYOBE",
+    "definition": "younger sister",
+    "source": "https://en.wiktionary.org/wiki/siyobe",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2027-01-09",
+    "word": "PANGGANG",
+    "definition": "broiled, toasted",
+    "source": "https://en.wiktionary.org/wiki/panggang",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2027-01-10",
+    "word": "LAMPAS",
+    "definition": "gone past; past; exceeded; surpassed",
+    "source": "https://en.wiktionary.org/wiki/lampas",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2027-01-11",
+    "word": "KLORIN",
+    "definition": "chlorine",
+    "source": "https://en.wiktionary.org/wiki/klorin",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2027-01-12",
+    "word": "PAHINA",
+    "definition": "page",
+    "source": "https://en.wiktionary.org/wiki/pahina",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2027-01-13",
+    "word": "SENYAS",
+    "definition": "sign given by a gesture; signal",
+    "source": "https://en.wiktionary.org/wiki/senyas",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2027-01-14",
+    "word": "PREMYO",
+    "definition": "prize; reward",
+    "source": "https://en.wiktionary.org/wiki/premyo",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2027-01-15",
+    "word": "MAMAGA",
+    "definition": "to swell; to inflame; to engorge",
+    "source": "https://en.wiktionary.org/wiki/mamaga",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2027-01-16",
+    "word": "BUGHAW",
+    "definition": "blue",
+    "source": "https://en.wiktionary.org/wiki/bughaw",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2027-01-17",
+    "word": "LUMAKI",
+    "definition": "to become bigger; to increase in size",
+    "source": "https://en.wiktionary.org/wiki/lumaki",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2027-01-18",
+    "word": "LOHIKA",
+    "definition": "logic",
+    "source": "https://en.wiktionary.org/wiki/lohika",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2027-01-19",
+    "word": "TALANGI",
+    "definition": "discriminant",
+    "source": "https://en.wiktionary.org/wiki/talangi",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2027-01-20",
+    "word": "PATANGO",
+    "definition": "noddingly; in a nodding way or manner",
+    "source": "https://en.wiktionary.org/wiki/patango",
+    "difficulty": "medium"
+  },
+  {
+    "date": "2027-01-21",
+    "word": "BULGAR",
+    "definition": "vulgar; coarse",
+    "source": "https://en.wiktionary.org/wiki/bulgar",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2027-01-22",
+    "word": "PALARA",
+    "definition": "foil (thin aluminum or tin used to wrap food)",
+    "source": "https://en.wiktionary.org/wiki/palara",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2027-01-23",
+    "word": "ILIKHA",
+    "definition": "to be created",
+    "source": "https://en.wiktionary.org/wiki/ilikha",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2027-01-24",
+    "word": "SAGALA",
+    "definition": "costumed maiden, with an enlarged headdress of leaves, joining a Lenten procession",
+    "source": "https://en.wiktionary.org/wiki/sagala",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2027-01-25",
+    "word": "SIGNOS",
+    "definition": "destiny; omen; fatal sign; presage of fate",
+    "source": "https://en.wiktionary.org/wiki/signos",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2027-01-26",
+    "word": "KANELA",
+    "definition": "cannella; true cinnamon (Cinnamomum verum)",
+    "source": "https://en.wiktionary.org/wiki/kanela",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2027-01-27",
+    "word": "MALUOY",
+    "definition": "to wither; to fade",
+    "source": "https://en.wiktionary.org/wiki/maluoy",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2027-01-28",
+    "word": "DUMAPA",
+    "definition": "to lie flat on one's stomach",
+    "source": "https://en.wiktionary.org/wiki/dumapa",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2027-01-29",
+    "word": "ORARYO",
+    "definition": "timetable; schedule",
+    "source": "https://en.wiktionary.org/wiki/oraryo",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2027-01-30",
+    "word": "IKATLO",
+    "definition": "third",
+    "source": "https://en.wiktionary.org/wiki/ikatlo",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2027-01-31",
+    "word": "BIYAYA",
+    "definition": "grace",
+    "source": "https://en.wiktionary.org/wiki/biyaya",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2027-02-01",
+    "word": "ISIPAN",
+    "definition": "mind (ability for rational thought, to be aware of things, to remember things, and to focus the thoughts)",
+    "source": "https://en.wiktionary.org/wiki/isipan",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2027-02-02",
+    "word": "DAPDAP",
+    "definition": "Indian coral tree (Erythrina variegata)",
+    "source": "https://en.wiktionary.org/wiki/dapdap",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2027-02-03",
+    "word": "BAYBAY",
+    "definition": "border; edge; side",
+    "source": "https://en.wiktionary.org/wiki/baybay",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2027-02-04",
+    "word": "LAKAYA",
+    "definition": "act of fishing or angling",
+    "source": "https://en.wiktionary.org/wiki/lakaya",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2027-02-05",
+    "word": "KUMPIL",
+    "definition": "confirmation (sacrament)",
+    "source": "https://en.wiktionary.org/wiki/kumpil",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2027-02-06",
+    "word": "ITUBIG",
+    "definition": "to be addressed with water",
+    "source": "https://en.wiktionary.org/wiki/itubig",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2027-02-07",
+    "word": "DUMURA",
+    "definition": "to spit",
+    "source": "https://en.wiktionary.org/wiki/dumura",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2027-02-08",
+    "word": "LIMPIK",
+    "definition": "very large jar with handles",
+    "source": "https://en.wiktionary.org/wiki/limpik",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2027-02-09",
+    "word": "SIRAAN",
+    "definition": "to smear; to defame; to calumniate; to slander",
+    "source": "https://en.wiktionary.org/wiki/siraan",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2027-02-10",
+    "word": "LANGHAP",
+    "definition": "inhalation; breathing in",
+    "source": "https://en.wiktionary.org/wiki/langhap",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2027-02-11",
+    "word": "KORONA",
+    "definition": "crown",
+    "source": "https://en.wiktionary.org/wiki/korona",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2027-02-12",
+    "word": "SEGURO",
+    "definition": "insurance",
+    "source": "https://en.wiktionary.org/wiki/seguro",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2027-02-13",
+    "word": "PEKLAT",
+    "definition": "scar",
+    "source": "https://en.wiktionary.org/wiki/peklat",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2027-02-14",
+    "word": "KUBIKO",
+    "definition": "cubic",
+    "source": "https://en.wiktionary.org/wiki/kubiko",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2027-02-15",
+    "word": "KAHERO",
+    "definition": "cashier",
+    "source": "https://en.wiktionary.org/wiki/kahero",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2027-02-16",
+    "word": "MINOLA",
+    "definition": "man; boy; male",
+    "source": "https://en.wiktionary.org/wiki/minola",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2027-02-17",
+    "word": "SANGGOL",
+    "definition": "baby; infant; babe",
+    "source": "https://en.wiktionary.org/wiki/sanggol",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2027-02-18",
+    "word": "TAGHOY",
+    "definition": "lament; lamentation",
+    "source": "https://en.wiktionary.org/wiki/taghoy",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2027-02-19",
+    "word": "BIGWAS",
+    "definition": "frontal box with the fist; sudden hard blow with the fist",
+    "source": "https://en.wiktionary.org/wiki/bigwas",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2027-02-20",
+    "word": "HUMIGA",
+    "definition": "to lie on; to lie down",
+    "source": "https://en.wiktionary.org/wiki/humiga",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2027-02-21",
+    "word": "SATIRA",
+    "definition": "satire",
+    "source": "https://en.wiktionary.org/wiki/satira",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2027-02-22",
+    "word": "BASKAG",
+    "definition": "framework; frame",
+    "source": "https://en.wiktionary.org/wiki/baskag",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2027-02-23",
+    "word": "ILAKAS",
+    "definition": "to be strengthened",
+    "source": "https://en.wiktionary.org/wiki/ilakas",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2027-02-24",
+    "word": "TAIHAN",
+    "definition": "to defecate on something",
+    "source": "https://en.wiktionary.org/wiki/taihan",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2027-02-25",
+    "word": "BANTOD",
+    "definition": "diameter",
+    "source": "https://en.wiktionary.org/wiki/bantod",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2027-02-26",
+    "word": "ALPINO",
+    "definition": "alpine (of or relating to mountains)",
+    "source": "https://en.wiktionary.org/wiki/alpino",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2027-02-27",
+    "word": "LUMIIT",
+    "definition": "to become smaller; to decrease in size",
+    "source": "https://en.wiktionary.org/wiki/lumiit",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2027-02-28",
+    "word": "PETSAY",
+    "definition": "Chinese cabbage (either napa cabbage or bok choy)",
+    "source": "https://en.wiktionary.org/wiki/petsay",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2027-03-01",
+    "word": "BURNIK",
+    "definition": "dingleberry (fecal matter)",
+    "source": "https://en.wiktionary.org/wiki/burnik",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2027-03-02",
+    "word": "KABAONG",
+    "definition": "coffin; casket",
+    "source": "https://en.wiktionary.org/wiki/kabaong",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2027-03-03",
+    "word": "MITIKO",
+    "definition": "mythic; mythical",
+    "source": "https://en.wiktionary.org/wiki/mitiko",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2027-03-04",
+    "word": "ERALDO",
+    "definition": "herald",
+    "source": "https://en.wiktionary.org/wiki/eraldo",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2027-03-05",
+    "word": "PUSALI",
+    "definition": "mire under the bamboo platform at the back of small houses; muck",
+    "source": "https://en.wiktionary.org/wiki/pusali",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2027-03-06",
+    "word": "IBAHAW",
+    "definition": "to set aside to become a cold leftover",
+    "source": "https://en.wiktionary.org/wiki/ibahaw",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2027-03-07",
+    "word": "NGATNGAT",
+    "definition": "gnaw",
+    "source": "https://en.wiktionary.org/wiki/ngatngat",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2027-03-08",
+    "word": "BULAOS",
+    "definition": "trail; footpath",
+    "source": "https://en.wiktionary.org/wiki/bulaos",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2027-03-09",
+    "word": "BANYAS",
+    "definition": "large boa constrictor",
+    "source": "https://en.wiktionary.org/wiki/banyas",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2027-03-10",
+    "word": "LUNGSOD",
+    "definition": "city",
+    "source": "https://en.wiktionary.org/wiki/lungsod",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2027-03-11",
+    "word": "PAROLA",
+    "definition": "lighthouse",
+    "source": "https://en.wiktionary.org/wiki/parola",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2027-03-12",
+    "word": "BABERO",
+    "definition": "bib; chin cloth",
+    "source": "https://en.wiktionary.org/wiki/babero",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2027-03-13",
+    "word": "KALIPA",
+    "definition": "caliph",
+    "source": "https://en.wiktionary.org/wiki/kalipa",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2027-03-14",
+    "word": "LIMETA",
+    "definition": "bottle with a short but wide belly, and long narrow neck similar to a flask or a flagon",
+    "source": "https://en.wiktionary.org/wiki/limeta",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2027-03-15",
+    "word": "BURGES",
+    "definition": "bourgeois; of the middle class",
+    "source": "https://en.wiktionary.org/wiki/burges",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2027-03-16",
+    "word": "TAUTAY",
+    "definition": "act of giving or receiving, buying or selling something little by little and in parts",
+    "source": "https://en.wiktionary.org/wiki/tautay",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2027-03-17",
+    "word": "MAIMOT",
+    "definition": "stingy; miserly",
+    "source": "https://en.wiktionary.org/wiki/maimot",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2027-03-18",
+    "word": "BINTANG",
+    "definition": "accusation; imputation",
+    "source": "https://en.wiktionary.org/wiki/bintang",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2027-03-19",
+    "word": "PUNUAN",
+    "definition": "fully loaded or occupied; crowded; packed",
+    "source": "https://en.wiktionary.org/wiki/punuan",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2027-03-20",
+    "word": "TUMPAK",
+    "definition": "correct; right",
+    "source": "https://en.wiktionary.org/wiki/tumpak",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2027-03-21",
+    "word": "LIGPIT",
+    "definition": "put away in an orderly manner",
+    "source": "https://en.wiktionary.org/wiki/ligpit",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2027-03-22",
+    "word": "PUWEGO",
+    "definition": "fire",
+    "source": "https://en.wiktionary.org/wiki/puwego",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2027-03-23",
+    "word": "PADALA",
+    "definition": "delivery; transmission",
+    "source": "https://en.wiktionary.org/wiki/padala",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2027-03-24",
+    "word": "BASAIN",
+    "definition": "to be made wet; to be wetted",
+    "source": "https://en.wiktionary.org/wiki/basain",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2027-03-25",
+    "word": "BAKBAK",
+    "definition": "act of detaching forcibly",
+    "source": "https://en.wiktionary.org/wiki/bakbak",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2027-03-26",
+    "word": "BANTOG",
+    "definition": "famous; popular; well-known; illustrious",
+    "source": "https://en.wiktionary.org/wiki/bantog",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2027-03-27",
+    "word": "MABANGO",
+    "definition": "fragrant; aromatic; sweet-smelling",
+    "source": "https://en.wiktionary.org/wiki/mabango",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2027-03-28",
+    "word": "KACHAT",
+    "definition": "chatmate",
+    "source": "https://en.wiktionary.org/wiki/kachat",
+    "difficulty": "hard"
+  },
+  {
+    "date": "2027-03-29",
+    "word": "TABINGI",
+    "definition": "unbalanced; unsymmetrical",
+    "source": "https://en.wiktionary.org/wiki/tabingi",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2027-03-30",
+    "word": "PATABA",
+    "definition": "fertilizer",
+    "source": "https://en.wiktionary.org/wiki/pataba",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2027-03-31",
+    "word": "BIGKAS",
+    "definition": "pronunciation; enunciation",
+    "source": "https://en.wiktionary.org/wiki/bigkas",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2027-04-01",
+    "word": "GAWAIN",
+    "definition": "task; work; duty",
+    "source": "https://en.wiktionary.org/wiki/gawain",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2027-04-02",
+    "word": "KANULA",
+    "definition": "cannula (tube)",
+    "source": "https://en.wiktionary.org/wiki/kanula",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2027-04-03",
+    "word": "TUNGHAY",
+    "definition": "erect or slightly raised",
+    "source": "https://en.wiktionary.org/wiki/tunghay",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2027-04-04",
+    "word": "SIGLAP",
+    "definition": "casual, accidental glance",
+    "source": "https://en.wiktionary.org/wiki/siglap",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2027-04-05",
+    "word": "BILYON",
+    "definition": "billion (thousand million)",
+    "source": "https://en.wiktionary.org/wiki/bilyon",
+    "difficulty": "medium"
+  },
+  {
+    "date": "2027-04-06",
+    "word": "TAKWIL",
+    "definition": "repudiation; disowning",
+    "source": "https://en.wiktionary.org/wiki/takwil",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2027-04-07",
+    "word": "HINHIN",
+    "definition": "modesty; coyness; decency",
+    "source": "https://en.wiktionary.org/wiki/hinhin",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2027-04-08",
+    "word": "SAMPAN",
+    "definition": "champagne",
+    "source": "https://en.wiktionary.org/wiki/sampan",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2027-04-09",
+    "word": "SISIYO",
+    "definition": "fig",
+    "source": "https://en.wiktionary.org/wiki/sisiyo",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2027-04-10",
+    "word": "SAPIRO",
+    "definition": "sapphire",
+    "source": "https://en.wiktionary.org/wiki/sapiro",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2027-04-11",
+    "word": "MANGUHA",
+    "definition": "to perform the getting of something",
+    "source": "https://en.wiktionary.org/wiki/manguha",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2027-04-12",
+    "word": "PANTAS",
+    "definition": "sage; wise man; scholar",
+    "source": "https://en.wiktionary.org/wiki/pantas",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2027-04-13",
+    "word": "ANUHIN",
+    "definition": "to be done unspecified to or with",
+    "source": "https://en.wiktionary.org/wiki/anuhin",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2027-04-14",
+    "word": "SUKLAY",
+    "definition": "comb",
+    "source": "https://en.wiktionary.org/wiki/suklay",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2027-04-15",
+    "word": "BIRADA",
+    "definition": "chastisement; denunciation",
+    "source": "https://en.wiktionary.org/wiki/birada",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2027-04-16",
+    "word": "KANINA",
+    "definition": "recently",
+    "source": "https://en.wiktionary.org/wiki/kanina",
+    "difficulty": "medium"
+  },
+  {
+    "date": "2027-04-17",
+    "word": "MAKINA",
+    "definition": "machine",
+    "source": "https://en.wiktionary.org/wiki/makina",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2027-04-18",
+    "word": "HAPLOS",
+    "definition": "gentle caress with the hand",
+    "source": "https://en.wiktionary.org/wiki/haplos",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2027-04-19",
+    "word": "IDALUM",
+    "definition": "nadir",
+    "source": "https://en.wiktionary.org/wiki/idalum",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2027-04-20",
+    "word": "PANUTO",
+    "definition": "instruction; directive",
+    "source": "https://en.wiktionary.org/wiki/panuto",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2027-04-21",
+    "word": "PUSLIT",
+    "definition": "smuggled matter; contraband",
+    "source": "https://en.wiktionary.org/wiki/puslit",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2027-04-22",
+    "word": "MANDIN",
+    "definition": "unexpectedly; suddenly",
+    "source": "https://en.wiktionary.org/wiki/mandin",
+    "difficulty": "medium"
+  },
+  {
+    "date": "2027-04-23",
+    "word": "AKSAYA",
+    "definition": "waste; wastefulness; squandering",
+    "source": "https://en.wiktionary.org/wiki/aksaya",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2027-04-24",
+    "word": "PLATUN",
+    "definition": "platoon",
+    "source": "https://en.wiktionary.org/wiki/platun",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2027-04-25",
+    "word": "NAMNAM",
+    "definition": "savor; taste",
+    "source": "https://en.wiktionary.org/wiki/namnam",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2027-04-26",
+    "word": "SINILI",
+    "definition": "hip; hip joint",
+    "source": "https://en.wiktionary.org/wiki/sinili",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2027-04-27",
+    "word": "LUMAYA",
+    "definition": "to become free",
+    "source": "https://en.wiktionary.org/wiki/lumaya",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2027-04-28",
+    "word": "ABUTIN",
+    "definition": "to be overtaken",
+    "source": "https://en.wiktionary.org/wiki/abutin",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2027-04-29",
+    "word": "NGUMITI",
+    "definition": "to smile",
+    "source": "https://en.wiktionary.org/wiki/ngumiti",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2027-04-30",
+    "word": "APIRMA",
+    "definition": "act of affirming or asserting; affirmation",
+    "source": "https://en.wiktionary.org/wiki/apirma",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2027-05-01",
+    "word": "HUMPAY",
+    "definition": "cessation; stop; pause",
+    "source": "https://en.wiktionary.org/wiki/humpay",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2027-05-02",
+    "word": "GASELA",
+    "definition": "gazelle",
+    "source": "https://en.wiktionary.org/wiki/gasela",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2027-05-03",
+    "word": "SAWATO",
+    "definition": "agreement; accordance; concordance",
+    "source": "https://en.wiktionary.org/wiki/sawato",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2027-05-04",
+    "word": "BILHIN",
+    "definition": "to buy something",
+    "source": "https://en.wiktionary.org/wiki/bilhin",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2027-05-05",
+    "word": "KALTEK",
+    "definition": "dipper made out of plastic motor oil or gasoline containers",
+    "source": "https://en.wiktionary.org/wiki/kaltek",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2027-05-06",
+    "word": "SUSPEK",
+    "definition": "suspect",
+    "source": "https://en.wiktionary.org/wiki/suspek",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2027-05-07",
+    "word": "TAMBANG",
+    "definition": "ambush; waylaying; ambuscade",
+    "source": "https://en.wiktionary.org/wiki/tambang",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2027-05-08",
+    "word": "PALABI",
+    "definition": "by the lips",
+    "source": "https://en.wiktionary.org/wiki/palabi",
+    "difficulty": "medium"
+  },
+  {
+    "date": "2027-05-09",
+    "word": "KANSING",
+    "definition": "gold brooch or clasp",
+    "source": "https://en.wiktionary.org/wiki/kansing",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2027-05-10",
+    "word": "GATAAN",
+    "definition": "to be cooked with coconut milk",
+    "source": "https://en.wiktionary.org/wiki/gataan",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2027-05-11",
+    "word": "SIMUNO",
+    "definition": "subject; agent; actor",
+    "source": "https://en.wiktionary.org/wiki/simuno",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2027-05-12",
+    "word": "IPASOK",
+    "definition": "to bring inside (a person or thing)",
+    "source": "https://en.wiktionary.org/wiki/ipasok",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2027-05-13",
+    "word": "KUNYAS",
+    "definition": "quoin",
+    "source": "https://en.wiktionary.org/wiki/kunyas",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2027-05-14",
+    "word": "LAPAAN",
+    "definition": "slaughterhouse; place for butchering; abattoir",
+    "source": "https://en.wiktionary.org/wiki/lapaan",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2027-05-15",
+    "word": "ABAHIN",
+    "definition": "to remind; to notify; to advise",
+    "source": "https://en.wiktionary.org/wiki/abahin",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2027-05-16",
+    "word": "BATYAW",
+    "definition": "spy; informer",
+    "source": "https://en.wiktionary.org/wiki/batyaw",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2027-05-17",
+    "word": "BULBOL",
+    "definition": "pubic hair",
+    "source": "https://en.wiktionary.org/wiki/bulbol",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2027-05-18",
+    "word": "TAMEME",
+    "definition": "stunned; dumbfounded; unable to talk due to shock",
+    "source": "https://en.wiktionary.org/wiki/tameme",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2027-05-19",
+    "word": "RUWEDA",
+    "definition": "wheel",
+    "source": "https://en.wiktionary.org/wiki/ruweda",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2027-05-20",
+    "word": "DULAAN",
+    "definition": "theater; playhouse",
+    "source": "https://en.wiktionary.org/wiki/dulaan",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2027-05-21",
+    "word": "MALAON",
+    "definition": "for a long time; in the end; finally",
+    "source": "https://en.wiktionary.org/wiki/malaon",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2027-05-22",
+    "word": "TAMBOL",
+    "definition": "drum",
+    "source": "https://en.wiktionary.org/wiki/tambol",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2027-05-23",
+    "word": "PAMIHA",
+    "definition": "polishing stone; burnisher",
+    "source": "https://en.wiktionary.org/wiki/pamiha",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2027-05-24",
+    "word": "GURLIS",
+    "definition": "light scratch",
+    "source": "https://en.wiktionary.org/wiki/gurlis",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2027-05-25",
+    "word": "IKUNWA",
+    "definition": "to be pretended to be; to be simulated to be",
+    "source": "https://en.wiktionary.org/wiki/ikunwa",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2027-05-26",
+    "word": "ITULAD",
+    "definition": "to be compared to another",
+    "source": "https://en.wiktionary.org/wiki/itulad",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2027-05-27",
+    "word": "KAMPAY",
+    "definition": "movement of the arms and legs while walking",
+    "source": "https://en.wiktionary.org/wiki/kampay",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2027-05-28",
+    "word": "LAGARI",
+    "definition": "saw",
+    "source": "https://en.wiktionary.org/wiki/lagari",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2027-05-29",
+    "word": "BOKSING",
+    "definition": "boxing",
+    "source": "https://en.wiktionary.org/wiki/boksing",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2027-05-30",
+    "word": "KARETA",
+    "definition": "sled; sledge (framework of boards mounted on wooden runners used to carry passengers and cargo especially on ice drawn by either horse, dogs, reindeer, or one or more people)",
+    "source": "https://en.wiktionary.org/wiki/kareta",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2027-05-31",
+    "word": "BARAKA",
+    "definition": "market; marketplace",
+    "source": "https://en.wiktionary.org/wiki/baraka",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2027-06-01",
+    "word": "BUNSOD",
+    "definition": "initiation; launch",
+    "source": "https://en.wiktionary.org/wiki/bunsod",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2027-06-02",
+    "word": "HULUNA",
+    "definition": "lullaby",
+    "source": "https://en.wiktionary.org/wiki/huluna",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2027-06-03",
+    "word": "AKLAHA",
+    "definition": "cry or chatter of monkeys",
+    "source": "https://en.wiktionary.org/wiki/aklaha",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2027-06-04",
+    "word": "SOPBOL",
+    "definition": "softball",
+    "source": "https://en.wiktionary.org/wiki/sopbol",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2027-06-05",
+    "word": "TALPAK",
+    "definition": "act of telling something openly to someone (without fear or reservation)",
+    "source": "https://en.wiktionary.org/wiki/talpak",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2027-06-06",
+    "word": "GRASYA",
+    "definition": "grace",
+    "source": "https://en.wiktionary.org/wiki/grasya",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2027-06-07",
+    "word": "SARBEY",
+    "definition": "survey (examination of the opinions of a group)",
+    "source": "https://en.wiktionary.org/wiki/sarbey",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2027-06-08",
+    "word": "GAYARI",
+    "definition": "like this; in this particular manner",
+    "source": "https://en.wiktionary.org/wiki/gayari",
+    "difficulty": "medium"
+  },
+  {
+    "date": "2027-06-09",
+    "word": "HANGGAN",
+    "definition": "limit; boundary",
+    "source": "https://en.wiktionary.org/wiki/hanggan",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2027-06-10",
+    "word": "WALDAS",
+    "definition": "squandering; wasteful or extravagant expenditure, malversation or misappropriation of funds",
+    "source": "https://en.wiktionary.org/wiki/waldas",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2027-06-11",
+    "word": "BELYAS",
+    "definition": "prostitute",
+    "source": "https://en.wiktionary.org/wiki/belyas",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2027-06-12",
+    "word": "IBANTO",
+    "definition": "to be diluted",
+    "source": "https://en.wiktionary.org/wiki/ibanto",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2027-06-13",
+    "word": "MATYAG",
+    "definition": "act of observing or watching the surroundings",
+    "source": "https://en.wiktionary.org/wiki/matyag",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2027-06-14",
+    "word": "BUNTON",
+    "definition": "heap; pile; collection",
+    "source": "https://en.wiktionary.org/wiki/bunton",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2027-06-15",
+    "word": "SANSAN",
+    "definition": "arranged in a neat or orderly pile",
+    "source": "https://en.wiktionary.org/wiki/sansan",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2027-06-16",
+    "word": "PIGURA",
+    "definition": "figure; shape; the way something looks",
+    "source": "https://en.wiktionary.org/wiki/pigura",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2027-06-17",
+    "word": "ISKAWT",
+    "definition": "scout (person sent out to gain and bring in tidings)",
+    "source": "https://en.wiktionary.org/wiki/iskawt",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2027-06-18",
+    "word": "KORKOR",
+    "definition": "phenomenon of mass migration of South Koreans to the Philippines to study  or to engage in business for a time",
+    "source": "https://en.wiktionary.org/wiki/korkor",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2027-06-19",
+    "word": "SAPLOT",
+    "definition": "clothes; clothing",
+    "source": "https://en.wiktionary.org/wiki/saplot",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2027-06-20",
+    "word": "SUKDAN",
+    "definition": "even; even if; although; even though; notwithstanding",
+    "source": "https://en.wiktionary.org/wiki/sukdan",
+    "difficulty": "medium"
+  },
+  {
+    "date": "2027-06-21",
+    "word": "PIYAYA",
+    "definition": "piaya (muscovado-filled flatbread)",
+    "source": "https://en.wiktionary.org/wiki/piyaya",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2027-06-22",
+    "word": "LAGIIN",
+    "definition": "constant; identifier that is bound to an invariant value",
+    "source": "https://en.wiktionary.org/wiki/lagiin",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2027-06-23",
+    "word": "NGIKNGIK",
+    "definition": "cry made by pigs waiting to be fed",
+    "source": "https://en.wiktionary.org/wiki/ngikngik",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2027-06-24",
+    "word": "KARERA",
+    "definition": "race, racing",
+    "source": "https://en.wiktionary.org/wiki/karera",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2027-06-25",
+    "word": "ISULAT",
+    "definition": "to put in writing",
+    "source": "https://en.wiktionary.org/wiki/isulat",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2027-06-26",
+    "word": "SIPAIN",
+    "definition": "to be kick; to be struck with one's foot",
+    "source": "https://en.wiktionary.org/wiki/sipain",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2027-06-27",
+    "word": "ABUBOR",
+    "definition": "misconstruction of abuwor",
+    "source": "https://en.wiktionary.org/wiki/abubor",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2027-06-28",
+    "word": "KARBON",
+    "definition": "charcoal",
+    "source": "https://en.wiktionary.org/wiki/karbon",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2027-06-29",
+    "word": "LINGKOD",
+    "definition": "servant; attendant",
+    "source": "https://en.wiktionary.org/wiki/lingkod",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2027-06-30",
+    "word": "TINDAK",
+    "definition": "recoil",
+    "source": "https://en.wiktionary.org/wiki/tindak",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2027-07-01",
+    "word": "PRISER",
+    "definition": "freezer",
+    "source": "https://en.wiktionary.org/wiki/priser",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2027-07-02",
+    "word": "ATENEO",
+    "definition": "athenaeum",
+    "source": "https://en.wiktionary.org/wiki/ateneo",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2027-07-03",
+    "word": "KIMONA",
+    "definition": "traditional short-sleeved loose woman's blouse made of piña or jusi",
+    "source": "https://en.wiktionary.org/wiki/kimona",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2027-07-04",
+    "word": "RINGGIT",
+    "definition": "ringgit (currency)",
+    "source": "https://en.wiktionary.org/wiki/ringgit",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2027-07-05",
+    "word": "PINTAL",
+    "definition": "warp; bend or twist",
+    "source": "https://en.wiktionary.org/wiki/pintal",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2027-07-06",
+    "word": "GURYON",
+    "definition": "large kite that creates a sound before launch",
+    "source": "https://en.wiktionary.org/wiki/guryon",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2027-07-07",
+    "word": "SAMUOL",
+    "definition": "full mouthful; mouth-filling feed",
+    "source": "https://en.wiktionary.org/wiki/samuol",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2027-07-08",
+    "word": "ANEMIK",
+    "definition": "anemic ; anaemic",
+    "source": "https://en.wiktionary.org/wiki/anemik",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2027-07-09",
+    "word": "PUNLAY",
+    "definition": "sperm; semen",
+    "source": "https://en.wiktionary.org/wiki/punlay",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2027-07-10",
+    "word": "HANDAK",
+    "definition": "lascivious; carnal; lewd; lustful",
+    "source": "https://en.wiktionary.org/wiki/handak",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2027-07-11",
+    "word": "SUKDOL",
+    "definition": "conclusion; end; finish; termination",
+    "source": "https://en.wiktionary.org/wiki/sukdol",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2027-07-12",
+    "word": "ILAPIT",
+    "definition": "to be brought closer",
+    "source": "https://en.wiktionary.org/wiki/ilapit",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2027-07-13",
+    "word": "PINTON",
+    "definition": "tall basket woven out of strips of bamboo for storing rice",
+    "source": "https://en.wiktionary.org/wiki/pinton",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2027-07-14",
+    "word": "LUMBAY",
+    "definition": "sadness; melancholy; sorrow",
+    "source": "https://en.wiktionary.org/wiki/lumbay",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2027-07-15",
+    "word": "BINUOK",
+    "definition": "cube (a regular polyhedron having six identical square faces)",
+    "source": "https://en.wiktionary.org/wiki/binuok",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2027-07-16",
+    "word": "BIBINGA",
+    "definition": "broken piece of china; shard; piece of broken earthenware",
+    "source": "https://en.wiktionary.org/wiki/bibinga",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2027-07-17",
+    "word": "LIMWAD",
+    "definition": "mimeograph",
+    "source": "https://en.wiktionary.org/wiki/limwad",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2027-07-18",
+    "word": "BAITANG",
+    "definition": "step",
+    "source": "https://en.wiktionary.org/wiki/baitang",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2027-07-19",
+    "word": "IKALAT",
+    "definition": "to diffuse; to scatter; to spread",
+    "source": "https://en.wiktionary.org/wiki/ikalat",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2027-07-20",
+    "word": "SABSAB",
+    "definition": "voracious and noisy eating peculiar to hogs, dogs, etc.",
+    "source": "https://en.wiktionary.org/wiki/sabsab",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2027-07-21",
+    "word": "TRAWMA",
+    "definition": "trauma",
+    "source": "https://en.wiktionary.org/wiki/trawma",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2027-07-22",
+    "word": "RESIBO",
+    "definition": "receipt (written acknowledgement)",
+    "source": "https://en.wiktionary.org/wiki/resibo",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2027-07-23",
+    "word": "BUPETE",
+    "definition": "writing desk",
+    "source": "https://en.wiktionary.org/wiki/bupete",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2027-07-24",
+    "word": "PALITO",
+    "definition": "toothpick",
+    "source": "https://en.wiktionary.org/wiki/palito",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2027-07-25",
+    "word": "SIKSIN",
+    "definition": "solid",
+    "source": "https://en.wiktionary.org/wiki/siksin",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2027-07-26",
+    "word": "PUTSPA",
+    "definition": "said in dismay or discontent",
+    "source": "https://en.wiktionary.org/wiki/putspa",
+    "difficulty": "medium"
+  },
+  {
+    "date": "2027-07-27",
+    "word": "MADAGA",
+    "definition": "infested with mice or rats",
+    "source": "https://en.wiktionary.org/wiki/madaga",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2027-07-28",
+    "word": "LAMBAT",
+    "definition": "fishing net; dragnet",
+    "source": "https://en.wiktionary.org/wiki/lambat",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2027-07-29",
+    "word": "BARERA",
+    "definition": "tollgate",
+    "source": "https://en.wiktionary.org/wiki/barera",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2027-07-30",
+    "word": "TAMBAD",
+    "definition": "exposed to view; in the open",
+    "source": "https://en.wiktionary.org/wiki/tambad",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2027-07-31",
+    "word": "KAPUNO",
+    "definition": "an individual planted tree",
+    "source": "https://en.wiktionary.org/wiki/kapuno",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2027-08-01",
+    "word": "TSANSA",
+    "definition": "chance",
+    "source": "https://en.wiktionary.org/wiki/tsansa",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2027-08-02",
+    "word": "SOSYAL",
+    "definition": "social (relating to society)",
+    "source": "https://en.wiktionary.org/wiki/sosyal",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2027-08-03",
+    "word": "SUTURA",
+    "definition": "surgical stitch",
+    "source": "https://en.wiktionary.org/wiki/sutura",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2027-08-04",
+    "word": "TIYARA",
+    "definition": "tiara",
+    "source": "https://en.wiktionary.org/wiki/tiyara",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2027-08-05",
+    "word": "AWAYIN",
+    "definition": "to fight",
+    "source": "https://en.wiktionary.org/wiki/awayin",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2027-08-06",
+    "word": "BRUKAL",
+    "definition": "metal ring of a scabbard or sheath",
+    "source": "https://en.wiktionary.org/wiki/brukal",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2027-08-07",
+    "word": "DABDAB",
+    "definition": "glitter; luster; shine; glow",
+    "source": "https://en.wiktionary.org/wiki/dabdab",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2027-08-08",
+    "word": "KUDKOD",
+    "definition": "act of grating",
+    "source": "https://en.wiktionary.org/wiki/kudkod",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2027-08-09",
+    "word": "HUGPONG",
+    "definition": "juncture; point of connection between two things",
+    "source": "https://en.wiktionary.org/wiki/hugpong",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2027-08-10",
+    "word": "SAMBOG",
+    "definition": "accumulation or pile of diverse things",
+    "source": "https://en.wiktionary.org/wiki/sambog",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2027-08-11",
+    "word": "TSATSA",
+    "definition": "cha-cha (dance)",
+    "source": "https://en.wiktionary.org/wiki/tsatsa",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2027-08-12",
+    "word": "DINGSOL",
+    "definition": "very dark ink",
+    "source": "https://en.wiktionary.org/wiki/dingsol",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2027-08-13",
+    "word": "MAANGAL",
+    "definition": "vociferous; clamorous",
+    "source": "https://en.wiktionary.org/wiki/maangal",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2027-08-14",
+    "word": "TINOLA",
+    "definition": "tinola (Filipino soup cooked with chicken or fish, wedges of papaya, and ginger)",
+    "source": "https://en.wiktionary.org/wiki/tinola",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2027-08-15",
+    "word": "TINGHOY",
+    "definition": "oil lamp with a wick that burns with a small steady flame",
+    "source": "https://en.wiktionary.org/wiki/tinghoy",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2027-08-16",
+    "word": "MINUTO",
+    "definition": "minute (60 seconds)",
+    "source": "https://en.wiktionary.org/wiki/minuto",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2027-08-17",
+    "word": "BALAAS",
+    "definition": "rays of the sun during the morning",
+    "source": "https://en.wiktionary.org/wiki/balaas",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2027-08-18",
+    "word": "SALISI",
+    "definition": "taking each other's turn alternately",
+    "source": "https://en.wiktionary.org/wiki/salisi",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2027-08-19",
+    "word": "TIMAWA",
+    "definition": "glutton; voracious eater",
+    "source": "https://en.wiktionary.org/wiki/timawa",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2027-08-20",
+    "word": "BERILO",
+    "definition": "beryl",
+    "source": "https://en.wiktionary.org/wiki/berilo",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2027-08-21",
+    "word": "ATANGYA",
+    "definition": "rice black bug (Scotinophara coarctata)",
+    "source": "https://en.wiktionary.org/wiki/atangya",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2027-08-22",
+    "word": "SERESO",
+    "definition": "cherry",
+    "source": "https://en.wiktionary.org/wiki/sereso",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2027-08-23",
+    "word": "ISKRIN",
+    "definition": "screen",
+    "source": "https://en.wiktionary.org/wiki/iskrin",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2027-08-24",
+    "word": "SINGKAK",
+    "definition": "bitter drug used for diarrhea, indigestion, etc.",
+    "source": "https://en.wiktionary.org/wiki/singkak",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2027-08-25",
+    "word": "KANYAW",
+    "definition": "swash of liquid",
+    "source": "https://en.wiktionary.org/wiki/kanyaw",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2027-08-26",
+    "word": "PLANTA",
+    "definition": "plant (factory)",
+    "source": "https://en.wiktionary.org/wiki/planta",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2027-08-27",
+    "word": "ASENSO",
+    "definition": "progress",
+    "source": "https://en.wiktionary.org/wiki/asenso",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2027-08-28",
+    "word": "BUYAYA",
+    "definition": "spendthrift; prodigal person",
+    "source": "https://en.wiktionary.org/wiki/buyaya",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2027-08-29",
+    "word": "KORNIK",
+    "definition": "cornick (a Filipino deep-fried crunchy puffed corn nut snack)",
+    "source": "https://en.wiktionary.org/wiki/kornik",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2027-08-30",
+    "word": "PIMPIN",
+    "definition": "entrenchment; stockade; embankment",
+    "source": "https://en.wiktionary.org/wiki/pimpin",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2027-08-31",
+    "word": "MUSMOS",
+    "definition": "very young",
+    "source": "https://en.wiktionary.org/wiki/musmos",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2027-09-01",
+    "word": "SUBIDO",
+    "definition": "strong; loud; bright",
+    "source": "https://en.wiktionary.org/wiki/subido",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2027-09-02",
+    "word": "KAMYON",
+    "definition": "truck; lorry",
+    "source": "https://en.wiktionary.org/wiki/kamyon",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2027-09-03",
+    "word": "PRESKO",
+    "definition": "fresh; cool; refreshing",
+    "source": "https://en.wiktionary.org/wiki/presko",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2027-09-04",
+    "word": "LANGKAP",
+    "definition": "inclusion; incorporation",
+    "source": "https://en.wiktionary.org/wiki/langkap",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2027-09-05",
+    "word": "LAGNAT",
+    "definition": "fever",
+    "source": "https://en.wiktionary.org/wiki/lagnat",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2027-09-06",
+    "word": "HIMBAK",
+    "definition": "leap or jump over an obstacle",
+    "source": "https://en.wiktionary.org/wiki/himbak",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2027-09-07",
+    "word": "PANIYO",
+    "definition": "(large) turtle",
+    "source": "https://en.wiktionary.org/wiki/paniyo",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2027-09-08",
+    "word": "AGARAN",
+    "definition": "immediate; prompt; done or made at once",
+    "source": "https://en.wiktionary.org/wiki/agaran",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2027-09-09",
+    "word": "PONPAL",
+    "definition": "someone regularly talked to over the phone",
+    "source": "https://en.wiktionary.org/wiki/ponpal",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2027-09-10",
+    "word": "BANTOT",
+    "definition": "stench; offensive odor; fetidness",
+    "source": "https://en.wiktionary.org/wiki/bantot",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2027-09-11",
+    "word": "ASAHAN",
+    "definition": "to hope for; to look forward",
+    "source": "https://en.wiktionary.org/wiki/asahan",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2027-09-12",
+    "word": "GUNTING",
+    "definition": "scissors",
+    "source": "https://en.wiktionary.org/wiki/gunting",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2027-09-13",
+    "word": "NANGHAW",
+    "definition": "thanks (an expression of gratitude)",
+    "source": "https://en.wiktionary.org/wiki/nanghaw",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2027-09-14",
+    "word": "HAYBOL",
+    "definition": "highball",
+    "source": "https://en.wiktionary.org/wiki/haybol",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2027-09-15",
+    "word": "DUMAAN",
+    "definition": "to pass by; to pass through",
+    "source": "https://en.wiktionary.org/wiki/dumaan",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2027-09-16",
+    "word": "HASAIN",
+    "definition": "to whet; to sharpen with a whetting stone",
+    "source": "https://en.wiktionary.org/wiki/hasain",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2027-09-17",
+    "word": "PALTAK",
+    "definition": "wooden or bamboo peg (usually sunk into the ground where the rope or tether of an animal is tied when made to graze in the field)",
+    "source": "https://en.wiktionary.org/wiki/paltak",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2027-09-18",
+    "word": "KONSUL",
+    "definition": "consul (official who protects the interests of citizens)",
+    "source": "https://en.wiktionary.org/wiki/konsul",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2027-09-19",
+    "word": "SISIWA",
+    "definition": "wet nurse",
+    "source": "https://en.wiktionary.org/wiki/sisiwa",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2027-09-20",
+    "word": "DAKTAO",
+    "definition": "great man",
+    "source": "https://en.wiktionary.org/wiki/daktao",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2027-09-21",
+    "word": "BINLIT",
+    "definition": "spores",
+    "source": "https://en.wiktionary.org/wiki/binlit",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2027-09-22",
+    "word": "BALINA",
+    "definition": "auger; borer",
+    "source": "https://en.wiktionary.org/wiki/balina",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2027-09-23",
+    "word": "SIKOTE",
+    "definition": "severe admonishment; beat; strike",
+    "source": "https://en.wiktionary.org/wiki/sikote",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2027-09-24",
+    "word": "IBIGIN",
+    "definition": "to be loved",
+    "source": "https://en.wiktionary.org/wiki/ibigin",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2027-09-25",
+    "word": "SUWATO",
+    "definition": "in harmony with each other",
+    "source": "https://en.wiktionary.org/wiki/suwato",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2027-09-26",
+    "word": "MAMUPO",
+    "definition": "to speak respectfully by using po",
+    "source": "https://en.wiktionary.org/wiki/mamupo",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2027-09-27",
+    "word": "MAAYOS",
+    "definition": "organized; in order; neat",
+    "source": "https://en.wiktionary.org/wiki/maayos",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2027-09-28",
+    "word": "TRAPIK",
+    "definition": "traffic jam",
+    "source": "https://en.wiktionary.org/wiki/trapik",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2027-09-29",
+    "word": "LAKTAW",
+    "definition": "stepping over; skipping over (a physical barrier)",
+    "source": "https://en.wiktionary.org/wiki/laktaw",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2027-09-30",
+    "word": "DALITA",
+    "definition": "poverty; destitution",
+    "source": "https://en.wiktionary.org/wiki/dalita",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2027-10-01",
+    "word": "REBISA",
+    "definition": "review; restudy",
+    "source": "https://en.wiktionary.org/wiki/rebisa",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2027-10-02",
+    "word": "TITSER",
+    "definition": "teacher (person who teaches)",
+    "source": "https://en.wiktionary.org/wiki/titser",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2027-10-03",
+    "word": "LASIGI",
+    "definition": "lamp with oil and wick",
+    "source": "https://en.wiktionary.org/wiki/lasigi",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2027-10-04",
+    "word": "LIMAHI",
+    "definition": "messy; slovenly; untidy",
+    "source": "https://en.wiktionary.org/wiki/limahi",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2027-10-05",
+    "word": "ARESTO",
+    "definition": "arrest; capture",
+    "source": "https://en.wiktionary.org/wiki/aresto",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2027-10-06",
+    "word": "KAMANGA",
+    "definition": "grindstone; whetstone",
+    "source": "https://en.wiktionary.org/wiki/kamanga",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2027-10-07",
+    "word": "IBIGAY",
+    "definition": "to be given; to be bestowed",
+    "source": "https://en.wiktionary.org/wiki/ibigay",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2027-10-08",
+    "word": "LAGWAT",
+    "definition": "basting stitch",
+    "source": "https://en.wiktionary.org/wiki/lagwat",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2027-10-09",
+    "word": "PUTAHE",
+    "definition": "choice dish; viand; article of food",
+    "source": "https://en.wiktionary.org/wiki/putahe",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2027-10-10",
+    "word": "KANAPE",
+    "definition": "canapé (sandwich)",
+    "source": "https://en.wiktionary.org/wiki/kanape",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2027-10-11",
+    "word": "LAGSANG",
+    "definition": "just delivered",
+    "source": "https://en.wiktionary.org/wiki/lagsang",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2027-10-12",
+    "word": "PANTAW",
+    "definition": "on credit",
+    "source": "https://en.wiktionary.org/wiki/pantaw",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2027-10-13",
+    "word": "LUHAAN",
+    "definition": "to have tears fallen on",
+    "source": "https://en.wiktionary.org/wiki/luhaan",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2027-10-14",
+    "word": "BAKULO",
+    "definition": "crozier",
+    "source": "https://en.wiktionary.org/wiki/bakulo",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2027-10-15",
+    "word": "DUTDOT",
+    "definition": "poking",
+    "source": "https://en.wiktionary.org/wiki/dutdot",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2027-10-16",
+    "word": "KABAYO",
+    "definition": "horse",
+    "source": "https://en.wiktionary.org/wiki/kabayo",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2027-10-17",
+    "word": "HIMALA",
+    "definition": "miracle",
+    "source": "https://en.wiktionary.org/wiki/himala",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2027-10-18",
+    "word": "KUTYOG",
+    "definition": "haircut close to the scalp",
+    "source": "https://en.wiktionary.org/wiki/kutyog",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2027-10-19",
+    "word": "TSAMBA",
+    "definition": "fluke; pure chance",
+    "source": "https://en.wiktionary.org/wiki/tsamba",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2027-10-20",
+    "word": "SALMON",
+    "definition": "salmon",
+    "source": "https://en.wiktionary.org/wiki/salmon",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2027-10-21",
+    "word": "GANTSO",
+    "definition": "hook",
+    "source": "https://en.wiktionary.org/wiki/gantso",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2027-10-22",
+    "word": "UMAMIN",
+    "definition": "to admit; to confess",
+    "source": "https://en.wiktionary.org/wiki/umamin",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2027-10-23",
+    "word": "BANGKING",
+    "definition": "banking",
+    "source": "https://en.wiktionary.org/wiki/bangking",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2027-10-24",
+    "word": "PATUNGO",
+    "definition": "toward",
+    "source": "https://en.wiktionary.org/wiki/patungo",
+    "difficulty": "medium"
+  },
+  {
+    "date": "2027-10-25",
+    "word": "CHAROT",
+    "definition": "just kidding (expression by a speaker, playfully admitting to telling a joke or a lie)",
+    "source": "https://en.wiktionary.org/wiki/charot",
+    "difficulty": "hard"
+  },
+  {
+    "date": "2027-10-26",
+    "word": "LOSYANG",
+    "definition": "unkempt; shabby; untidy in appearance",
+    "source": "https://en.wiktionary.org/wiki/losyang",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2027-10-27",
+    "word": "SUMITE",
+    "definition": "act of submission",
+    "source": "https://en.wiktionary.org/wiki/sumite",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2027-10-28",
+    "word": "GIYERA",
+    "definition": "war",
+    "source": "https://en.wiktionary.org/wiki/giyera",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2027-10-29",
+    "word": "TANWAY",
+    "definition": "tangent",
+    "source": "https://en.wiktionary.org/wiki/tanway",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2027-10-30",
+    "word": "KAPAIN",
+    "definition": "to be groped; to be searched by feeling",
+    "source": "https://en.wiktionary.org/wiki/kapain",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2027-10-31",
+    "word": "AHENTE",
+    "definition": "agent (one who acts for another)",
+    "source": "https://en.wiktionary.org/wiki/ahente",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2027-11-01",
+    "word": "AGHIMO",
+    "definition": "technique",
+    "source": "https://en.wiktionary.org/wiki/aghimo",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2027-11-02",
+    "word": "PAMPANG",
+    "definition": "riverbank",
+    "source": "https://en.wiktionary.org/wiki/pampang",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2027-11-03",
+    "word": "GUSALI",
+    "definition": "building; edifice",
+    "source": "https://en.wiktionary.org/wiki/gusali",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2027-11-04",
+    "word": "HIKAMA",
+    "definition": "jicama (edible root of the yam bean)",
+    "source": "https://en.wiktionary.org/wiki/hikama",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2027-11-05",
+    "word": "TUGANO",
+    "definition": "vector",
+    "source": "https://en.wiktionary.org/wiki/tugano",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2027-11-06",
+    "word": "GANITO",
+    "definition": "like this; in this particular manner",
+    "source": "https://en.wiktionary.org/wiki/ganito",
+    "difficulty": "medium"
+  },
+  {
+    "date": "2027-11-07",
+    "word": "BOLPEN",
+    "definition": "ballpoint pen",
+    "source": "https://en.wiktionary.org/wiki/bolpen",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2027-11-08",
+    "word": "LIRIKA",
+    "definition": "lyrics (words to a song)",
+    "source": "https://en.wiktionary.org/wiki/lirika",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2027-11-09",
+    "word": "BAGBAG",
+    "definition": "broken up",
+    "source": "https://en.wiktionary.org/wiki/bagbag",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2027-11-10",
+    "word": "ALISTO",
+    "definition": "alert; active",
+    "source": "https://en.wiktionary.org/wiki/alisto",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2027-11-11",
+    "word": "BINUWO",
+    "definition": "meat or fish cooked inside bamboo",
+    "source": "https://en.wiktionary.org/wiki/binuwo",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2027-11-12",
+    "word": "RAYUMA",
+    "definition": "rheumatism",
+    "source": "https://en.wiktionary.org/wiki/rayuma",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2027-11-13",
+    "word": "TANIGI",
+    "definition": "narrow-barred Spanish mackerel (Scomberomorus commerson)",
+    "source": "https://en.wiktionary.org/wiki/tanigi",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2027-11-14",
+    "word": "SUBSOB",
+    "definition": "an occurrence of falling flat on one's face or falling forwards",
+    "source": "https://en.wiktionary.org/wiki/subsob",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2027-11-15",
+    "word": "DANGGIT",
+    "definition": "rabbitfish",
+    "source": "https://en.wiktionary.org/wiki/danggit",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2027-11-16",
+    "word": "PANHIK",
+    "definition": "act of climbing a ladder",
+    "source": "https://en.wiktionary.org/wiki/panhik",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2027-11-17",
+    "word": "TUDLANG",
+    "definition": "prop or support to push upward a window flap and to keep it open",
+    "source": "https://en.wiktionary.org/wiki/tudlang",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2027-11-18",
+    "word": "TIMBON",
+    "definition": "smale pile, heap, or mound",
+    "source": "https://en.wiktionary.org/wiki/timbon",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2027-11-19",
+    "word": "KANGKONG",
+    "definition": "water spinach (Ipomoea aquatica)",
+    "source": "https://en.wiktionary.org/wiki/kangkong",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2027-11-20",
+    "word": "BAYSAK",
+    "definition": "very wet; waterlogged",
+    "source": "https://en.wiktionary.org/wiki/baysak",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2027-11-21",
+    "word": "IRIHIN",
+    "definition": "to be pushed",
+    "source": "https://en.wiktionary.org/wiki/irihin",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2027-11-22",
+    "word": "KUWELA",
+    "definition": "funny; silly; amusing; ridiculous",
+    "source": "https://en.wiktionary.org/wiki/kuwela",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2027-11-23",
+    "word": "HIGPIT",
+    "definition": "tightness; firmness",
+    "source": "https://en.wiktionary.org/wiki/higpit",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2027-11-24",
+    "word": "HABHAB",
+    "definition": "voracious and noisy eating peculiar to pigs, dogs, etc.",
+    "source": "https://en.wiktionary.org/wiki/habhab",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2027-11-25",
+    "word": "MAHILO",
+    "definition": "to be dizzy",
+    "source": "https://en.wiktionary.org/wiki/mahilo",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2027-11-26",
+    "word": "APIHIN",
+    "definition": "to be oppressed; to be mistreated; to be treated with injustice",
+    "source": "https://en.wiktionary.org/wiki/apihin",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2027-11-27",
+    "word": "BALASA",
+    "definition": "shuffle (act of shuffling cards)",
+    "source": "https://en.wiktionary.org/wiki/balasa",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2027-11-28",
+    "word": "PALAPA",
+    "definition": "the pulpy midrib or petiole of a banana leaf or coconut palm frond or leaf of a similar tree",
+    "source": "https://en.wiktionary.org/wiki/palapa",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2027-11-29",
+    "word": "TANDOS",
+    "definition": "lance or spear with an iron point",
+    "source": "https://en.wiktionary.org/wiki/tandos",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2027-11-30",
+    "word": "PATOLA",
+    "definition": "ridged gourd (Luffa acutangula)",
+    "source": "https://en.wiktionary.org/wiki/patola",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2027-12-01",
+    "word": "MASUSI",
+    "definition": "very careful; in detail",
+    "source": "https://en.wiktionary.org/wiki/masusi",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2027-12-02",
+    "word": "LUKBOT",
+    "definition": "pouch; purse; small bag",
+    "source": "https://en.wiktionary.org/wiki/lukbot",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2027-12-03",
+    "word": "DANGDANG",
+    "definition": "heating, toasting, or drying through exposure to fire or glowing coals",
+    "source": "https://en.wiktionary.org/wiki/dangdang",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2027-12-04",
+    "word": "KARMIN",
+    "definition": "carmine",
+    "source": "https://en.wiktionary.org/wiki/karmin",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2027-12-05",
+    "word": "KAEDAD",
+    "definition": "person with the same age as oneself",
+    "source": "https://en.wiktionary.org/wiki/kaedad",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2027-12-06",
+    "word": "POKNAT",
+    "definition": "tear",
+    "source": "https://en.wiktionary.org/wiki/poknat",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2027-12-07",
+    "word": "ABUHAN",
+    "definition": "ashtray",
+    "source": "https://en.wiktionary.org/wiki/abuhan",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2027-12-08",
+    "word": "MARIIN",
+    "definition": "emphatic; with emphasis",
+    "source": "https://en.wiktionary.org/wiki/mariin",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2027-12-09",
+    "word": "UMABAY",
+    "definition": "to escort; to be a consort",
+    "source": "https://en.wiktionary.org/wiki/umabay",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2027-12-10",
+    "word": "MORYON",
+    "definition": "morion (helmet)",
+    "source": "https://en.wiktionary.org/wiki/moryon",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2027-12-11",
+    "word": "KAGABI",
+    "definition": "last night",
+    "source": "https://en.wiktionary.org/wiki/kagabi",
+    "difficulty": "medium"
+  },
+  {
+    "date": "2027-12-12",
+    "word": "KAILAN",
+    "definition": "when",
+    "source": "https://en.wiktionary.org/wiki/kailan",
+    "difficulty": "medium"
+  },
+  {
+    "date": "2027-12-13",
+    "word": "KUTSAY",
+    "definition": "garlic chives; Chinese chives (Allium tuberosum)",
+    "source": "https://en.wiktionary.org/wiki/kutsay",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2027-12-14",
+    "word": "IANDAR",
+    "definition": "to be made to function",
+    "source": "https://en.wiktionary.org/wiki/iandar",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2027-12-15",
+    "word": "KAMPON",
+    "definition": "disciple; follower",
+    "source": "https://en.wiktionary.org/wiki/kampon",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2027-12-16",
+    "word": "PARUGO",
+    "definition": "duel that ends on first blood",
+    "source": "https://en.wiktionary.org/wiki/parugo",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2027-12-17",
+    "word": "RAGSAK",
+    "definition": "cadence",
+    "source": "https://en.wiktionary.org/wiki/ragsak",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2027-12-18",
+    "word": "PINSAN",
+    "definition": "cousin",
+    "source": "https://en.wiktionary.org/wiki/pinsan",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2027-12-19",
+    "word": "PAGKIT",
+    "definition": "adhesive",
+    "source": "https://en.wiktionary.org/wiki/pagkit",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2027-12-20",
+    "word": "TIYESA",
+    "definition": "Pouteria campechiana (an evergreen tree introduced from Mexico and Central America)",
+    "source": "https://en.wiktionary.org/wiki/tiyesa",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2027-12-21",
+    "word": "BAGOOK",
+    "definition": "partial burying due to falling from a height; embed; settle",
+    "source": "https://en.wiktionary.org/wiki/bagook",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2027-12-22",
+    "word": "MUSALA",
+    "definition": "musalla (a place for praying)",
+    "source": "https://en.wiktionary.org/wiki/musala",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2027-12-23",
+    "word": "DAMARA",
+    "definition": "a trellis decorated with various ornaments, having a roof made of banana leaves, fruits, or coconuts, and an arch at the front embellished with papers of various colors",
+    "source": "https://en.wiktionary.org/wiki/damara",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2027-12-24",
+    "word": "TEYBOL",
+    "definition": "table (item of furniture)",
+    "source": "https://en.wiktionary.org/wiki/teybol",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2027-12-25",
+    "word": "SAJADA",
+    "definition": "prayer rug",
+    "source": "https://en.wiktionary.org/wiki/sajada",
+    "difficulty": "hard"
+  },
+  {
+    "date": "2027-12-26",
+    "word": "BALADA",
+    "definition": "ballad (narrative poem)",
+    "source": "https://en.wiktionary.org/wiki/balada",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2027-12-27",
+    "word": "BULWAG",
+    "definition": "wide open or uncovered",
+    "source": "https://en.wiktionary.org/wiki/bulwag",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2027-12-28",
+    "word": "DORBEL",
+    "definition": "doorbell",
+    "source": "https://en.wiktionary.org/wiki/dorbel",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2027-12-29",
+    "word": "TESTING",
+    "definition": "trial; testing; test; attempt",
+    "source": "https://en.wiktionary.org/wiki/testing",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2027-12-30",
+    "word": "TINAON",
+    "definition": "vermin; pest",
+    "source": "https://en.wiktionary.org/wiki/tinaon",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2027-12-31",
+    "word": "PARUKA",
+    "definition": "clogs; pointed shoes",
+    "source": "https://en.wiktionary.org/wiki/paruka",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2028-01-01",
+    "word": "LUMAYO",
+    "definition": "to go away; to go farther away",
+    "source": "https://en.wiktionary.org/wiki/lumayo",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2028-01-02",
+    "word": "BULATE",
+    "definition": "worm",
+    "source": "https://en.wiktionary.org/wiki/bulate",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2028-01-03",
+    "word": "HOSTES",
+    "definition": "bargirl",
+    "source": "https://en.wiktionary.org/wiki/hostes",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2028-01-04",
+    "word": "HUWEGO",
+    "definition": "gambling",
+    "source": "https://en.wiktionary.org/wiki/huwego",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2028-01-05",
+    "word": "PULUBI",
+    "definition": "pauper; beggar; mendicant",
+    "source": "https://en.wiktionary.org/wiki/pulubi",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2028-01-06",
+    "word": "BISALA",
+    "definition": "fault; defect; error; mistake; mishap",
+    "source": "https://en.wiktionary.org/wiki/bisala",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2028-01-07",
+    "word": "PASTOL",
+    "definition": "shepherd",
+    "source": "https://en.wiktionary.org/wiki/pastol",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2028-01-08",
+    "word": "TAMPAY",
+    "definition": "serenity; calmness; tranquility",
+    "source": "https://en.wiktionary.org/wiki/tampay",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2028-01-09",
+    "word": "PONKAN",
+    "definition": "ponkan (Citrus poonensis, a species of citrus fruit, similar to a tangerine (fruit), mandarin orange, orange)",
+    "source": "https://en.wiktionary.org/wiki/ponkan",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2028-01-10",
+    "word": "DOMINO",
+    "definition": "dominoes",
+    "source": "https://en.wiktionary.org/wiki/domino",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2028-01-11",
+    "word": "ALANGAN",
+    "definition": "hesitant; uncertain; reluctant",
+    "source": "https://en.wiktionary.org/wiki/alangan",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2028-01-12",
+    "word": "TAGUAN",
+    "definition": "hideout; hiding place",
+    "source": "https://en.wiktionary.org/wiki/taguan",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2028-01-13",
+    "word": "MABULA",
+    "definition": "foamy; full of bubbles",
+    "source": "https://en.wiktionary.org/wiki/mabula",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2028-01-14",
+    "word": "BULYOS",
+    "definition": "whip consisting of cylindrical bamboo sticks bundled and tied into a sturdy cord commonly used by flagellants during Holy Week",
+    "source": "https://en.wiktionary.org/wiki/bulyos",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2028-01-15",
+    "word": "APALIT",
+    "definition": "sandalwood",
+    "source": "https://en.wiktionary.org/wiki/apalit",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2028-01-16",
+    "word": "LINSAD",
+    "definition": "dislocated",
+    "source": "https://en.wiktionary.org/wiki/linsad",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2028-01-17",
+    "word": "BARAKO",
+    "definition": "male hog; boar used for breeding",
+    "source": "https://en.wiktionary.org/wiki/barako",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2028-01-18",
+    "word": "LANGLANG",
+    "definition": "Chinese; of Chinese cuisine",
+    "source": "https://en.wiktionary.org/wiki/langlang",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2028-01-19",
+    "word": "MAYORA",
+    "definition": "mayoress of a city or municipality/town",
+    "source": "https://en.wiktionary.org/wiki/mayora",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2028-01-20",
+    "word": "PULMON",
+    "definition": "lung",
+    "source": "https://en.wiktionary.org/wiki/pulmon",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2028-01-21",
+    "word": "BANLAT",
+    "definition": "pigpen; pigsty",
+    "source": "https://en.wiktionary.org/wiki/banlat",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2028-01-22",
+    "word": "MAUTAK",
+    "definition": "brainy; clever",
+    "source": "https://en.wiktionary.org/wiki/mautak",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2028-01-23",
+    "word": "LANDAS",
+    "definition": "path; trail; pathway; footpath",
+    "source": "https://en.wiktionary.org/wiki/landas",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2028-01-24",
+    "word": "ILAHOK",
+    "definition": "to be mixed to a larger mixture",
+    "source": "https://en.wiktionary.org/wiki/ilahok",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2028-01-25",
+    "word": "REKORD",
+    "definition": "record (information put into a lasting physical medium)",
+    "source": "https://en.wiktionary.org/wiki/rekord",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2028-01-26",
+    "word": "SAMBONG",
+    "definition": "Ngai camphor (Blumea balsamifera)",
+    "source": "https://en.wiktionary.org/wiki/sambong",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2028-01-27",
+    "word": "HARABE",
+    "definition": "a type of syrup added to and mixed with medicinal substances",
+    "source": "https://en.wiktionary.org/wiki/harabe",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2028-01-28",
+    "word": "MALASA",
+    "definition": "tasty; palatable; delicious",
+    "source": "https://en.wiktionary.org/wiki/malasa",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2028-01-29",
+    "word": "HIYAIN",
+    "definition": "to be embarrassed; to be shamed; to be humiliated",
+    "source": "https://en.wiktionary.org/wiki/hiyain",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2028-01-30",
+    "word": "BISLIG",
+    "definition": "hardening; petrification",
+    "source": "https://en.wiktionary.org/wiki/bislig",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2028-01-31",
+    "word": "OPISER",
+    "definition": "officer",
+    "source": "https://en.wiktionary.org/wiki/opiser",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2028-02-01",
+    "word": "PRAYLE",
+    "definition": "friar",
+    "source": "https://en.wiktionary.org/wiki/prayle",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2028-02-02",
+    "word": "ASUKAL",
+    "definition": "sugar",
+    "source": "https://en.wiktionary.org/wiki/asukal",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2028-02-03",
+    "word": "LUBLOB",
+    "definition": "dipping in water or liquid",
+    "source": "https://en.wiktionary.org/wiki/lublob",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2028-02-04",
+    "word": "TUGNAW",
+    "definition": "completely burned; burnt to ashes",
+    "source": "https://en.wiktionary.org/wiki/tugnaw",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2028-02-05",
+    "word": "ASEYTE",
+    "definition": "oil",
+    "source": "https://en.wiktionary.org/wiki/aseyte",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2028-02-06",
+    "word": "TERMOS",
+    "definition": "thermos; vacuum flask",
+    "source": "https://en.wiktionary.org/wiki/termos",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2028-02-07",
+    "word": "MAARAL",
+    "definition": "full of moral lessons (of a story, lecture, etc.)",
+    "source": "https://en.wiktionary.org/wiki/maaral",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2028-02-08",
+    "word": "PUSPOS",
+    "definition": "complete; full; thorough; replete",
+    "source": "https://en.wiktionary.org/wiki/puspos",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2028-02-09",
+    "word": "BUGNOT",
+    "definition": "exasperation; irascibility",
+    "source": "https://en.wiktionary.org/wiki/bugnot",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2028-02-10",
+    "word": "NGALNGAL",
+    "definition": "wail; long and loud cry",
+    "source": "https://en.wiktionary.org/wiki/ngalngal",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2028-02-11",
+    "word": "LUBYAK",
+    "definition": "wheel rut",
+    "source": "https://en.wiktionary.org/wiki/lubyak",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2028-02-12",
+    "word": "SUBIDA",
+    "definition": "ascent; rise; mounting",
+    "source": "https://en.wiktionary.org/wiki/subida",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2028-02-13",
+    "word": "MALIIT",
+    "definition": "small; little; insignificant",
+    "source": "https://en.wiktionary.org/wiki/maliit",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2028-02-14",
+    "word": "LINGGAL",
+    "definition": "din; clamor; loud, disturbing noise",
+    "source": "https://en.wiktionary.org/wiki/linggal",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2028-02-15",
+    "word": "ASINAN",
+    "definition": "salt bed; salt farm; salt mine",
+    "source": "https://en.wiktionary.org/wiki/asinan",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2028-02-16",
+    "word": "HARAYA",
+    "definition": "imagination",
+    "source": "https://en.wiktionary.org/wiki/haraya",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2028-02-17",
+    "word": "MORADO",
+    "definition": "purple; mulberry",
+    "source": "https://en.wiktionary.org/wiki/morado",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2028-02-18",
+    "word": "HORNAL",
+    "definition": "daily wage; day's pay",
+    "source": "https://en.wiktionary.org/wiki/hornal",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2028-02-19",
+    "word": "TSAROL",
+    "definition": "patent leather",
+    "source": "https://en.wiktionary.org/wiki/tsarol",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2028-02-20",
+    "word": "ALILIS",
+    "definition": "milling; grinding",
+    "source": "https://en.wiktionary.org/wiki/alilis",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2028-02-21",
+    "word": "GAWAAN",
+    "definition": "a place or location of manufacturing",
+    "source": "https://en.wiktionary.org/wiki/gawaan",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2028-02-22",
+    "word": "IMAHEN",
+    "definition": "image (graphical representation)",
+    "source": "https://en.wiktionary.org/wiki/imahen",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2028-02-23",
+    "word": "ISAULO",
+    "definition": "to memorize; to commit to memory",
+    "source": "https://en.wiktionary.org/wiki/isaulo",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2028-02-24",
+    "word": "MULIAS",
+    "definition": "twilight; crepusculum\nmorning twilight; break of dawn",
+    "source": "https://en.wiktionary.org/wiki/mulias",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2028-02-25",
+    "word": "PUSYAW",
+    "definition": "paleness",
+    "source": "https://en.wiktionary.org/wiki/pusyaw",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2028-02-26",
+    "word": "POHIYA",
+    "definition": "ladle; dipper",
+    "source": "https://en.wiktionary.org/wiki/pohiya",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2028-02-27",
+    "word": "PAEPEK",
+    "definition": "attempt to be pleasing",
+    "source": "https://en.wiktionary.org/wiki/paepek",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2028-02-28",
+    "word": "ADEPTO",
+    "definition": "adept (well skilled)",
+    "source": "https://en.wiktionary.org/wiki/adepto",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2028-02-29",
+    "word": "HULAPI",
+    "definition": "suffix",
+    "source": "https://en.wiktionary.org/wiki/hulapi",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2028-03-01",
+    "word": "TRUHEL",
+    "definition": "die (embossed device used in stamping coins and medals)",
+    "source": "https://en.wiktionary.org/wiki/truhel",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2028-03-02",
+    "word": "GUNGGONG",
+    "definition": "stupid; dull; ignoramus",
+    "source": "https://en.wiktionary.org/wiki/gunggong",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2028-03-03",
+    "word": "SUMAMA",
+    "definition": "to go with; to join; to come along; to accompany",
+    "source": "https://en.wiktionary.org/wiki/sumama",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2028-03-04",
+    "word": "BUSLOT",
+    "definition": "break or opening on floors offering danger of stumbling",
+    "source": "https://en.wiktionary.org/wiki/buslot",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2028-03-05",
+    "word": "INUMIN",
+    "definition": "beverage",
+    "source": "https://en.wiktionary.org/wiki/inumin",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2028-03-06",
+    "word": "SAMPAY",
+    "definition": "laundry hanging on a clothesline, fence, etc.",
+    "source": "https://en.wiktionary.org/wiki/sampay",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2028-03-07",
+    "word": "PIYESA",
+    "definition": "musical piece (composition and paper)",
+    "source": "https://en.wiktionary.org/wiki/piyesa",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2028-03-08",
+    "word": "ORASAN",
+    "definition": "clock; timepiece",
+    "source": "https://en.wiktionary.org/wiki/orasan",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2028-03-09",
+    "word": "TEKNIK",
+    "definition": "technique",
+    "source": "https://en.wiktionary.org/wiki/teknik",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2028-03-10",
+    "word": "BUGNOY",
+    "definition": "fallen coconut fruit",
+    "source": "https://en.wiktionary.org/wiki/bugnoy",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2028-03-11",
+    "word": "ALAALA",
+    "definition": "memory; recollection",
+    "source": "https://en.wiktionary.org/wiki/alaala",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2028-03-12",
+    "word": "LUNGKAG",
+    "definition": "bulky but light in weight",
+    "source": "https://en.wiktionary.org/wiki/lungkag",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2028-03-13",
+    "word": "BARETA",
+    "definition": "bar (a cuboid piece of any solid commodity)",
+    "source": "https://en.wiktionary.org/wiki/bareta",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2028-03-14",
+    "word": "DRAGON",
+    "definition": "dragon",
+    "source": "https://en.wiktionary.org/wiki/dragon",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2028-03-15",
+    "word": "ALYADO",
+    "definition": "ally",
+    "source": "https://en.wiktionary.org/wiki/alyado",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2028-03-16",
+    "word": "KIMKIM",
+    "definition": "held in the fist",
+    "source": "https://en.wiktionary.org/wiki/kimkim",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2028-03-17",
+    "word": "SUMPAK",
+    "definition": "blowgun; popgun",
+    "source": "https://en.wiktionary.org/wiki/sumpak",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2028-03-18",
+    "word": "SUMUKA",
+    "definition": "to vomit; to throw up",
+    "source": "https://en.wiktionary.org/wiki/sumuka",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2028-03-19",
+    "word": "MOMIYA",
+    "definition": "mummy",
+    "source": "https://en.wiktionary.org/wiki/momiya",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2028-03-20",
+    "word": "SAMBIT",
+    "definition": "mention; reference",
+    "source": "https://en.wiktionary.org/wiki/sambit",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2028-03-21",
+    "word": "LUGAMI",
+    "definition": "fallen into misfortune or suffering",
+    "source": "https://en.wiktionary.org/wiki/lugami",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2028-03-22",
+    "word": "KAPUWA",
+    "definition": "fellow being; of the same affinity; equal; neighbor; other; brethren; kin",
+    "source": "https://en.wiktionary.org/wiki/kapuwa",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2028-03-23",
+    "word": "BADYET",
+    "definition": "budget",
+    "source": "https://en.wiktionary.org/wiki/badyet",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2028-03-24",
+    "word": "SAMALA",
+    "definition": "a species of gum storax, used with incense in medical fumigation",
+    "source": "https://en.wiktionary.org/wiki/samala",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2028-03-25",
+    "word": "HAKBANG",
+    "definition": "step; stride",
+    "source": "https://en.wiktionary.org/wiki/hakbang",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2028-03-26",
+    "word": "MANAPA",
+    "definition": "better yet; it would be better; preferably",
+    "source": "https://en.wiktionary.org/wiki/manapa",
+    "difficulty": "medium"
+  },
+  {
+    "date": "2028-03-27",
+    "word": "ESKOBA",
+    "definition": "large hand brush; whisk broom",
+    "source": "https://en.wiktionary.org/wiki/eskoba",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2028-03-28",
+    "word": "TIMPLA",
+    "definition": "proportionate mixture of ingredients",
+    "source": "https://en.wiktionary.org/wiki/timpla",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2028-03-29",
+    "word": "MOTIBO",
+    "definition": "motive",
+    "source": "https://en.wiktionary.org/wiki/motibo",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2028-03-30",
+    "word": "BAHETE",
+    "definition": "short",
+    "source": "https://en.wiktionary.org/wiki/bahete",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2028-03-31",
+    "word": "BIRHEN",
+    "definition": "virgin",
+    "source": "https://en.wiktionary.org/wiki/birhen",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2028-04-01",
+    "word": "BUSBOS",
+    "definition": "perforated; pierced",
+    "source": "https://en.wiktionary.org/wiki/busbos",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2028-04-02",
+    "word": "SAMAIN",
+    "definition": "to be unlucky; to meet with bad luck",
+    "source": "https://en.wiktionary.org/wiki/samain",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2028-04-03",
+    "word": "BULKAN",
+    "definition": "volcano",
+    "source": "https://en.wiktionary.org/wiki/bulkan",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2028-04-04",
+    "word": "ATUNGAL",
+    "definition": "long, loud mooing of cattle",
+    "source": "https://en.wiktionary.org/wiki/atungal",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2028-04-05",
+    "word": "SAKLOB",
+    "definition": "act of putting on one's hat",
+    "source": "https://en.wiktionary.org/wiki/saklob",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2028-04-06",
+    "word": "SURIAN",
+    "definition": "institute",
+    "source": "https://en.wiktionary.org/wiki/surian",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2028-04-07",
+    "word": "PUWERA",
+    "definition": "except; except for; apart from; besides; other than",
+    "source": "https://en.wiktionary.org/wiki/puwera",
+    "difficulty": "medium"
+  },
+  {
+    "date": "2028-04-08",
+    "word": "GAMBOL",
+    "definition": "badly beaten up",
+    "source": "https://en.wiktionary.org/wiki/gambol",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2028-04-09",
+    "word": "TUMAYO",
+    "definition": "to stand; to stand up",
+    "source": "https://en.wiktionary.org/wiki/tumayo",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2028-04-10",
+    "word": "HAMPOK",
+    "definition": "stale; spoiled; rotten",
+    "source": "https://en.wiktionary.org/wiki/hampok",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2028-04-11",
+    "word": "BIRSIN",
+    "definition": "virgin",
+    "source": "https://en.wiktionary.org/wiki/birsin",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2028-04-12",
+    "word": "HIMPAK",
+    "definition": "deflated",
+    "source": "https://en.wiktionary.org/wiki/himpak",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2028-04-13",
+    "word": "PANTAY",
+    "definition": "level; even",
+    "source": "https://en.wiktionary.org/wiki/pantay",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2028-04-14",
+    "word": "ITAPON",
+    "definition": "to be thrown",
+    "source": "https://en.wiktionary.org/wiki/itapon",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2028-04-15",
+    "word": "MUKMOK",
+    "definition": "sulkiness",
+    "source": "https://en.wiktionary.org/wiki/mukmok",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2028-04-16",
+    "word": "DUKESA",
+    "definition": "duchess",
+    "source": "https://en.wiktionary.org/wiki/dukesa",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2028-04-17",
+    "word": "KAMPING",
+    "definition": "physical weakness or frailty; languor; weariness",
+    "source": "https://en.wiktionary.org/wiki/kamping",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2028-04-18",
+    "word": "BANTING",
+    "definition": "stretched rope or cable of a ship",
+    "source": "https://en.wiktionary.org/wiki/banting",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2028-04-19",
+    "word": "SERESA",
+    "definition": "cherry",
+    "source": "https://en.wiktionary.org/wiki/seresa",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2028-04-20",
+    "word": "AYUSIN",
+    "definition": "to be arranged; to be put in order",
+    "source": "https://en.wiktionary.org/wiki/ayusin",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2028-04-21",
+    "word": "BALUTI",
+    "definition": "armor; breastplate",
+    "source": "https://en.wiktionary.org/wiki/baluti",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2028-04-22",
+    "word": "HITHIT",
+    "definition": "puff; drag",
+    "source": "https://en.wiktionary.org/wiki/hithit",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2028-04-23",
+    "word": "SUMPIT",
+    "definition": "blowgun; popgun",
+    "source": "https://en.wiktionary.org/wiki/sumpit",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2028-04-24",
+    "word": "OHALES",
+    "definition": "buttonhole",
+    "source": "https://en.wiktionary.org/wiki/ohales",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2028-04-25",
+    "word": "KIDLAT",
+    "definition": "lightning",
+    "source": "https://en.wiktionary.org/wiki/kidlat",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2028-04-26",
+    "word": "TORERO",
+    "definition": "bullfighter",
+    "source": "https://en.wiktionary.org/wiki/torero",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2028-04-27",
+    "word": "PINGKIT",
+    "definition": "slant-eyed",
+    "source": "https://en.wiktionary.org/wiki/pingkit",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2028-04-28",
+    "word": "BAGASO",
+    "definition": "bagasse",
+    "source": "https://en.wiktionary.org/wiki/bagaso",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2028-04-29",
+    "word": "BIRTUD",
+    "definition": "virtue",
+    "source": "https://en.wiktionary.org/wiki/birtud",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2028-04-30",
+    "word": "TAWHID",
+    "definition": "tawhid (central Islamic doctrine of God's divine unity)",
+    "source": "https://en.wiktionary.org/wiki/tawhid",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2028-05-01",
+    "word": "SUMPONG",
+    "definition": "fit; attack",
+    "source": "https://en.wiktionary.org/wiki/sumpong",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2028-05-02",
+    "word": "DEHINS",
+    "definition": "no; not",
+    "source": "https://en.wiktionary.org/wiki/dehins",
+    "difficulty": "medium"
+  },
+  {
+    "date": "2028-05-03",
+    "word": "DIKLAP",
+    "definition": "spark; sudden burst of flame",
+    "source": "https://en.wiktionary.org/wiki/diklap",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2028-05-04",
+    "word": "SALIWA",
+    "definition": "incorrect; opposite",
+    "source": "https://en.wiktionary.org/wiki/saliwa",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2028-05-05",
+    "word": "KORNER",
+    "definition": "corner (point where two converging lines meet)",
+    "source": "https://en.wiktionary.org/wiki/korner",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2028-05-06",
+    "word": "LASPAG",
+    "definition": "raped; violated",
+    "source": "https://en.wiktionary.org/wiki/laspag",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2028-05-07",
+    "word": "HUNAIN",
+    "definition": "theorem",
+    "source": "https://en.wiktionary.org/wiki/hunain",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2028-05-08",
+    "word": "PATAGO",
+    "definition": "secret; covert",
+    "source": "https://en.wiktionary.org/wiki/patago",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2028-05-09",
+    "word": "BALYAN",
+    "definition": "scarecrow",
+    "source": "https://en.wiktionary.org/wiki/balyan",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2028-05-10",
+    "word": "DEPINI",
+    "definition": "act of definition",
+    "source": "https://en.wiktionary.org/wiki/depini",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2028-05-11",
+    "word": "DUBDOB",
+    "definition": "big blaze caused by fanning or adding more fuel",
+    "source": "https://en.wiktionary.org/wiki/dubdob",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2028-05-12",
+    "word": "BANSIW",
+    "definition": "stench",
+    "source": "https://en.wiktionary.org/wiki/bansiw",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2028-05-13",
+    "word": "TILAOK",
+    "definition": "cock-a-doodle-doo; cry of a rooster",
+    "source": "https://en.wiktionary.org/wiki/tilaok",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2028-05-14",
+    "word": "MAAGAP",
+    "definition": "prompt; ready; quick",
+    "source": "https://en.wiktionary.org/wiki/maagap",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2028-05-15",
+    "word": "TORNEO",
+    "definition": "tournament; tourney",
+    "source": "https://en.wiktionary.org/wiki/torneo",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2028-05-16",
+    "word": "PITAKA",
+    "definition": "wallet; purse",
+    "source": "https://en.wiktionary.org/wiki/pitaka",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2028-05-17",
+    "word": "IANULA",
+    "definition": "to be annuled",
+    "source": "https://en.wiktionary.org/wiki/ianula",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2028-05-18",
+    "word": "LANDIT",
+    "definition": "prurient; lascivious; lustful",
+    "source": "https://en.wiktionary.org/wiki/landit",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2028-05-19",
+    "word": "KAMOTE",
+    "definition": "sweet potato (Ipomoea batatas)",
+    "source": "https://en.wiktionary.org/wiki/kamote",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2028-05-20",
+    "word": "SALAWA",
+    "definition": "having the habit of taking on too many things without doing anything, neither beginning nor finishing",
+    "source": "https://en.wiktionary.org/wiki/salawa",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2028-05-21",
+    "word": "PITPIT",
+    "definition": "flattened by beating; beaten; pounded",
+    "source": "https://en.wiktionary.org/wiki/pitpit",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2028-05-22",
+    "word": "OMELET",
+    "definition": "omelette",
+    "source": "https://en.wiktionary.org/wiki/omelet",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2028-05-23",
+    "word": "HAGWAY",
+    "definition": "proportioned tallness and slenderness",
+    "source": "https://en.wiktionary.org/wiki/hagway",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2028-05-24",
+    "word": "DINGGIN",
+    "definition": "to listen to; to hear; to pay attention to what one is saying",
+    "source": "https://en.wiktionary.org/wiki/dinggin",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2028-05-25",
+    "word": "KIMIKO",
+    "definition": "chemical",
+    "source": "https://en.wiktionary.org/wiki/kimiko",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2028-05-26",
+    "word": "ISINGIT",
+    "definition": "to be inserted in a narrow space",
+    "source": "https://en.wiktionary.org/wiki/isingit",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2028-05-27",
+    "word": "LUNSAD",
+    "definition": "launching",
+    "source": "https://en.wiktionary.org/wiki/lunsad",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2028-05-28",
+    "word": "ASALAN",
+    "definition": "roaster made of ironwood or cane in which they skewer something to roast it",
+    "source": "https://en.wiktionary.org/wiki/asalan",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2028-05-29",
+    "word": "TETANO",
+    "definition": "tetanus",
+    "source": "https://en.wiktionary.org/wiki/tetano",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2028-05-30",
+    "word": "SAKUNA",
+    "definition": "accident; casualty; mishap",
+    "source": "https://en.wiktionary.org/wiki/sakuna",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2028-05-31",
+    "word": "TARIPA",
+    "definition": "tariff",
+    "source": "https://en.wiktionary.org/wiki/taripa",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2028-06-01",
+    "word": "TANGGAL",
+    "definition": "removed; disconnected",
+    "source": "https://en.wiktionary.org/wiki/tanggal",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2028-06-02",
+    "word": "MABAHO",
+    "definition": "foul; smelly; fetid; stinky",
+    "source": "https://en.wiktionary.org/wiki/mabaho",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2028-06-03",
+    "word": "ASETON",
+    "definition": "acetone",
+    "source": "https://en.wiktionary.org/wiki/aseton",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2028-06-04",
+    "word": "GIBUTS",
+    "definition": "water",
+    "source": "https://en.wiktionary.org/wiki/gibuts",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2028-06-05",
+    "word": "PAELYA",
+    "definition": "paella",
+    "source": "https://en.wiktionary.org/wiki/paelya",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2028-06-06",
+    "word": "AGUYOD",
+    "definition": "friendship among playmates",
+    "source": "https://en.wiktionary.org/wiki/aguyod",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2028-06-07",
+    "word": "GAWGAW",
+    "definition": "starch made from plants or palms",
+    "source": "https://en.wiktionary.org/wiki/gawgaw",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2028-06-08",
+    "word": "BANATO",
+    "definition": "kamala tree (Mallotus philippensis)",
+    "source": "https://en.wiktionary.org/wiki/banato",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2028-06-09",
+    "word": "ALUNYA",
+    "definition": "illicit caress",
+    "source": "https://en.wiktionary.org/wiki/alunya",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2028-06-10",
+    "word": "HALAYA",
+    "definition": "jelly",
+    "source": "https://en.wiktionary.org/wiki/halaya",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2028-06-11",
+    "word": "DIKLOM",
+    "definition": "dark; darkness",
+    "source": "https://en.wiktionary.org/wiki/diklom",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2028-06-12",
+    "word": "TUWINA",
+    "definition": "always; every time",
+    "source": "https://en.wiktionary.org/wiki/tuwina",
+    "difficulty": "medium"
+  },
+  {
+    "date": "2028-06-13",
+    "word": "HALINA",
+    "definition": "let's go! come along!",
+    "source": "https://en.wiktionary.org/wiki/halina",
+    "difficulty": "medium"
+  },
+  {
+    "date": "2028-06-14",
+    "word": "MENTAL",
+    "definition": "mental",
+    "source": "https://en.wiktionary.org/wiki/mental",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2028-06-15",
+    "word": "DAGSIN",
+    "definition": "gravity; gravitational force",
+    "source": "https://en.wiktionary.org/wiki/dagsin",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2028-06-16",
+    "word": "TABTAB",
+    "definition": "gradual hewing or chopping into a certain size or shape",
+    "source": "https://en.wiktionary.org/wiki/tabtab",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2028-06-17",
+    "word": "PILOTO",
+    "definition": "pilot",
+    "source": "https://en.wiktionary.org/wiki/piloto",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2028-06-18",
+    "word": "GALERA",
+    "definition": "galley",
+    "source": "https://en.wiktionary.org/wiki/galera",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2028-06-19",
+    "word": "TONIKO",
+    "definition": "tonic",
+    "source": "https://en.wiktionary.org/wiki/toniko",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2028-06-20",
+    "word": "GITLING",
+    "definition": "hyphen",
+    "source": "https://en.wiktionary.org/wiki/gitling",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2028-06-21",
+    "word": "TERASA",
+    "definition": "terrace",
+    "source": "https://en.wiktionary.org/wiki/terasa",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2028-06-22",
+    "word": "GAHASA",
+    "definition": "use of force against another",
+    "source": "https://en.wiktionary.org/wiki/gahasa",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2028-06-23",
+    "word": "TIRGAS",
+    "definition": "tear gas",
+    "source": "https://en.wiktionary.org/wiki/tirgas",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2028-06-24",
+    "word": "SERMON",
+    "definition": "sermon",
+    "source": "https://en.wiktionary.org/wiki/sermon",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2028-06-25",
+    "word": "SENISA",
+    "definition": "ash",
+    "source": "https://en.wiktionary.org/wiki/senisa",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2028-06-26",
+    "word": "HARDEL",
+    "definition": "hurdle",
+    "source": "https://en.wiktionary.org/wiki/hardel",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2028-06-27",
+    "word": "HAKHAK",
+    "definition": "noisy, gobbling manner of eating",
+    "source": "https://en.wiktionary.org/wiki/hakhak",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2028-06-28",
+    "word": "BULYAW",
+    "definition": "loud, shouted rebuke",
+    "source": "https://en.wiktionary.org/wiki/bulyaw",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2028-06-29",
+    "word": "TANGHOD",
+    "definition": "act of waiting for something full of hope",
+    "source": "https://en.wiktionary.org/wiki/tanghod",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2028-06-30",
+    "word": "BALANI",
+    "definition": "magnetism",
+    "source": "https://en.wiktionary.org/wiki/balani",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2028-07-01",
+    "word": "TAYUTO",
+    "definition": "rotten; decayed",
+    "source": "https://en.wiktionary.org/wiki/tayuto",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2028-07-02",
+    "word": "SIYANGA",
+    "definition": "really!; indeed!; that's true! that's right!",
+    "source": "https://en.wiktionary.org/wiki/siyanga",
+    "difficulty": "medium"
+  },
+  {
+    "date": "2028-07-03",
+    "word": "KAMPANG",
+    "definition": "characteristic swaying motion in walking",
+    "source": "https://en.wiktionary.org/wiki/kampang",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2028-07-04",
+    "word": "KUTYAM",
+    "definition": "anvil-like block of iron provided with graduated grooves or cavities on the surface or sides, used by smiths for shaping or rounding rings, plates, etc.",
+    "source": "https://en.wiktionary.org/wiki/kutyam",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2028-07-05",
+    "word": "LIYABE",
+    "definition": "key",
+    "source": "https://en.wiktionary.org/wiki/liyabe",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2028-07-06",
+    "word": "SANGKAL",
+    "definition": "hardened due to overaccumulation of milk",
+    "source": "https://en.wiktionary.org/wiki/sangkal",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2028-07-07",
+    "word": "BISTEK",
+    "definition": "beefsteak",
+    "source": "https://en.wiktionary.org/wiki/bistek",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2028-07-08",
+    "word": "LUPAIN",
+    "definition": "landed property; estate; land holdings",
+    "source": "https://en.wiktionary.org/wiki/lupain",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2028-07-09",
+    "word": "HUMPAK",
+    "definition": "hollow; concave",
+    "source": "https://en.wiktionary.org/wiki/humpak",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2028-07-10",
+    "word": "KOPYUR",
+    "definition": "coiffure; hairstyle",
+    "source": "https://en.wiktionary.org/wiki/kopyur",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2028-07-11",
+    "word": "RAYAMA",
+    "definition": "tête-à-tête; private conversation",
+    "source": "https://en.wiktionary.org/wiki/rayama",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2028-07-12",
+    "word": "IHAGIS",
+    "definition": "to cast; to throw",
+    "source": "https://en.wiktionary.org/wiki/ihagis",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2028-07-13",
+    "word": "ABUBOT",
+    "definition": "knick-knacks; trinkets; baubles; gewgaw",
+    "source": "https://en.wiktionary.org/wiki/abubot",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2028-07-14",
+    "word": "HINUHA",
+    "definition": "inference; deduction; presumption",
+    "source": "https://en.wiktionary.org/wiki/hinuha",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2028-07-15",
+    "word": "BUNSOL",
+    "definition": "fainting; loss of consciousness",
+    "source": "https://en.wiktionary.org/wiki/bunsol",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2028-07-16",
+    "word": "KINDAY",
+    "definition": "affected gait; strutting (while walking)",
+    "source": "https://en.wiktionary.org/wiki/kinday",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2028-07-17",
+    "word": "KANTIN",
+    "definition": "canteen",
+    "source": "https://en.wiktionary.org/wiki/kantin",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2028-07-18",
+    "word": "RIBETE",
+    "definition": "ornamental edge; trimming",
+    "source": "https://en.wiktionary.org/wiki/ribete",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2028-07-19",
+    "word": "BIDBID",
+    "definition": "twine and spool",
+    "source": "https://en.wiktionary.org/wiki/bidbid",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2028-07-20",
+    "word": "BILAHI",
+    "definition": "fish or meat jerky, which is half-dried",
+    "source": "https://en.wiktionary.org/wiki/bilahi",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2028-07-21",
+    "word": "GREMYO",
+    "definition": "guild (association of tradespeople)",
+    "source": "https://en.wiktionary.org/wiki/gremyo",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2028-07-22",
+    "word": "IBABAW",
+    "definition": "top; tip; apex",
+    "source": "https://en.wiktionary.org/wiki/ibabaw",
+    "difficulty": "easy"
+  },
+  {
+    "date": "2028-07-23",
+    "word": "BAUNAN",
+    "definition": "lunchbox (container where lunch is packed and served)",
+    "source": "https://en.wiktionary.org/wiki/baunan",
     "difficulty": "easy"
   }
 ];
 
 export const FALLBACK_POOL: WordEntry[] = [
   {
-    "word": "TANGGOL",
-    "definition": "to defend",
-    "source": "https://en.wiktionary.org/wiki/tanggol",
+    "word": "SUPLONG",
+    "definition": "act of reporting or denouncing an anomaly or irregularity to the authorities",
+    "source": "https://en.wiktionary.org/wiki/suplong",
+    "difficulty": "easy"
+  },
+  {
+    "word": "LAGKIT",
+    "definition": "stickiness; adhesiveness",
+    "source": "https://en.wiktionary.org/wiki/lagkit",
+    "difficulty": "easy"
+  },
+  {
+    "word": "PIRYUD",
+    "definition": "period (punctation mark “.”)",
+    "source": "https://en.wiktionary.org/wiki/piryud",
+    "difficulty": "easy"
+  },
+  {
+    "word": "ROSKAS",
+    "definition": "screw thread",
+    "source": "https://en.wiktionary.org/wiki/roskas",
+    "difficulty": "easy"
+  },
+  {
+    "word": "MISYON",
+    "definition": "mission",
+    "source": "https://en.wiktionary.org/wiki/misyon",
+    "difficulty": "easy"
+  },
+  {
+    "word": "MUNGLAY",
+    "definition": "fragmented",
+    "source": "https://en.wiktionary.org/wiki/munglay",
+    "difficulty": "easy"
+  },
+  {
+    "word": "OBLIGA",
+    "definition": "act of obligating",
+    "source": "https://en.wiktionary.org/wiki/obliga",
+    "difficulty": "easy"
+  },
+  {
+    "word": "MANGKOK",
+    "definition": "big bowl or saucer",
+    "source": "https://en.wiktionary.org/wiki/mangkok",
+    "difficulty": "easy"
+  },
+  {
+    "word": "RATRAT",
+    "definition": "pelting; bombarding with bullets",
+    "source": "https://en.wiktionary.org/wiki/ratrat",
+    "difficulty": "easy"
+  },
+  {
+    "word": "ATRASO",
+    "definition": "lateness; delay; tardiness",
+    "source": "https://en.wiktionary.org/wiki/atraso",
+    "difficulty": "easy"
+  },
+  {
+    "word": "KONDOM",
+    "definition": "condom",
+    "source": "https://en.wiktionary.org/wiki/kondom",
+    "difficulty": "easy"
+  },
+  {
+    "word": "SEMANA",
+    "definition": "week",
+    "source": "https://en.wiktionary.org/wiki/semana",
+    "difficulty": "easy"
+  },
+  {
+    "word": "LUGLOG",
+    "definition": "rinsing by shaking in water",
+    "source": "https://en.wiktionary.org/wiki/luglog",
+    "difficulty": "easy"
+  },
+  {
+    "word": "KINGPIN",
+    "definition": "kingpin\n axis where which steered wheels pivot; bolt that holds the pivot in place\nmost important person in an undertaking or organization",
+    "source": "https://en.wiktionary.org/wiki/kingpin",
+    "difficulty": "easy"
+  },
+  {
+    "word": "SINSIN",
+    "definition": "condition of being set, placed, or arranged close together",
+    "source": "https://en.wiktionary.org/wiki/sinsin",
+    "difficulty": "easy"
+  },
+  {
+    "word": "PAKANA",
+    "definition": "advantage; benefit",
+    "source": "https://en.wiktionary.org/wiki/pakana",
+    "difficulty": "easy"
+  },
+  {
+    "word": "NABASA",
+    "definition": "complete aspect of mabasa",
+    "source": "https://en.wiktionary.org/wiki/nabasa",
+    "difficulty": "easy"
+  },
+  {
+    "word": "BUNTAL",
+    "definition": "punch; jab; blow",
+    "source": "https://en.wiktionary.org/wiki/buntal",
+    "difficulty": "easy"
+  },
+  {
+    "word": "KANYON",
+    "definition": "cannon",
+    "source": "https://en.wiktionary.org/wiki/kanyon",
+    "difficulty": "easy"
+  },
+  {
+    "word": "KARBIN",
+    "definition": "carbine, a rifle shorter in length and lighter in weight",
+    "source": "https://en.wiktionary.org/wiki/karbin",
+    "difficulty": "easy"
+  },
+  {
+    "word": "ALIPIN",
+    "definition": "slave",
+    "source": "https://en.wiktionary.org/wiki/alipin",
+    "difficulty": "easy"
+  },
+  {
+    "word": "LUMIKO",
+    "definition": "to turn; to make a turn",
+    "source": "https://en.wiktionary.org/wiki/lumiko",
+    "difficulty": "easy"
+  },
+  {
+    "word": "PINTAS",
+    "definition": "fault; flaw; defect",
+    "source": "https://en.wiktionary.org/wiki/pintas",
+    "difficulty": "easy"
+  },
+  {
+    "word": "PIKOLO",
+    "definition": "piccolo",
+    "source": "https://en.wiktionary.org/wiki/pikolo",
+    "difficulty": "easy"
+  },
+  {
+    "word": "PATUNA",
+    "definition": "striped eel catfish (Plotosus lineatus)",
+    "source": "https://en.wiktionary.org/wiki/patuna",
+    "difficulty": "easy"
+  },
+  {
+    "word": "ETNIKO",
+    "definition": "a member of an ethnic group",
+    "source": "https://en.wiktionary.org/wiki/etniko",
+    "difficulty": "easy"
+  },
+  {
+    "word": "SALWAK",
+    "definition": "spilling of liquid from a container (when strongly shaken or toppled)",
+    "source": "https://en.wiktionary.org/wiki/salwak",
+    "difficulty": "easy"
+  },
+  {
+    "word": "KOSTAL",
+    "definition": "jute sack or bag",
+    "source": "https://en.wiktionary.org/wiki/kostal",
+    "difficulty": "easy"
+  },
+  {
+    "word": "OBARYO",
+    "definition": "ovary",
+    "source": "https://en.wiktionary.org/wiki/obaryo",
+    "difficulty": "easy"
+  },
+  {
+    "word": "TIGHOY",
+    "definition": "temporary stopping, mitigation, or reduction in intensity",
+    "source": "https://en.wiktionary.org/wiki/tighoy",
+    "difficulty": "easy"
+  },
+  {
+    "word": "MAPILI",
+    "definition": "selective; choosy",
+    "source": "https://en.wiktionary.org/wiki/mapili",
+    "difficulty": "easy"
+  },
+  {
+    "word": "TUBERO",
+    "definition": "plumber; pipe setter",
+    "source": "https://en.wiktionary.org/wiki/tubero",
+    "difficulty": "easy"
+  },
+  {
+    "word": "BUMAHA",
+    "definition": "to be flooded; to be inundated",
+    "source": "https://en.wiktionary.org/wiki/bumaha",
+    "difficulty": "easy"
+  },
+  {
+    "word": "LIMPAL",
+    "definition": "very huge piece; huge bulk",
+    "source": "https://en.wiktionary.org/wiki/limpal",
+    "difficulty": "easy"
+  },
+  {
+    "word": "BUNYAG",
+    "definition": "disclosure; revelation",
+    "source": "https://en.wiktionary.org/wiki/bunyag",
+    "difficulty": "easy"
+  },
+  {
+    "word": "INSULA",
+    "definition": "act of insulation",
+    "source": "https://en.wiktionary.org/wiki/insula",
+    "difficulty": "easy"
+  },
+  {
+    "word": "MARTIR",
+    "definition": "martyr",
+    "source": "https://en.wiktionary.org/wiki/martir",
+    "difficulty": "easy"
+  },
+  {
+    "word": "NGIDNGID",
+    "definition": "gum",
+    "source": "https://en.wiktionary.org/wiki/ngidngid",
+    "difficulty": "easy"
+  },
+  {
+    "word": "REPERI",
+    "definition": "referee",
+    "source": "https://en.wiktionary.org/wiki/reperi",
+    "difficulty": "easy"
+  },
+  {
+    "word": "MUTAWI",
+    "definition": "utterance; pronouncement; declaration",
+    "source": "https://en.wiktionary.org/wiki/mutawi",
+    "difficulty": "easy"
+  },
+  {
+    "word": "TABIGI",
+    "definition": "cannonball mangrove (Xylocarpus granatum)",
+    "source": "https://en.wiktionary.org/wiki/tabigi",
+    "difficulty": "easy"
+  },
+  {
+    "word": "TIGDAS",
+    "definition": "measles",
+    "source": "https://en.wiktionary.org/wiki/tigdas",
+    "difficulty": "easy"
+  },
+  {
+    "word": "SINGSING",
+    "definition": "ring",
+    "source": "https://en.wiktionary.org/wiki/singsing",
+    "difficulty": "easy"
+  },
+  {
+    "word": "LIYAMA",
+    "definition": "llama",
+    "source": "https://en.wiktionary.org/wiki/liyama",
+    "difficulty": "easy"
+  },
+  {
+    "word": "PAROKO",
+    "definition": "a parish priest",
+    "source": "https://en.wiktionary.org/wiki/paroko",
+    "difficulty": "easy"
+  },
+  {
+    "word": "PLEKOS",
+    "definition": "tassel; fringe; flounce",
+    "source": "https://en.wiktionary.org/wiki/plekos",
+    "difficulty": "easy"
+  },
+  {
+    "word": "SUONGIN",
+    "definition": "to be faced ; to be risked through",
+    "source": "https://en.wiktionary.org/wiki/suongin",
+    "difficulty": "easy"
+  },
+  {
+    "word": "DIGAIN",
+    "definition": "to be refined",
+    "source": "https://en.wiktionary.org/wiki/digain",
+    "difficulty": "easy"
+  },
+  {
+    "word": "TINGTING",
+    "definition": "palm leaf midrib without the blades or lamina",
+    "source": "https://en.wiktionary.org/wiki/tingting",
+    "difficulty": "easy"
+  },
+  {
+    "word": "DYAKET",
+    "definition": "jacket (clothing)",
+    "source": "https://en.wiktionary.org/wiki/dyaket",
+    "difficulty": "easy"
+  },
+  {
+    "word": "AMONYO",
+    "definition": "ammonium",
+    "source": "https://en.wiktionary.org/wiki/amonyo",
+    "difficulty": "easy"
+  },
+  {
+    "word": "PUKPOK",
+    "definition": "hammering; striking; pounding",
+    "source": "https://en.wiktionary.org/wiki/pukpok",
+    "difficulty": "easy"
+  },
+  {
+    "word": "TINLOY",
+    "definition": "lesser spear grass (Chrysopogon aciculatus)",
+    "source": "https://en.wiktionary.org/wiki/tinloy",
+    "difficulty": "easy"
+  },
+  {
+    "word": "ITATAG",
+    "definition": "to be founded; to established",
+    "source": "https://en.wiktionary.org/wiki/itatag",
+    "difficulty": "easy"
+  },
+  {
+    "word": "BRANDI",
+    "definition": "brandy",
+    "source": "https://en.wiktionary.org/wiki/brandi",
+    "difficulty": "easy"
+  },
+  {
+    "word": "TENKYU",
+    "definition": "thank you",
+    "source": "https://en.wiktionary.org/wiki/tenkyu",
+    "difficulty": "medium"
+  },
+  {
+    "word": "SULAKE",
+    "definition": "wood wool; excelsior",
+    "source": "https://en.wiktionary.org/wiki/sulake",
+    "difficulty": "easy"
+  },
+  {
+    "word": "PIYAOS",
+    "definition": "sawdust",
+    "source": "https://en.wiktionary.org/wiki/piyaos",
+    "difficulty": "easy"
+  },
+  {
+    "word": "SAMPON",
+    "definition": "together; along",
+    "source": "https://en.wiktionary.org/wiki/sampon",
+    "difficulty": "medium"
+  },
+  {
+    "word": "KAMYAS",
+    "definition": "bilimbi (Averrhoa bilimbi)",
+    "source": "https://en.wiktionary.org/wiki/kamyas",
+    "difficulty": "easy"
+  },
+  {
+    "word": "KANLONG",
+    "definition": "shadow of a tree",
+    "source": "https://en.wiktionary.org/wiki/kanlong",
+    "difficulty": "easy"
+  },
+  {
+    "word": "ARALAN",
+    "definition": "to teach; to educate",
+    "source": "https://en.wiktionary.org/wiki/aralan",
+    "difficulty": "easy"
+  },
+  {
+    "word": "GITGIT",
+    "definition": "jostling; act of elbowing one's way into a thick crowd",
+    "source": "https://en.wiktionary.org/wiki/gitgit",
+    "difficulty": "easy"
+  },
+  {
+    "word": "NAPNAP",
+    "definition": "perfect",
+    "source": "https://en.wiktionary.org/wiki/napnap",
+    "difficulty": "easy"
+  },
+  {
+    "word": "BILHAN",
+    "definition": "to buy from",
+    "source": "https://en.wiktionary.org/wiki/bilhan",
+    "difficulty": "easy"
+  },
+  {
+    "word": "KAMPOR",
+    "definition": "camphor",
+    "source": "https://en.wiktionary.org/wiki/kampor",
+    "difficulty": "easy"
+  },
+  {
+    "word": "HINGALO",
+    "definition": "death pangs; agony; moribund state",
+    "source": "https://en.wiktionary.org/wiki/hingalo",
+    "difficulty": "easy"
+  },
+  {
+    "word": "GALILA",
+    "definition": "galley",
+    "source": "https://en.wiktionary.org/wiki/galila",
+    "difficulty": "easy"
+  },
+  {
+    "word": "SUPSOP",
+    "definition": "act of sucking using the mouth",
+    "source": "https://en.wiktionary.org/wiki/supsop",
+    "difficulty": "easy"
+  },
+  {
+    "word": "TSITSA",
+    "definition": "let's eat!",
+    "source": "https://en.wiktionary.org/wiki/tsitsa",
+    "difficulty": "medium"
+  },
+  {
+    "word": "DIRIHI",
+    "definition": "act of directing, leading, guiding, or steering",
+    "source": "https://en.wiktionary.org/wiki/dirihi",
+    "difficulty": "easy"
+  },
+  {
+    "word": "TULIRO",
+    "definition": "confused; mentally puzzled",
+    "source": "https://en.wiktionary.org/wiki/tuliro",
+    "difficulty": "easy"
+  },
+  {
+    "word": "HADLANG",
+    "definition": "obstruction; obstacle; hindrance",
+    "source": "https://en.wiktionary.org/wiki/hadlang",
+    "difficulty": "easy"
+  },
+  {
+    "word": "MINTIS",
+    "definition": "failed; dud (said of firecrackers that did not explode, or some project that failed or missed out)",
+    "source": "https://en.wiktionary.org/wiki/mintis",
+    "difficulty": "easy"
+  },
+  {
+    "word": "SAGWIL",
+    "definition": "obstacle; impediment; obstruction",
+    "source": "https://en.wiktionary.org/wiki/sagwil",
+    "difficulty": "easy"
+  },
+  {
+    "word": "KUHILA",
+    "definition": "traitor; betrayer; disloyal person",
+    "source": "https://en.wiktionary.org/wiki/kuhila",
+    "difficulty": "easy"
+  },
+  {
+    "word": "IPUNIN",
+    "definition": "to gather; to collect",
+    "source": "https://en.wiktionary.org/wiki/ipunin",
+    "difficulty": "easy"
+  },
+  {
+    "word": "SALAPI",
+    "definition": "money",
+    "source": "https://en.wiktionary.org/wiki/salapi",
+    "difficulty": "easy"
+  },
+  {
+    "word": "TIKTIK",
+    "definition": "ticking of a watch, clock, etc.",
+    "source": "https://en.wiktionary.org/wiki/tiktik",
+    "difficulty": "easy"
+  },
+  {
+    "word": "SALARA",
+    "definition": "salad",
+    "source": "https://en.wiktionary.org/wiki/salara",
+    "difficulty": "easy"
+  },
+  {
+    "word": "NUWEBE",
+    "definition": "nine",
+    "source": "https://en.wiktionary.org/wiki/nuwebe",
+    "difficulty": "medium"
+  },
+  {
+    "word": "NUMERO",
+    "definition": "number",
+    "source": "https://en.wiktionary.org/wiki/numero",
+    "difficulty": "easy"
+  },
+  {
+    "word": "KANINO",
+    "definition": "whose",
+    "source": "https://en.wiktionary.org/wiki/kanino",
+    "difficulty": "medium"
+  },
+  {
+    "word": "KABILA",
+    "definition": "opposite side",
+    "source": "https://en.wiktionary.org/wiki/kabila",
+    "difficulty": "easy"
+  },
+  {
+    "word": "MAALAT",
+    "definition": "salty (tasting of salt)",
+    "source": "https://en.wiktionary.org/wiki/maalat",
+    "difficulty": "easy"
+  },
+  {
+    "word": "TEKSTO",
+    "definition": "text (a written passage)",
+    "source": "https://en.wiktionary.org/wiki/teksto",
+    "difficulty": "easy"
+  },
+  {
+    "word": "ASUNTO",
+    "definition": "court case",
+    "source": "https://en.wiktionary.org/wiki/asunto",
+    "difficulty": "easy"
+  },
+  {
+    "word": "KAMADA",
+    "definition": "litter (animals born in one birth); brood of young animals produced at one time",
+    "source": "https://en.wiktionary.org/wiki/kamada",
+    "difficulty": "easy"
+  },
+  {
+    "word": "ABSISA",
+    "definition": "abscissa",
+    "source": "https://en.wiktionary.org/wiki/absisa",
+    "difficulty": "easy"
+  },
+  {
+    "word": "PANGULO",
+    "definition": "president",
+    "source": "https://en.wiktionary.org/wiki/pangulo",
+    "difficulty": "easy"
+  },
+  {
+    "word": "SAMBAL",
+    "definition": "crossing; junction of two roads or rivers",
+    "source": "https://en.wiktionary.org/wiki/sambal",
+    "difficulty": "easy"
+  },
+  {
+    "word": "HALATA",
+    "definition": "obvious; noticeable; perceptible",
+    "source": "https://en.wiktionary.org/wiki/halata",
+    "difficulty": "easy"
+  },
+  {
+    "word": "TIISIN",
+    "definition": "burden; hardship",
+    "source": "https://en.wiktionary.org/wiki/tiisin",
+    "difficulty": "easy"
+  },
+  {
+    "word": "KAINAN",
+    "definition": "place to eat; eatery",
+    "source": "https://en.wiktionary.org/wiki/kainan",
+    "difficulty": "easy"
+  },
+  {
+    "word": "HANTING",
+    "definition": "hunting",
+    "source": "https://en.wiktionary.org/wiki/hanting",
+    "difficulty": "easy"
+  },
+  {
+    "word": "TITULO",
+    "definition": "title",
+    "source": "https://en.wiktionary.org/wiki/titulo",
+    "difficulty": "easy"
+  },
+  {
+    "word": "GURAMI",
+    "definition": "snakeskin gourami (Trichopodus pectoralis)",
+    "source": "https://en.wiktionary.org/wiki/gurami",
+    "difficulty": "easy"
+  },
+  {
+    "word": "ABWELA",
+    "definition": "grandmother",
+    "source": "https://en.wiktionary.org/wiki/abwela",
+    "difficulty": "easy"
+  },
+  {
+    "word": "TARAWI",
+    "definition": "tarawih (an extra prayer performed by Sunni Muslims at night in the month of Ramadan)",
+    "source": "https://en.wiktionary.org/wiki/tarawi",
+    "difficulty": "easy"
+  },
+  {
+    "word": "TAMPAK",
+    "definition": "patent; evident; obvious",
+    "source": "https://en.wiktionary.org/wiki/tampak",
+    "difficulty": "easy"
+  },
+  {
+    "word": "ALISIN",
+    "definition": "to be removed; to be taken off",
+    "source": "https://en.wiktionary.org/wiki/alisin",
+    "difficulty": "easy"
+  },
+  {
+    "word": "DEBOTO",
+    "definition": "devotee",
+    "source": "https://en.wiktionary.org/wiki/deboto",
+    "difficulty": "easy"
+  },
+  {
+    "word": "ULITIN",
+    "definition": "to restart; to repeat; to redo",
+    "source": "https://en.wiktionary.org/wiki/ulitin",
+    "difficulty": "easy"
+  },
+  {
+    "word": "PORKET",
+    "definition": "just because",
+    "source": "https://en.wiktionary.org/wiki/porket",
+    "difficulty": "medium"
+  },
+  {
+    "word": "AKUMEN",
+    "definition": "acumen (quickness of perception); sharpness",
+    "source": "https://en.wiktionary.org/wiki/akumen",
+    "difficulty": "easy"
+  },
+  {
+    "word": "AKWOSO",
+    "definition": "aqueous; watery",
+    "source": "https://en.wiktionary.org/wiki/akwoso",
+    "difficulty": "easy"
+  },
+  {
+    "word": "BUKLAT",
+    "definition": "open; opened; turned",
+    "source": "https://en.wiktionary.org/wiki/buklat",
+    "difficulty": "easy"
+  },
+  {
+    "word": "SARHAN",
+    "definition": "to be closed something on (a door, window, etc.)",
+    "source": "https://en.wiktionary.org/wiki/sarhan",
+    "difficulty": "easy"
+  },
+  {
+    "word": "PANTOG",
+    "definition": "urinary bladder",
+    "source": "https://en.wiktionary.org/wiki/pantog",
+    "difficulty": "easy"
+  },
+  {
+    "word": "PAGARE",
+    "definition": "promissory note",
+    "source": "https://en.wiktionary.org/wiki/pagare",
+    "difficulty": "easy"
+  },
+  {
+    "word": "SABANA",
+    "definition": "savanna",
+    "source": "https://en.wiktionary.org/wiki/sabana",
+    "difficulty": "easy"
+  },
+  {
+    "word": "BUKSAN",
+    "definition": "to be opened",
+    "source": "https://en.wiktionary.org/wiki/buksan",
+    "difficulty": "easy"
+  },
+  {
+    "word": "TUBLIK",
+    "definition": "piston",
+    "source": "https://en.wiktionary.org/wiki/tublik",
+    "difficulty": "easy"
+  },
+  {
+    "word": "KADETE",
+    "definition": "cadet",
+    "source": "https://en.wiktionary.org/wiki/kadete",
+    "difficulty": "easy"
+  },
+  {
+    "word": "NAYLON",
+    "definition": "nylon",
+    "source": "https://en.wiktionary.org/wiki/naylon",
+    "difficulty": "easy"
+  },
+  {
+    "word": "GUMALA",
+    "definition": "to rove; to stroll around; to roam",
+    "source": "https://en.wiktionary.org/wiki/gumala",
+    "difficulty": "easy"
+  },
+  {
+    "word": "TINDIG",
+    "definition": "deportment; bearing; posture; pose",
+    "source": "https://en.wiktionary.org/wiki/tindig",
+    "difficulty": "easy"
+  },
+  {
+    "word": "TAKBIR",
+    "definition": "takbir (a proclamation of the greatness of God)",
+    "source": "https://en.wiktionary.org/wiki/takbir",
+    "difficulty": "easy"
+  },
+  {
+    "word": "KAPUSO",
+    "definition": "someone of the same heart",
+    "source": "https://en.wiktionary.org/wiki/kapuso",
+    "difficulty": "easy"
+  },
+  {
+    "word": "INGRESO",
+    "definition": "money remitted; receipts",
+    "source": "https://en.wiktionary.org/wiki/ingreso",
     "difficulty": "easy"
   }
 ];
