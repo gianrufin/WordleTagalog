@@ -1,8 +1,17 @@
 import { MAX_GUESSES, VALID_GUESSES, WORD_LENGTH } from './words.js';
-import { buildManilaDateInfo, formatCountdown, getManilaDateInfo, getPreviousDateKey, type ManilaDateInfo } from './time.js';
+import {
+  buildManilaDateInfo,
+  daysBetweenDateKeys,
+  formatCountdown,
+  getManilaDateInfo,
+  getManilaDateInfoForDateKey,
+  getPreviousDateKey,
+  type ManilaDateInfo
+} from './time.js';
 import { readJson, removeKey, writeJson } from './storage.js';
 import { tokenize } from './tokenize.js';
 import { getPuzzleForDate, type Difficulty } from './schedule.js';
+import { SCHEDULE_START_DATE } from './schedule-data.js';
 
 type LetterState = 'correct' | 'present' | 'absent';
 type TileState = LetterState | 'filled' | 'empty';
@@ -80,6 +89,7 @@ const FLIP_STAGGER_MS = 260;
 const BOUNCE_DURATION_MS = 620;
 const BOUNCE_STAGGER_MS = 90;
 
+let todayDateInfo: ManilaDateInfo;
 let dateInfo: ManilaDateInfo;
 let game: GameState;
 let settings: Settings;
@@ -93,6 +103,8 @@ let revealingRowIndex: number | null = null;
 let isAnimating = false;
 let showingLanding = true;
 let lastAddedTileIndex: number | null = null;
+let archiveYear = 2026;
+let archiveMonth = 10;
 
 const appRoot = document.querySelector<HTMLDivElement>('#app');
 if (!appRoot) throw new Error('App root not found.');
@@ -103,7 +115,11 @@ void initialize();
 async function initialize(): Promise<void> {
   settings = loadSettings();
   stats = loadStats();
-  dateInfo = await getManilaDateInfo();
+  todayDateInfo = await getManilaDateInfo();
+  dateInfo = todayDateInfo;
+  const [initYear, initMonth] = todayDateInfo.dateKey.split('-').map(Number);
+  archiveYear = initYear;
+  archiveMonth = initMonth;
   appLoadedDeviceEpochMs = Date.now();
   trustedBaseEpochMs = dateInfo.epochMs;
   game = loadGame(dateInfo);
@@ -115,14 +131,15 @@ async function initialize(): Promise<void> {
 
 function getActiveStreak(): number {
   if (!stats.currentStreak || !stats.lastWinDateKey) return 0;
-  const previousDateKey = getPreviousDateKey(dateInfo.dateKey);
-  if (stats.lastWinDateKey === dateInfo.dateKey || stats.lastWinDateKey === previousDateKey) {
+  const previousDateKey = getPreviousDateKey(todayDateInfo.dateKey);
+  if (stats.lastWinDateKey === todayDateInfo.dateKey || stats.lastWinDateKey === previousDateKey) {
     return stats.currentStreak;
   }
   return 0;
 }
 
 function renderLanding(): void {
+  const isArchiveSelected = game.dateKey !== todayDateInfo.dateKey;
   const alreadyPlayed = game.status !== 'playing';
   const streak = getActiveStreak();
   const streakLine = streak > 0
@@ -134,22 +151,57 @@ function renderLanding(): void {
     `<div class="tile${letter.length > 1 ? ' tile-wide-letter' : ''}" data-state="${previewStates[index]}">${letter}</div>`
   ).join('');
 
+  const todayGame = isArchiveSelected ? loadGame(todayDateInfo) : game;
+  const todayAlreadyPlayed = todayGame.status !== 'playing';
+
+  let buttonsHtml = '';
+  if (isArchiveSelected) {
+    buttonsHtml = `
+      <button class="primary-button landing-play" type="button" data-action="play">
+        Resume Archive #${game.puzzleNumber} (${dateInfo.displayDate})
+      </button>
+      <button class="landing-archive-btn" type="button" data-action="return-today">
+        Play Today's Word #${todayGame.puzzleNumber} (${todayAlreadyPlayed ? "Solved" : "Play"})
+      </button>
+      <button class="landing-archive-btn" type="button" data-action="archive">
+        📅 Calendar Archive
+      </button>
+    `;
+  } else {
+    buttonsHtml = `
+      <button class="primary-button landing-play" type="button" data-action="play">
+        ${alreadyPlayed ? "See today's result" : 'Play'}
+      </button>
+      <button class="landing-archive-btn" type="button" data-action="archive">
+        📅 Calendar Archive
+      </button>
+    `;
+  }
+
   app.innerHTML = `
     <div class="landing">
       <div class="landing-card">
         <div class="landing-preview" aria-hidden="true">${preview}</div>
-        <p class="eyebrow">Daily Filipino word puzzle</p>
+        <p class="eyebrow">${isArchiveSelected ? `Archived Puzzle #${game.puzzleNumber}` : `Daily Filipino word puzzle`}</p>
         <h1 class="landing-title">Wordle Tagalog</h1>
         <p class="landing-tagline">Guess the 6-letter Filipino word in 6 tries. Ñ and NG each count as one letter. A new word drops every midnight in Manila.</p>
-        <button class="primary-button landing-play" type="button" data-action="play">${alreadyPlayed ? "See today's result" : 'Play'}</button>
+        <div class="landing-actions">
+          ${buttonsHtml}
+        </div>
         ${streakLine}
-        <p class="landing-meta">Puzzle #${game.puzzleNumber} · ${dateInfo.displayDate}</p>
+        <p class="landing-meta">Today: Puzzle #${todayGame.puzzleNumber} · ${todayDateInfo.displayDate}</p>
       </div>
       <div class="credits landing-credits">
         <p>Made by <a href="https://instagram.com/gianrufin" target="_blank" rel="noopener noreferrer">Gian Rufin</a></p>
       </div>
     </div>
   `;
+}
+
+function exitToLanding(): void {
+  showingLanding = true;
+  closeModal();
+  renderLanding();
 }
 
 function enterGame(): void {
@@ -164,34 +216,83 @@ function enterGame(): void {
   }
 }
 
+function switchToDate(targetDateKey: string): void {
+  if (targetDateKey === todayDateInfo.dateKey) {
+    dateInfo = todayDateInfo;
+  } else {
+    dateInfo = getManilaDateInfoForDateKey(targetDateKey);
+  }
+  game = loadGame(dateInfo);
+  closeModal();
+  showingLanding = false;
+  renderShell();
+  render();
+  startTicker();
+  if (dateInfo.dateKey !== todayDateInfo.dateKey) {
+    showToast(`Loaded puzzle #${game.puzzleNumber} (${dateInfo.displayDate})`);
+  }
+}
+
 function renderShell(): void {
+  const isArchive = game.dateKey !== todayDateInfo.dateKey;
+
+  const archiveBanner = isArchive ? `
+    <div class="archive-bar" role="status">
+      <div class="archive-bar-info">
+        <span class="archive-dot" aria-hidden="true"></span>
+        <span>Archive: <strong>${dateInfo.displayDate}</strong> (Puzzle #${game.puzzleNumber})</span>
+      </div>
+      <button class="archive-return-pill" type="button" data-action="return-today">
+        Today's Word ➔
+      </button>
+    </div>
+  ` : '';
+
+  const thirdCard = isArchive ? `
+    <div>
+      <span class="label">Return</span>
+      <button class="archive-inline-return" type="button" data-action="return-today">Today ➔</button>
+    </div>
+  ` : `
+    <div>
+      <span class="label">Next word</span>
+      <strong id="countdown">--:--:--</strong>
+    </div>
+  `;
+
   app.innerHTML = `
     <header class="topbar" aria-label="Wordle Tagalog header">
-      <button class="icon-button" type="button" data-action="help" aria-label="How to play">?</button>
-      <div class="title-lockup">
-        <p class="eyebrow">Daily Filipino word puzzle</p>
+      <div class="header-nav-left">
+        <button class="icon-button" type="button" data-action="home" aria-label="Back to home" title="Back to home">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+        </button>
+        <button class="icon-button" type="button" data-action="help" aria-label="How to play" title="How to play">?</button>
+      </div>
+      <div class="title-lockup clickable-title" data-action="home" role="button" tabindex="0" aria-label="Wordle Tagalog - Back to Home" title="Back to Home">
+        <p class="eyebrow">${isArchive ? `Archived Puzzle` : `Daily Filipino word puzzle`}</p>
         <h1>Wordle Tagalog</h1>
       </div>
       <div class="header-actions">
-        <button class="icon-button" type="button" data-action="stats" aria-label="Statistics">▥</button>
-        <button class="icon-button" type="button" data-action="settings" aria-label="Settings">⚙</button>
+        <button class="icon-button" type="button" data-action="archive" aria-label="Calendar Archive" title="Calendar Archive">
+          <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="18" height="18" x="3" y="4" rx="2" ry="2"/><line x1="16" x2="16" y1="2" y2="6"/><line x1="8" x2="8" y1="2" y2="6"/><line x1="3" x2="21" y1="10" y2="10"/></svg>
+        </button>
+        <button class="icon-button" type="button" data-action="stats" aria-label="Statistics" title="Statistics">▥</button>
+        <button class="icon-button" type="button" data-action="settings" aria-label="Settings" title="Settings">⚙</button>
       </div>
     </header>
 
     <main class="game" aria-live="polite">
+      ${archiveBanner}
       <section class="status-card" aria-label="Puzzle status">
         <div>
           <span class="label">Puzzle</span>
           <strong id="puzzleNumber">#${game.puzzleNumber}</strong>
         </div>
         <div>
-          <span class="label">Manila date</span>
+          <span class="label">${isArchive ? 'Archived date' : 'Manila date'}</span>
           <strong id="manilaDate">${dateInfo.displayDate}</strong>
         </div>
-        <div>
-          <span class="label">Next word</span>
-          <strong id="countdown">--:--:--</strong>
-        </div>
+        ${thirdCard}
       </section>
 
       <section id="board" class="board" role="grid" aria-label="Wordle Tagalog board"></section>
@@ -225,7 +326,7 @@ function renderStatus(): void {
   const countdown = document.querySelector('#countdown');
   if (puzzleNumber) puzzleNumber.textContent = `#${game.puzzleNumber}`;
   if (manilaDate) manilaDate.textContent = dateInfo.displayDate;
-  if (countdown) countdown.textContent = formatCountdown(dateInfo.nextMidnightEpochMs - getEstimatedEpochMs());
+  if (countdown) countdown.textContent = formatCountdown(todayDateInfo.nextMidnightEpochMs - getEstimatedEpochMs());
 }
 
 function renderBoard(): void {
@@ -297,7 +398,32 @@ function handleClick(event: MouseEvent): void {
 
   if (actionButton) {
     const action = actionButton.dataset.action;
+    if (action === 'home') exitToLanding();
     if (action === 'play') enterGame();
+    if (action === 'archive') showArchiveModal();
+    if (action === 'archive-prev-month') {
+      archiveMonth -= 1;
+      if (archiveMonth < 1) {
+        archiveMonth = 12;
+        archiveYear -= 1;
+      }
+      showArchiveModal();
+    }
+    if (action === 'archive-next-month') {
+      archiveMonth += 1;
+      if (archiveMonth > 12) {
+        archiveMonth = 1;
+        archiveYear += 1;
+      }
+      showArchiveModal();
+    }
+    if (action === 'pick-archive-date') {
+      const targetDate = actionButton.dataset.date;
+      if (targetDate) switchToDate(targetDate);
+    }
+    if (action === 'return-today') {
+      switchToDate(todayDateInfo.dateKey);
+    }
     if (action === 'help') showHelpModal();
     if (action === 'stats') showStatsModal();
     if (action === 'settings') showSettingsModal();
@@ -558,15 +684,151 @@ function finishGame(): void {
   if (finalStatus === 'won') {
     stats.wins += 1;
     stats.guessDistribution[String(game.guesses.length)] = (stats.guessDistribution[String(game.guesses.length)] ?? 0) + 1;
-    const previousDateKey = getPreviousDateKey(game.dateKey);
-    stats.currentStreak = stats.lastWinDateKey === previousDateKey ? stats.currentStreak + 1 : 1;
-    stats.maxStreak = Math.max(stats.maxStreak, stats.currentStreak);
-    stats.lastWinDateKey = game.dateKey;
-  } else {
+    if (game.dateKey === todayDateInfo.dateKey) {
+      const previousDateKey = getPreviousDateKey(game.dateKey);
+      stats.currentStreak = stats.lastWinDateKey === previousDateKey ? stats.currentStreak + 1 : 1;
+      stats.maxStreak = Math.max(stats.maxStreak, stats.currentStreak);
+      stats.lastWinDateKey = game.dateKey;
+    }
+  } else if (game.dateKey === todayDateInfo.dateKey) {
     stats.currentStreak = 0;
   }
 
   writeJson(STATS_KEY, stats);
+}
+
+function showArchiveModal(): void {
+  const [currentYear, currentMonth] = (game.dateKey || todayDateInfo.dateKey).split('-').map(Number);
+  if (!archiveYear) archiveYear = currentYear;
+  if (!archiveMonth) archiveMonth = currentMonth;
+  showModal('archive', buildArchiveModalContent());
+}
+
+function buildArchiveModalContent(): string {
+  const [todayYear, todayMonth] = todayDateInfo.dateKey.split('-').map(Number);
+  const canGoPrev = archiveYear > 2026 || (archiveYear === 2026 && archiveMonth > 7);
+  const canGoNext = archiveYear < todayYear || (archiveYear === todayYear && archiveMonth < todayMonth);
+
+  const monthNames = [
+    'January', 'February', 'March', 'April', 'May', 'June',
+    'July', 'August', 'September', 'October', 'November', 'December'
+  ];
+  const monthTitle = `${monthNames[archiveMonth - 1]} ${archiveYear}`;
+
+  const daysInMonth = new Date(archiveYear, archiveMonth, 0).getDate();
+  const firstDayOfWeek = new Date(archiveYear, archiveMonth - 1, 1).getDay();
+
+  const dayHeaders = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat']
+    .map((day) => `<div class="cal-weekday">${day}</div>`)
+    .join('');
+
+  let cells = '';
+  for (let index = 0; index < firstDayOfWeek; index += 1) {
+    cells += `<div class="cal-cell empty" aria-hidden="true"></div>`;
+  }
+
+  for (let day = 1; day <= daysInMonth; day += 1) {
+    const dayString = String(day).padStart(2, '0');
+    const monthString = String(archiveMonth).padStart(2, '0');
+    const cellDateKey = `${archiveYear}-${monthString}-${dayString}`;
+
+    const isBeforeLaunch = cellDateKey < SCHEDULE_START_DATE;
+    const isFuture = cellDateKey > todayDateInfo.dateKey;
+    const isToday = cellDateKey === todayDateInfo.dateKey;
+    const isCurrentActive = cellDateKey === game.dateKey;
+
+    if (isBeforeLaunch) {
+      cells += `<div class="cal-cell disabled"><span class="cal-num">${day}</span></div>`;
+      continue;
+    }
+
+    if (isFuture) {
+      cells += `<div class="cal-cell locked" title="Unlocks at midnight Manila time"><span class="cal-num">${day}</span><span class="cal-badge">🔒</span></div>`;
+      continue;
+    }
+
+    const result = stats.resultsByDate[cellDateKey];
+    let statusClass = 'unplayed';
+    let statusLabel = 'Unplayed';
+    let statusIcon = '';
+
+    if (result) {
+      if (result.status === 'won') {
+        statusClass = 'won';
+        statusLabel = `Solved in ${result.guesses} tries`;
+        statusIcon = `<span class="cal-score">${result.guesses}/6</span>`;
+      } else {
+        statusClass = 'lost';
+        statusLabel = 'Unsolved';
+        statusIcon = `<span class="cal-score">X/6</span>`;
+      }
+    } else {
+      const saved = readJson<GameState | null>(getGameKey(cellDateKey), null);
+      if (saved && saved.guesses && saved.guesses.length > 0) {
+        statusClass = 'in-progress';
+        statusLabel = 'In progress';
+        statusIcon = `<span class="cal-score">${saved.guesses.length}…</span>`;
+      } else {
+        statusClass = 'unplayed';
+        statusLabel = 'Playable';
+      }
+    }
+
+    const currentClass = isCurrentActive ? ' is-active' : '';
+    const todayClass = isToday ? ' is-today' : '';
+
+    cells += `
+      <button class="cal-cell ${statusClass}${currentClass}${todayClass}"
+              type="button"
+              data-action="pick-archive-date"
+              data-date="${cellDateKey}"
+              aria-label="${cellDateKey}: ${statusLabel}"
+              title="${cellDateKey}: ${statusLabel}">
+        <span class="cal-num">${day}</span>
+        ${statusIcon}
+        ${isToday ? '<span class="cal-today-tag">TODAY</span>' : ''}
+      </button>
+    `;
+  }
+
+  const totalPlayableDays = daysBetweenDateKeys(SCHEDULE_START_DATE, todayDateInfo.dateKey) + 1;
+  const completedEntries = Object.keys(stats.resultsByDate).filter(
+    (key) => key >= SCHEDULE_START_DATE && key <= todayDateInfo.dateKey
+  ).length;
+
+  return `
+    <div class="archive-container">
+      <div class="archive-header">
+        <h2>Calendar Archive</h2>
+        <p class="muted">Play any previous puzzle since launch on July 25, 2026. (${completedEntries} of ${totalPlayableDays} solved)</p>
+      </div>
+
+      <div class="cal-month-nav">
+        <button class="icon-button cal-nav-btn" type="button" data-action="archive-prev-month" aria-label="Previous month" ${canGoPrev ? '' : 'disabled'}>
+          ◀
+        </button>
+        <span class="cal-month-title">${monthTitle}</span>
+        <button class="icon-button cal-nav-btn" type="button" data-action="archive-next-month" aria-label="Next month" ${canGoNext ? '' : 'disabled'}>
+          ▶
+        </button>
+      </div>
+
+      <div class="cal-weekdays">${dayHeaders}</div>
+      <div class="cal-grid">${cells}</div>
+
+      <div class="cal-legend">
+        <span><i class="legend-swatch won"></i> Won</span>
+        <span><i class="legend-swatch lost"></i> Missed</span>
+        <span><i class="legend-swatch in-progress"></i> In progress</span>
+        <span><i class="legend-swatch unplayed"></i> Unplayed</span>
+      </div>
+
+      <div class="modal-actions archive-actions">
+        ${game.dateKey !== todayDateInfo.dateKey ? '<button class="primary-button" type="button" data-action="return-today">Back to Today\'s Word</button>' : ''}
+        <button class="text-button" type="button" data-action="close-modal">Close</button>
+      </div>
+    </div>
+  `;
 }
 
 function showHelpModal(): void {
@@ -619,10 +881,11 @@ function showStatsModal(): void {
       </div>`;
   }).join('');
 
+  const isArchive = game.dateKey !== todayDateInfo.dateKey;
   const resultLine = game.status === 'playing'
-    ? `<p class="muted">Keep going. Today\'s puzzle closes at midnight Manila time.</p>`
+    ? `<p class="muted">${isArchive ? `Playing archive puzzle #${game.puzzleNumber} (${dateInfo.displayDate}).` : `Keep going. Today's puzzle closes at midnight Manila time.`}</p>`
     : `
-      <p class="result-line">Today: <strong>${game.status === 'won' ? `${game.guesses.length}/6` : `X/6`}</strong></p>
+      <p class="result-line">${isArchive ? `Puzzle #${game.puzzleNumber} (${dateInfo.displayDate})` : 'Today'}: <strong>${game.status === 'won' ? `${game.guesses.length}/6` : `X/6`}</strong></p>
       <p class="word-meaning"><strong>${game.solution}</strong> — ${game.definition}</p>
     `;
 
@@ -639,6 +902,7 @@ function showStatsModal(): void {
     <div class="distribution">${distribution}</div>
     <div class="modal-actions">
       ${game.status !== 'playing' ? '<button class="primary-button" type="button" data-action="share">Share result</button>' : '<button class="primary-button" type="button" data-action="play-again-info">Next puzzle info</button>'}
+      <button class="text-button" type="button" data-action="archive">📅 Calendar Archive</button>
       <button class="text-button danger" type="button" data-action="reset-stats">Reset stats</button>
     </div>
   `);
@@ -884,7 +1148,7 @@ function startTicker(): void {
   if (ticker) window.clearInterval(ticker);
   ticker = window.setInterval(async () => {
     const estimatedEpochMs = getEstimatedEpochMs();
-    const remaining = dateInfo.nextMidnightEpochMs - estimatedEpochMs;
+    const remaining = todayDateInfo.nextMidnightEpochMs - estimatedEpochMs;
     const countdown = document.querySelector('#countdown');
     if (countdown) countdown.textContent = formatCountdown(remaining);
 
@@ -898,17 +1162,28 @@ async function refreshPuzzleIfNeeded(): Promise<void> {
   const latestInfo = await getManilaDateInfo();
   appLoadedDeviceEpochMs = Date.now();
   trustedBaseEpochMs = latestInfo.epochMs;
-  if (latestInfo.dateKey === dateInfo.dateKey) {
-    dateInfo = latestInfo;
-    renderStatus();
+  if (latestInfo.dateKey === todayDateInfo.dateKey) {
+    todayDateInfo = latestInfo;
+    if (dateInfo.dateKey === todayDateInfo.dateKey) {
+      dateInfo = latestInfo;
+      renderStatus();
+    }
     return;
   }
 
-  dateInfo = latestInfo;
-  game = loadGame(dateInfo);
-  closeModal();
-  render();
-  showToast('A new Wordle Tagalog puzzle is live.');
+  const wasOnToday = dateInfo.dateKey === todayDateInfo.dateKey;
+  todayDateInfo = latestInfo;
+  if (wasOnToday) {
+    dateInfo = latestInfo;
+    game = loadGame(dateInfo);
+    closeModal();
+    if (!showingLanding) {
+      render();
+      showToast('A new Wordle Tagalog puzzle is live.');
+    } else {
+      renderLanding();
+    }
+  }
 }
 
 function getEstimatedEpochMs(): number {
@@ -923,6 +1198,14 @@ function formatTimeSource(source: ManilaDateInfo['source']): string {
 
 function registerServiceWorker(): void {
   if (!('serviceWorker' in navigator)) return;
+  if (import.meta.env.DEV) {
+    void navigator.serviceWorker.getRegistrations().then((registrations) => {
+      for (const registration of registrations) {
+        void registration.unregister();
+      }
+    });
+    return;
+  }
   window.addEventListener('load', () => {
     void navigator.serviceWorker.register('./service-worker.js');
   });

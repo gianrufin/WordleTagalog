@@ -67,6 +67,12 @@ export function getPreviousDateKey(dateKey: string): string {
   return `${previous.getUTCFullYear()}-${pad(previous.getUTCMonth() + 1)}-${pad(previous.getUTCDate())}`;
 }
 
+export function getManilaDateInfoForDateKey(dateKey: string): ManilaDateInfo {
+  const [year, month, day] = dateKey.split('-').map(Number);
+  const epochMs = Date.UTC(year, month - 1, day, 4, 0, 0);
+  return buildManilaDateInfo(epochMs, 'device');
+}
+
 async function getTrustedEpochMs(): Promise<{ epochMs: number; source: TimeSource }> {
   const networkEpochMs = await fetchNetworkEpochMs();
   if (typeof networkEpochMs === 'number' && Number.isFinite(networkEpochMs)) {
