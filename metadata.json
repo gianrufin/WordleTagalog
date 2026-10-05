@@ -1,0 +1,8 @@
+{
+  "name": "Wordle Tagalog",
+  "description": "Wordle Tagalog is a mobile-first Filipino word puzzle with a new six-letter word every midnight in Manila.",
+  "prompt": "Wordle Tagalog is a mobile-first Filipino word puzzle with a new six-letter word every midnight in Manila.",
+  "capabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

@@ -4,9 +4,10 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "dev": "vite --host 0.0.0.0",
+    "dev": "vite --host 0.0.0.0 --port 3000",
     "build": "tsc && node tools/build-dist.mjs",
-    "preview": "vite preview --host 0.0.0.0",
+    "lint": "tsc --noEmit",
+    "preview": "vite preview --host 0.0.0.0 --port 3000",
     "validate:words": "node tools/validate-words.mjs",
     "generate:schedule": "node tools/generate-schedule.mjs"
   },

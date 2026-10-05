@@ -166,6 +166,13 @@ export function daysBetweenDateKeys(startKey: string, endKey: string): number {
   return Math.floor((end - start) / (24 * 60 * 60 * 1000));
 }
 
+export function getDayOfYear(dateKey: string): number {
+  const [year, month, day] = dateKey.split('-').map(Number);
+  const start = Date.UTC(year, 0, 1);
+  const target = Date.UTC(year, month - 1, day);
+  return Math.floor((target - start) / (24 * 60 * 60 * 1000)) + 1;
+}
+
 function pad(value: number): string {
   return value.toString().padStart(2, '0');
 }

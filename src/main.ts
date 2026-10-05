@@ -92,6 +92,7 @@ let ticker: number | undefined;
 let revealingRowIndex: number | null = null;
 let isAnimating = false;
 let showingLanding = true;
+let lastAddedTileIndex: number | null = null;
 
 const appRoot = document.querySelector<HTMLDivElement>('#app');
 if (!appRoot) throw new Error('App root not found.');
@@ -112,8 +113,21 @@ async function initialize(): Promise<void> {
   registerServiceWorker();
 }
 
+function getActiveStreak(): number {
+  if (!stats.currentStreak || !stats.lastWinDateKey) return 0;
+  const previousDateKey = getPreviousDateKey(dateInfo.dateKey);
+  if (stats.lastWinDateKey === dateInfo.dateKey || stats.lastWinDateKey === previousDateKey) {
+    return stats.currentStreak;
+  }
+  return 0;
+}
+
 function renderLanding(): void {
   const alreadyPlayed = game.status !== 'playing';
+  const streak = getActiveStreak();
+  const streakLine = streak > 0
+    ? `<p class="landing-streak">🔥 Streak: ${streak} ${streak === 1 ? 'day' : 'days'}</p>`
+    : '';
   const previewStates: LetterState[] = ['correct', 'present', 'absent', 'present', 'absent', 'correct'];
   const previewLetters = ['T', 'A', 'NG', 'G', 'A', 'P'];
   const preview = previewLetters.map((letter, index) =>
@@ -128,6 +142,7 @@ function renderLanding(): void {
         <h1 class="landing-title">Wordle Tagalog</h1>
         <p class="landing-tagline">Guess the 6-letter Filipino word in 6 tries. Ñ and NG each count as one letter. A new word drops every midnight in Manila.</p>
         <button class="primary-button landing-play" type="button" data-action="play">${alreadyPlayed ? "See today's result" : 'Play'}</button>
+        ${streakLine}
         <p class="landing-meta">Puzzle #${game.puzzleNumber} · ${dateInfo.displayDate}</p>
       </div>
       <div class="credits landing-credits">
@@ -228,7 +243,8 @@ function renderBoard(): void {
       const tileState: TileState = evaluation?.[tileIndex] ?? (letter ? 'filled' : 'empty');
       const aria = letter ? `${letter}, ${tileState}` : 'empty';
       const wideClass = letter.length > 1 ? ' tile-wide-letter' : '';
-      return `<div class="tile${wideClass}" data-state="${tileState}" role="gridcell" aria-label="${aria}">${letter}</div>`;
+      const popClass = isCurrentRow && tileIndex === lastAddedTileIndex && !settings.reduceMotion ? ' tile-pop' : '';
+      return `<div class="tile${wideClass}${popClass}" data-state="${tileState}" role="gridcell" aria-label="${aria}">${letter}</div>`;
     }).join('');
     return `<div class="board-row" data-row="${rowIndex}" role="row">${tiles}</div>`;
   }).join('');
@@ -339,16 +355,20 @@ function handleInput(key: string): void {
     const tokens = tokenize(game.currentGuess);
     tokens.pop();
     game.currentGuess = tokens.join('');
+    lastAddedTileIndex = null;
     saveGame();
     renderBoard();
     return;
   }
 
   const isLetterKey = key === 'NG' || /^[A-ZÑ]$/.test(key);
-  if (isLetterKey && tokenize(game.currentGuess).length < WORD_LENGTH) {
+  const currentTokens = tokenize(game.currentGuess);
+  if (isLetterKey && currentTokens.length < WORD_LENGTH) {
+    lastAddedTileIndex = currentTokens.length;
     game.currentGuess += key;
     saveGame();
     renderBoard();
+    lastAddedTileIndex = null;
   }
 }
 
@@ -823,6 +843,7 @@ function loadGame(info: ManilaDateInfo): GameState {
   return {
     ...fallback,
     ...saved,
+    puzzleNumber: fallback.puzzleNumber,
     currentGuess: saved.status === 'playing' ? saved.currentGuess ?? '' : ''
   };
 }

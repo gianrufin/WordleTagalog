@@ -229,6 +229,9 @@ h1 {
 .tile[data-state="filled"] {
   border-color: color-mix(in srgb, var(--text) 60%, var(--border));
   background: var(--filled);
+}
+
+.tile.tile-pop {
   animation: tilePop 160ms ease-out;
 }
 
@@ -663,6 +666,14 @@ h1 {
   min-height: 52px;
   font-size: 1.05rem;
   margin-top: 10px;
+}
+
+.landing-streak {
+  margin: 6px 0 0;
+  color: var(--text);
+  font-size: 0.95rem;
+  font-weight: 700;
+  letter-spacing: 0.01em;
 }
 
 .landing-meta {

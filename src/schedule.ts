@@ -1,5 +1,5 @@
-import { daysBetweenDateKeys } from './time.js';
-import { SCHEDULE, FALLBACK_POOL, INVALIDATED_DATES, SCHEDULE_START_DATE } from './schedule-data.js';
+import { getDayOfYear } from './time.js';
+import { SCHEDULE, FALLBACK_POOL, INVALIDATED_DATES } from './schedule-data.js';
 
 export type Difficulty = 'easy' | 'medium' | 'hard';
 
@@ -28,7 +28,7 @@ const INVALID_SET = new Set(INVALIDATED_DATES);
 // to the same fallback, even though it isn't part of the guaranteed-unique
 // primary schedule.
 export function getPuzzleForDate(dateKey: string): PuzzleForDate {
-  const puzzleNumber = daysBetweenDateKeys(SCHEDULE_START_DATE, dateKey) + 1;
+  const puzzleNumber = getDayOfYear(dateKey);
   const scheduled = SCHEDULE_BY_DATE.get(dateKey);
 
   if (scheduled && !INVALID_SET.has(dateKey)) {
